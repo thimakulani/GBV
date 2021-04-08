@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <ImageView
+        android:src="@drawable/logo9_23_211337"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription"
+        android:id="@+id/ImgBackground" 
+        android:background="@android:color/white"
+    />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout1"
+    >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_toolbar"
+            style="@style/Widget.MaterialComponents.Toolbar"
+            app:menu="@menu/top_app_bar"
+            app:navigationIcon="@mipmap/ic_menu_open_white_24dp"
+            app:titleTextColor="@android:color/white"
+           
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragHost"
+        android:layout_below="@+id/appBarLayout1"
+        android:layout_above="@+id/bottom_nav_view"
+     />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nav_view"
+        app:menu="@menu/nav_menu"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+    />
+
+    
+</RelativeLayout>

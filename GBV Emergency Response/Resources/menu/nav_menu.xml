@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: https://aka.ms/android-menu-resource-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+      android:id="@+id/navHome"
+      android:title="Home"
+      android:icon="@mipmap/ic_home_black_18dp"
+    />
+    <item
+      android:id="@+id/navForum"
+      android:title="Forum"
+	    android:icon="@mipmap/ic_forum_black_18dp"
+    />
+    <item
+      android:id="@+id/navAwareness"
+      android:title="Awareness"
+	    android:icon="@mipmap/ic_follow_the_signs_black_18dp"
+    />
+    <item
+      android:id="@+id/navUserProfile"
+      android:title="Profile"
+	    android:icon="@mipmap/ic_account_circle_black_18dp"
+    />
+    <item
+      android:id="@+id/navAlerts"
+      android:title="Alerts"
+	    android:icon="@mipmap/ic_notifications_active_black_18dp"
+    />
+</menu>

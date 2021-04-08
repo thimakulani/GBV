@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SenderTxtMsgTime"
+        android:layout_gravity="right"
+        android:textSize="10dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:layout_margin="2dp"
+    />
+    <com.github.library.bubbleview.BubbleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SenderTxtMessage"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        app:arrowHeight="10dp"
+        app:arrowWidth="8dp"
+        app:angle="8dp"
+        android:layout_gravity="right"
+        app:arrowPosition="14dp"
+        app:arrowLocation="right"
+        app:arrowCenter="true"
+        app:bubbleColor="#7EC0EE" 
+        android:layout_margin="2dp"
+    />
+</LinearLayout>

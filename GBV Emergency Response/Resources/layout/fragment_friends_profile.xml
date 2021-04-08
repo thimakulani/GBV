@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:elevation="0dp"
+        android:id="@+id/appBarLayout1"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_friend"
+            android:background="@color/mtrl_btn_transparent_bg_color"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/F_ProfileImgCover"
+                android:alpha="0.5"
+                android:scaleType="centerCrop"
+                tools:ignore="MissingDimension" 
+
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/F_ProfileImage"
+                android:src="@mipmap/iconfinder_user03_6318050"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/cardview"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            >
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@mipmap/ic_person_search_black_18dp"
+                android:textSize="26sp"
+                android:id="@+id/txt_profile_name"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:alpha="0.5"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/black"
+                tools:ignore="MissingDimension" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:layout_margin="10dp"
+                android:drawableLeft="@mipmap/ic_person_search_black_18dp"
+                android:id="@+id/txt_profile_surname"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:alpha="0.5"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/black"
+                tools:ignore="MissingDimension" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:drawableLeft="@mipmap/ic_contact_phone_black_18dp"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_profile_phone_number"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:alpha="0.5"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/black"
+                tools:ignore="MissingDimension" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+   
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_add_ic_call_black_18dp"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/appBarLayout1"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_margin="5dp"
+        app:elevation="2dp"
+        android:id="@+id/FabCallFriend"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+    />
+       
+
+    
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

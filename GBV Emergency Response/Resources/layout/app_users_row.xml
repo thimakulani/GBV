@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="6dp"
+
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+    >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/row_user_image"
+            android:src="@mipmap/ic_contact_phone_black_18dp"
+            android:layout_marginLeft="5dp"
+            tools:ignore="ContentDescription"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_row_display_name"
+            android:layout_marginRight="5dp"
+            android:text="@string/full_app_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/row_user_image"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_row_names"
+            android:layout_below="@+id/user_row_display_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/full_app_name"
+            android:layout_toRightOf="@+id/row_user_image"
+        />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnFriendAction"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/txt_btn_invite"
+            android:layout_below="@+id/user_row_names"
+            android:layout_toRightOf="@+id/row_user_image"
+        />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,55 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="6dp"
+    app:cardPreventCornerOverlap="true"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:id="@+id/awareness_img"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAwarenessSender"
+            android:text="@string/full_app_name"
+            android:layout_margin="5dp"
+        />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAwareessmessage"
+            android:layout_margin="5dp"
+            android:text="@string/full_app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:strokeWidth="2dp"
+            android:layout_margin="5dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            app:cornerRadius="20dp"
+            android:id="@+id/BtnDeleteAwareness"
+            android:layout_gravity="right"
+            android:text="@string/txt_remove"
+        />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

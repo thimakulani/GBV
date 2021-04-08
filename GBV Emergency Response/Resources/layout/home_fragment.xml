@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnPanic"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="@string/txt_btn_panic"
+        app:icon="@drawable/ic_notifications_active_black_18dp"
+        app:cornerRadius="12dp"
+        app:strokeWidth="1dp"
+        android:layout_centerHorizontal="true"
+        app:strokeColor="@android:color/holo_red_light"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerContactsList"
+        android:layout_below="@+id/BtnPanic"
+    />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:elevation="0dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:textSize="10dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:id="@+id/txt_invite_count"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/notification_red_dot"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_ic_call_white_18dp"
+            android:backgroundTint="@color/light_blue_50"
+            app:fabSize="mini"
+            
+            android:id="@+id/FabInvites"
+            android:layout_alignParentRight="true"
+        />
+        
+    </RelativeLayout>
+</RelativeLayout>

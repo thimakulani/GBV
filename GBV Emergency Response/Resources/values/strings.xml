@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GBVER</string>
+    <string name="full_app_name">Gender Based Violence Emergency Response</string>
+    <string name="txt_name">First name</string>
+    <string name="txt_surname">Last name</string>
+    <string name="txt_phone_number">Phone numbers</string>
+    <string name="txt_email_address">Email Address</string>
+    <string name="txt_btn_login">Login</string>
+    <string name="txt_btn_sign_up">Create account</string>
+    <string name="txt_forgot_password">Forgot password</string>
+    <string name="txt_dont_have_account">Don`t have an account?</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_update">Update</string>
+    <string name="txt_type_a_reply">Type a message</string>
+    <string name="txt_add_awareness">Create awareness</string>
+    <string name="txt_remove">Delete</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_password_2">Confirm Password</string>
+    <string name="txt_message">Message..</string>
+    <string name="txt_navigate">Locate</string>
+    <string name="txt_btn_panic">EMERGENCY(S.O.S)</string>
+    <string name="txt_username">User name</string>
+    <string name="text_tor">OR</string>
+	<string name="email_inputs_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZ_1234678910@abcdefghijklmnopqrstuvwxyz.</string>
+	<string name="text_inputs_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+	<string name="developed_by">Developed by Thima</string>
+    <string name="txt_welcome">WELCOME TO:</string>
+    <string name="sign_up_caption">CREATE YOUR GBVER</string>
+    <string name="txt_searchview">Name, Phone number or Email</string>
+    <string name="txt_btn_invite">Connect</string>
+    <string name="text_view_already_have_account">Already have an account</string>
+</resources>

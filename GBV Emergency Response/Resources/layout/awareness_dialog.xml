@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/relativeLayout1"
+    >
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription"
+            android:id="@+id/dlgImge" 
+            android:scaleType="centerCrop"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FabUploadImg" 
+            android:layout_margin="10dp"
+            app:fabSize="mini"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@android:drawable/ic_menu_camera"
+        />
+    
+    </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_message"
+            android:padding="10dp"
+            android:id="@+id/dlgInputAwareness" 
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:text="@string/txt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dlgBtnSubmiAwareness"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+    />
+     
+
+</LinearLayout>

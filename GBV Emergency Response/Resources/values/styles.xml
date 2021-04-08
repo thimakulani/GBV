@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item  name="android:windowActivityTransitions">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+	<style name="InputStyles" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+		<item name="boxStrokeColor">@color/light_blue_500</item>
+		<item name="boxStrokeWidth">1dp</item>
+	</style>
+
+  <style name="MyTheme.Splash" parent ="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+  <style name="FullScreenDialogStyle" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="android:windowNoTitle">true</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <!-- Set this to true if you want Full Screen without status bar -->
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowIsFloating">false</item>
+    <!-- This is important! Don't forget to set window background -->
+    <!-- Additionally if you want animations when dialog opening -->
+  </style>
+  <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+    <!-- Text Size -->
+    <!-- Query Text Color -->
+    <item name="android:textColorPrimary">@android:color/white</item>
+    <!-- Hint Color -->
+    <item name="android:textColorHint">@android:color/white</item>
+    <!-- Icon Color -->
+    <item name="android:tint">@android:color/white</item>
+</style>
+
+</resources>
