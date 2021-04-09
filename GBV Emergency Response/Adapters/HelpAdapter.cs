@@ -37,7 +37,6 @@ namespace GBV_Emergency_Response.Adapters
         // Replace the contents of a view (invoked by the layout manager)
         public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
         {
-            var item = Items[position];
 
             // Replace the contents of the view with that element
             var holder = viewHolder as HelpAdapterViewHolder;

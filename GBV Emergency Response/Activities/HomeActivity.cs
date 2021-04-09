@@ -1,6 +1,7 @@
 ﻿using Android;
 using Android.App;
 using Android.Content.PM;
+using Android.Gms.Extensions;
 using Android.Gms.Location;
 using Android.Gms.Tasks;
 using Android.OS;
@@ -12,6 +13,7 @@ using AndroidX.AppCompat.Widget;
 using AndroidX.Core.App;
 using Firebase.Auth;
 using Firebase.Database;
+using Firebase.Messaging;
 using GBV_Emergency_Response.AppDataHelper;
 using GBV_Emergency_Response.Dialogs;
 using GBV_Emergency_Response.Fragments;
@@ -61,7 +63,7 @@ namespace GBV_Emergency_Response.Activities
         private View badge;
         private TextView _notificationBadgeTextView;
         private List<AlertsMessages> items = new List<AlertsMessages>();
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected async override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -69,6 +71,7 @@ namespace GBV_Emergency_Response.Activities
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
+            await FirebaseMessaging.Instance.SubscribeToTopic("requests");
 
             nav_menu = FindViewById<BottomNavigationView>(Resource.Id.bottom_nav_view);
             //nav_menu.InflateMenu(Resource.Menu.nav_menu);
@@ -102,7 +105,7 @@ namespace GBV_Emergency_Response.Activities
                 .Child(FirebaseAuth.Instance.CurrentUser.Uid)
                 .AddValueEventListener(this);
             }
-
+           
             if (CheckPermission())
             {
                 //CreateLocationRequest();
@@ -113,6 +116,11 @@ namespace GBV_Emergency_Response.Activities
             AlertsMessagesData alerts = new AlertsMessagesData(FirebaseAuth.Instance.CurrentUser.Uid);
             alerts.GetAlerts();
             alerts.RetrivedAlerts += Alerts_RetrivedAlerts;
+        }
+        protected override  void OnResume()
+        {
+            base.OnResume();
+            
         }
         private void Alerts_RetrivedAlerts(object sender, AlertsMessagesData.AlertsHandler e)
         {
@@ -253,7 +261,7 @@ namespace GBV_Emergency_Response.Activities
 
         private bool CheckPermission()
         {
-            bool permisionGranted = false;
+            bool permisionGranted;
             if (ActivityCompat.CheckSelfPermission(this, Manifest.Permission.AccessFineLocation) != Permission.Granted &&
                 ActivityCompat.CheckSelfPermission(this, Manifest.Permission.AccessCoarseLocation) != Permission.Granted)
             {
@@ -314,6 +322,7 @@ namespace GBV_Emergency_Response.Activities
                     .Replace(Resource.Id.fragHost, profile)
                     .Commit();
             }
+            
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -325,7 +334,7 @@ namespace GBV_Emergency_Response.Activities
 
         public void OnCancelled(DatabaseError error)
         {
-
+            
         }
 
         public void OnDataChange(DataSnapshot snapshot)
@@ -337,15 +346,25 @@ namespace GBV_Emergency_Response.Activities
                     home_toolbar.Title = snapshot.Child("Name").Value.ToString() + " " + snapshot.Child("Surname").Value.ToString();
                     PersonNames = snapshot.Child("Name").Value.ToString() + " " + snapshot.Child("Surname").Value.ToString();
                     PersonPhoneNr = snapshot.Child("PhoneNumber").Value.ToString();
+                    
                 }
 
             }
         }
     }
+
+    internal class Conmplete : Activity, IOnSuccessListener
+    {
+        public void OnSuccess(Java.Lang.Object result)
+        {
+            
+        }
+    }
+
     public class AppInvites : Java.Lang.Object, IValueEventListener
     {
         public event EventHandler<InvitesValueEventHandler> RetriveInvites;
-        private List<InviteModel> items = new List<InviteModel>();
+        private readonly List<InviteModel> items = new List<InviteModel>();
         public class InvitesValueEventHandler : EventArgs
         {
            public List<InviteModel> Items { get; set; }

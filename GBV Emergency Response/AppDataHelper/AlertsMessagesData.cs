@@ -44,6 +44,7 @@ namespace GBV_Emergency_Response.AppDataHelper
                 items.Clear();
                 foreach (DataSnapshot data in child)
                 {
+
                     if (data.Child("UserKey").Value.ToString() != UserKey)
                     {
                         if (data.Child("Attended").Child(UserKey).Exists())

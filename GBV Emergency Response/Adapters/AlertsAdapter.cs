@@ -51,8 +51,8 @@ namespace GBV_Emergency_Response.Adapters
             var holder = viewHolder as AlertsAdapterViewHolder;
 
 
-            holder.txtName.Text = items[position].Name;
-            holder.txtPhone.Text = items[position].Phone;
+            holder.TxtName.Text = items[position].Name;
+            holder.TxtPhone.Text = items[position].Phone;
             TimeSpan timeSpan = DateTime.Now - items[position].TimeDate;
             if (timeSpan.TotalMinutes > 20)
             {
@@ -75,11 +75,11 @@ namespace GBV_Emergency_Response.Adapters
             if(await GetLocationAsync(lat, log) == null)
             {
 
-                holder.txtLocation.Text = await GetLocationAsync(lat, log);
+                holder.TxtLocation.Text = await GetLocationAsync(lat, log);
             }
             else
             {
-                holder.txtLocation.Text = await GetLocationAsync(lat, log);
+                holder.TxtLocation.Text = await GetLocationAsync(lat, log);
             }
         }
         private async System.Threading.Tasks.Task<string> GetLocationAsync(double lat, double lon)
@@ -167,11 +167,11 @@ namespace GBV_Emergency_Response.Adapters
     {
         //public TextView TextView { get; set; }
         public TextView txtTimeDate { get; set; }
-        public TextView txtName { get; set; }
-        public TextView txtLocation { get; set; }
-        public TextView txtPhone { get; set; }
+        public TextView TxtName { get; set; }
+        public TextView TxtLocation { get; set; }
+        public TextView TxtPhone { get; set; }
         public MaterialButton BtnNavigate { get; set; }
-        public View view_separator { get; set; }
+        public View View_separator { get; set; }
         public Google.Android.Material.FloatingActionButton.FloatingActionButton FabCall { get; set; }
 
 
@@ -182,11 +182,11 @@ namespace GBV_Emergency_Response.Adapters
         {
             //TextView = v;
             txtTimeDate = itemView.FindViewById<TextView>(Resource.Id.RowDateTime);
-            txtName = itemView.FindViewById<TextView>(Resource.Id.Row_User_Name);
-            txtLocation = itemView.FindViewById<TextView>(Resource.Id.Row_Location);
-            txtPhone = itemView.FindViewById<TextView>(Resource.Id.Row_Phone_Number);
+            TxtName = itemView.FindViewById<TextView>(Resource.Id.Row_User_Name);
+            TxtLocation = itemView.FindViewById<TextView>(Resource.Id.Row_Location);
+            TxtPhone = itemView.FindViewById<TextView>(Resource.Id.Row_Phone_Number);
             BtnNavigate = itemView.FindViewById<MaterialButton>(Resource.Id.BtnNavigate);
-            view_separator = itemView.FindViewById<View>(Resource.Id.view_separator);
+            View_separator = itemView.FindViewById<View>(Resource.Id.view_separator);
             FabCall = itemView.FindViewById<Google.Android.Material.FloatingActionButton.FloatingActionButton>(Resource.Id.FabCall);
 
 

@@ -119,7 +119,7 @@
 	<color name="pink_A200">#FF4081</color>
 	<color name="pink_A400">#F50057</color>
 	<color name="pink_A700">#C51162</color>
-
+  <color name="app_color">#85BADD</color>
 	<color name="indigo_50">#E8EAF6</color>
 	<color name="indigo_100">#C5CAE9</color>
 	<color name="indigo_200">#9FA8DA</color>

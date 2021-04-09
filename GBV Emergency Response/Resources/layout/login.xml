@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txt_welcome"
             android:textStyle="bold"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textSize="35sp"
             />
         <com.google.android.material.textview.MaterialTextView

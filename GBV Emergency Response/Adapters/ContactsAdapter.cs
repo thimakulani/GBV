@@ -14,7 +14,7 @@ namespace GBV_Emergency_Response.Adapters
     {
         public event EventHandler<ContactsAdapterClickEventArgs> ItemClick;
         public event EventHandler<ContactsAdapterClickEventArgs> ItemLongClick;
-        private List<InviteModel> items = new List<InviteModel>();
+        private readonly List<InviteModel> items = new List<InviteModel>();
 
         public ContactsAdapter(List<InviteModel> data)
         {
@@ -39,12 +39,10 @@ namespace GBV_Emergency_Response.Adapters
         public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
         {
             var holder = viewHolder as ContactsAdapterViewHolder;
-            var dbRef = FirebaseDatabase.Instance.GetReference("Users");
-            dbRef.Child(items[position].Key)
+
+
+            FirebaseDatabase.Instance.GetReference("Users").Child(items[position].Key)
                 .AddValueEventListener(new ValueAdapterEventListener(holder));
-            // Replace the contents of the view with that element
-            //holder.TextView.Text = items[position];
-            
         }
 
         public override int ItemCount => items.Count;
@@ -54,7 +52,7 @@ namespace GBV_Emergency_Response.Adapters
 
         private class ValueAdapterEventListener : Java.Lang.Object, IValueEventListener
         {
-            private ContactsAdapterViewHolder holder;
+            private readonly ContactsAdapterViewHolder holder;
 
             public ValueAdapterEventListener(ContactsAdapterViewHolder holder)
             {
