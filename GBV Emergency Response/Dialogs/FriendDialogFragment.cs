@@ -21,7 +21,7 @@ namespace GBV_Emergency_Response.Dialogs
     public class FriendDialogFragment : DialogFragment, IValueEventListener
     {
         private MaterialToolbar toolbar_friend;
-        private string id;
+        private readonly string id;
         private MaterialTextView Names;
         private MaterialTextView Surname;
         private MaterialTextView Phone;
@@ -40,12 +40,10 @@ namespace GBV_Emergency_Response.Dialogs
             // Create your fragment here
             SetStyle(StyleNoFrame, Resource.Style.FullScreenDialogStyle);
         }
-        private Context context;
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             View view = inflater.Inflate(Resource.Layout.fragment_friends_profile, container, false);
-            context = view.Context;
             ConnectViews(view);
             return view;
         }

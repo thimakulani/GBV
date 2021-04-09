@@ -18,8 +18,9 @@ namespace GBV_Emergency_Response.Adapters
         public event EventHandler<AlertsAdapterClickEventArgs> ItemLongClick;
         public event EventHandler<AlertsAdapterClickEventArgs> BtnNavClick;
         public event EventHandler<AlertsAdapterClickEventArgs> FabCallClick;
-        List<AlertsMessages> items = new List<AlertsMessages>();
-        private Context adapterContext;
+
+        readonly List<AlertsMessages> items = new List<AlertsMessages>();
+        private readonly Context adapterContext;
         public AlertsAdapter(List<AlertsMessages>  data, Context context)
         {
             items = data;
@@ -62,12 +63,12 @@ namespace GBV_Emergency_Response.Adapters
             if(items[position].TimeDate.ToString("dd/MMM/yyyy") == DateTime.Now.ToString("dd/MMM/yyyy"))
             {
 
-                holder.txtTimeDate.Text = "today: " +  items[position].TimeDate.ToString("HH:mm tt");
+                holder.TxtTimeDate.Text = "today: " +  items[position].TimeDate.ToString("HH:mm tt");
 
             }
             else
             {
-                holder.txtTimeDate.Text = items[position].TimeDate.ToString("ddd, dd/MMM/yyyy HH:mm tt");
+                holder.TxtTimeDate.Text = items[position].TimeDate.ToString("ddd, dd/MMM/yyyy HH:mm tt");
             }
 
             double lat = Convert.ToDouble(items[position].Lat);
@@ -84,7 +85,6 @@ namespace GBV_Emergency_Response.Adapters
         }
         private async System.Threading.Tasks.Task<string> GetLocationAsync(double lat, double lon)
         {
-            var current = Connectivity.NetworkAccess;
 
             try
             {
@@ -166,7 +166,7 @@ namespace GBV_Emergency_Response.Adapters
     public class AlertsAdapterViewHolder : RecyclerView.ViewHolder
     {
         //public TextView TextView { get; set; }
-        public TextView txtTimeDate { get; set; }
+        public TextView TxtTimeDate { get; set; }
         public TextView TxtName { get; set; }
         public TextView TxtLocation { get; set; }
         public TextView TxtPhone { get; set; }
@@ -181,7 +181,7 @@ namespace GBV_Emergency_Response.Adapters
                             Action<AlertsAdapterClickEventArgs> FabCallClickListener) : base(itemView)
         {
             //TextView = v;
-            txtTimeDate = itemView.FindViewById<TextView>(Resource.Id.RowDateTime);
+            TxtTimeDate = itemView.FindViewById<TextView>(Resource.Id.RowDateTime);
             TxtName = itemView.FindViewById<TextView>(Resource.Id.Row_User_Name);
             TxtLocation = itemView.FindViewById<TextView>(Resource.Id.Row_Location);
             TxtPhone = itemView.FindViewById<TextView>(Resource.Id.Row_Phone_Number);

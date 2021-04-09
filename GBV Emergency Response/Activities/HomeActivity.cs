@@ -278,6 +278,7 @@ namespace GBV_Emergency_Response.Activities
         {
             if (!CheckPermission())
             {
+                Toast.MakeText(this, "No permission", ToastLength.Long).Show();
                 return;
             }
             lastLocation = await locationClient.GetLastLocationAsync();

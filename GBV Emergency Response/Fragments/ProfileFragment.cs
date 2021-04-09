@@ -130,7 +130,7 @@ namespace GBV_Emergency_Response.Fragments
         private bool pool;
         private async void ChosePicture()
         {
-            var media =  CrossMedia.Current.Initialize();
+            await CrossMedia.Current.Initialize();
             if (!CrossMedia.Current.IsPickPhotoSupported)
             {
                 Toast.MakeText(Android.App.Application.Context, "Upload not supported on this device", ToastLength.Short).Show();

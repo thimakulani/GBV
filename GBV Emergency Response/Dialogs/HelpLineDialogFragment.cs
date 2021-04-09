@@ -16,7 +16,7 @@ namespace GBV_Emergency_Response.Dialogs
 {
     public class HelpLineDialogFragment : DialogFragment
     {
-        private List<HelpLine> Items = new List<HelpLine>();
+        private readonly List<HelpLine> Items = new List<HelpLine>();
         private RecyclerView helpline_recycler;
         public override void OnCreate(Bundle savedInstanceState)
         {

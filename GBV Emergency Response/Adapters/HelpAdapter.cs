@@ -13,7 +13,7 @@ namespace GBV_Emergency_Response.Adapters
         public event EventHandler<HelpAdapterClickEventArgs> ItemClick;
         public event EventHandler<HelpAdapterClickEventArgs> FabClick;
         public event EventHandler<HelpAdapterClickEventArgs> ItemLongClick;
-        private List<HelpLine> Items = new List<HelpLine>();
+        private readonly List<HelpLine> Items = new List<HelpLine>();
 
         public HelpAdapter(List<HelpLine> data)
         {

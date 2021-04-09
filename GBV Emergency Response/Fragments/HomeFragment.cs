@@ -1,37 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
-using AndroidX.Core.Widget;
 using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
 using Firebase.Database;
 using GBV_Emergency_Response.Adapters;
-using GBV_Emergency_Response.AppDataHelper;
 using GBV_Emergency_Response.Dialogs;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using Google.Android.Material.FloatingActionButton;
-using Hotstu.WaveDrawableLib;
 
 namespace GBV_Emergency_Response.Fragments
 {
-    public class HomeFragment : HelpFragment, IValueEventListener
+    public class HomeFragment : Fragment, IValueEventListener
     {
         private MaterialButton BtnPanic;
         private FloatingActionButton FabInvites;
         private TextView txt_invite_count;
-        WaveDrawable waveDrawable = new WaveDrawable();
         private RecyclerView recycler;
-        private List<InviteModel> items = new List<InviteModel>();
+        private readonly List<InviteModel> items = new List<InviteModel>();
        // private ContactsData data = new ContactsData();
         private Context context;
         

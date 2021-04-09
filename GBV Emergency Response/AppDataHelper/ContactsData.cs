@@ -17,7 +17,7 @@ namespace GBV_Emergency_Response.AppDataHelper
 {
     public class ContactsData : Java.Lang.Object, IValueEventListener
     {
-        private List<AppUsers> items = new List<AppUsers>();
+        private readonly List<AppUsers> items = new List<AppUsers>();
         public event EventHandler<ContactsEventHandler> RetrieveContactsHandler;
         public class ContactsEventHandler : EventArgs
         {

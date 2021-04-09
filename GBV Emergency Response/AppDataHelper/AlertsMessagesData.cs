@@ -18,8 +18,8 @@ namespace GBV_Emergency_Response.AppDataHelper
     public class AlertsMessagesData : Java.Lang.Object, IValueEventListener
     {
 
-        private List<AlertsMessages> items = new List<AlertsMessages>();
-        private string UserKey;
+        private readonly List<AlertsMessages> items = new List<AlertsMessages>();
+        private readonly string UserKey;
         public AlertsMessagesData(string key)
         {
             UserKey = key;
