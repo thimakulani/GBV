@@ -15,7 +15,7 @@ using System.Text;
 
 namespace GBV_Emergency_Response.Models
 {
-  
+
     [Service]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     public class FBInstanceMessaging : FirebaseMessagingService

@@ -71,7 +71,8 @@ namespace GBV_Emergency_Response.Activities
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            await FirebaseMessaging.Instance.SubscribeToTopic("requests");
+            var response = FirebaseMessaging.Instance.SubscribeToTopic("requests").AsAsync();
+            Toast.MakeText(this, response.Id.ToString(), ToastLength.Long).Show();
 
             nav_menu = FindViewById<BottomNavigationView>(Resource.Id.bottom_nav_view);
             //nav_menu.InflateMenu(Resource.Menu.nav_menu);
