@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
-using AndroidX.AppCompat.Widget;
 using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
-using Firebase.Database;
-using GBV_Emergency_Response.Activities;
 using GBV_Emergency_Response.Adapters;
-using GBV_Emergency_Response.AppDataHelper;
 using GBV_Emergency_Response.Models;
 using SearchView = AndroidX.AppCompat.Widget.SearchView;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
@@ -54,7 +46,7 @@ namespace GBV_Emergency_Response.Dialogs
             return view;
         }
 
-        AppUsersData data = new AppUsersData();
+        
 
 
         private void ConnectView(View view)
@@ -67,9 +59,7 @@ namespace GBV_Emergency_Response.Dialogs
             app_users_toolbar.NavigationClick += App_users_toolbar_NavigationClick;
             //searchView.QueryTextSubmit += SearchView_QueryTextSubmit;
 
-            AppInvites invitesData = new AppInvites();
-            invitesData.GetInvites(FirebaseAuth.Instance.CurrentUser.Uid);
-            invitesData.RetriveInvites += InvitesData_RetriveInvites;
+            
 
 
             
@@ -77,13 +67,7 @@ namespace GBV_Emergency_Response.Dialogs
 
         }
 
-        private void InvitesData_RetriveInvites(object sender, AppInvites.InvitesValueEventHandler e)
-        {
-            inviteItems = e.Items;
-            searchView.QueryTextChange += SearchView_QueryTextChange;
-            data.GetAllUsers(inviteItems);
-            data.RetrieveUsersHandler += Data_RetrieveUsersHandler;
-        }
+        
 
         private void SearchView_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
         {
@@ -106,13 +90,6 @@ namespace GBV_Emergency_Response.Dialogs
         //    searchView.ClearFocus();
         //}
 
-        private void Data_RetrieveUsersHandler(object sender, AppUsersData.AppUsersEventHandler e)
-        {
-            TempList = e.Items;
-            items = e.Items;
-            SetUpRecycler(TempList);
-        }
-
         private void SetUpRecycler(List<AppUsers> users)
         {
             
@@ -126,16 +103,16 @@ namespace GBV_Emergency_Response.Dialogs
 
         private void Adapter_BtnClick(object sender, AppUsersAdapterClickEventArgs e)
         {
-            FirebaseDatabase.Instance.GetReference("Request")
-                .Child(items[e.Position].Keyid)
-                .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-                .Child("Type")
-                .SetValue("Invite");
-            FirebaseDatabase.Instance.GetReference("Request")
-                .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-                .Child(items[e.Position].Keyid)
-                .Child("Type")
-                .SetValue("****");
+            //FirebaseDatabase.Instance.GetReference("Request")
+            //    .Child(items[e.Position].Keyid)
+            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
+            //    .Child("Type")
+            //    .SetValue("Invite");
+            //FirebaseDatabase.Instance.GetReference("Request")
+            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
+            //    .Child(items[e.Position].Keyid)
+            //    .Child("Type")
+            //    .SetValue("****");
             Toast.MakeText(context, e.Position.ToString() + items[e.Position].Name, ToastLength.Long).Show();
         }
 

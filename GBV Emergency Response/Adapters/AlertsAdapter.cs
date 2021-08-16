@@ -190,10 +190,10 @@ namespace GBV_Emergency_Response.Adapters
             FabCall = itemView.FindViewById<Google.Android.Material.FloatingActionButton.FloatingActionButton>(Resource.Id.FabCall);
 
 
-            FabCall.Click += (sender, e) => FabCallClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            BtnNavigate.Click += (sender, e) => navClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.Click += (sender, e) => clickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.LongClick += (sender, e) => longClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            FabCall.Click += (sender, e) => FabCallClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            BtnNavigate.Click += (sender, e) => navClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.Click += (sender, e) => clickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.LongClick += (sender, e) => longClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
         }
     }
 

@@ -65,9 +65,9 @@ namespace GBV_Emergency_Response.Adapters
             //TextView = v;
             Row_FabCall = itemView.FindViewById<FloatingActionButton>(Resource.Id.row_help_call);
             Row_Title = itemView.FindViewById<MaterialTextView>(Resource.Id.row_help_title);
-            Row_FabCall.Click += (sender, e) => fabClickListener(new HelpAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.Click += (sender, e) => clickListener(new HelpAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.LongClick += (sender, e) => longClickListener(new HelpAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            Row_FabCall.Click += (sender, e) => fabClickListener(new HelpAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.Click += (sender, e) => clickListener(new HelpAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.LongClick += (sender, e) => longClickListener(new HelpAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
         }
     }
 

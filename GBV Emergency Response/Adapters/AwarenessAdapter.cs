@@ -97,9 +97,9 @@ namespace GBV_Emergency_Response.Adapters
             ImgAwareness = itemView.FindViewById<ImageView>(Resource.Id.awareness_img);
 
 
-            itemView.Click += (sender, e) => clickListener(new AwarenessAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.LongClick += (sender, e) => longClickListener(new AwarenessAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            BtnDeleteAwareness.Click += (sender, e) => deleteClickListener(new AwarenessAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            itemView.Click += (sender, e) => clickListener(new AwarenessAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.LongClick += (sender, e) => longClickListener(new AwarenessAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            BtnDeleteAwareness.Click += (sender, e) => deleteClickListener(new AwarenessAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
         }
     }
 

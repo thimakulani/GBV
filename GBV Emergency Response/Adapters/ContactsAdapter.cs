@@ -4,9 +4,7 @@ using Android.Views;
 using Android.Widget;
 using System.Collections.Generic;
 using GBV_Emergency_Response.Models;
-using FFImageLoading;
 using AndroidX.RecyclerView.Widget;
-using Firebase.Database;
 
 namespace GBV_Emergency_Response.Adapters
 {
@@ -38,11 +36,17 @@ namespace GBV_Emergency_Response.Adapters
         // Replace the contents of a view (invoked by the layout manager)
         public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
         {
+            
             var holder = viewHolder as ContactsAdapterViewHolder;
 
+            var color = new XamarinTextDrawable.Util.ColorGenerator();
+            color.GetDefaultColor();
+            var drawable = new XamarinTextDrawable.TextDrawable.Builder().BuildRect("", color.GetRandomColor());
+            holder.Img.SetImageDrawable(drawable);
 
-            FirebaseDatabase.Instance.GetReference("Users").Child(items[position].Key)
-                .AddValueEventListener(new ValueAdapterEventListener(holder));
+
+
+
         }
 
         public override int ItemCount => items.Count;
@@ -50,40 +54,7 @@ namespace GBV_Emergency_Response.Adapters
         void OnClick(ContactsAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);
         void OnLongClick(ContactsAdapterClickEventArgs args) => ItemLongClick?.Invoke(this, args);
 
-        private class ValueAdapterEventListener : Java.Lang.Object, IValueEventListener
-        {
-            private readonly ContactsAdapterViewHolder holder;
-
-            public ValueAdapterEventListener(ContactsAdapterViewHolder holder)
-            {
-                this.holder = holder;
-            }
-
-            public void OnCancelled(DatabaseError error)
-            {
-                
-            }
-
-            public void OnDataChange(DataSnapshot snapshot)
-            {
-                if (snapshot.Exists())
-                {
-
-                    holder.Name.Text = snapshot.Child("Name").Value.ToString() + " " + snapshot.Child("Surname").Value.ToString();
-                    
-                    if (snapshot.Child("ImgUrl").Exists())
-                    {
-                        ImageService.Instance
-                           .LoadUrl(snapshot.Child("ImgUrl").Value.ToString())
-                           .Retry(3, 200)
-                           .DownSampleInDip(250, 250)
-                           .Transform(new ImageTransformations.CircleTransformation())
-                           .FadeAnimation(true, true, 300)
-                           .IntoAsync(holder.Img);
-                    }
-                }
-            }
-        }
+        
     }
 
     public class ContactsAdapterViewHolder : RecyclerView.ViewHolder
@@ -99,8 +70,8 @@ namespace GBV_Emergency_Response.Adapters
             Name = itemView.FindViewById<TextView>(Resource.Id.contact_names);
             Img = itemView.FindViewById<ImageView>(Resource.Id.contact_image);
            
-            itemView.Click += (sender, e) => clickListener(new ContactsAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.LongClick += (sender, e) => longClickListener(new ContactsAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            itemView.Click += (sender, e) => clickListener(new ContactsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.LongClick += (sender, e) => longClickListener(new ContactsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
         }
     }
 

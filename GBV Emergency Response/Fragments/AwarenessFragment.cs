@@ -1,35 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.Content;
 using Android.Gms.Tasks;
 using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
 using AndroidHUD;
 using AndroidX.AppCompat.App;
-using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
-using Firebase.Database;
 using Firebase.Storage;
 using GBV_Emergency_Response.Adapters;
-using GBV_Emergency_Response.AppDataHelper;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using Google.Android.Material.FloatingActionButton;
 using Java.Util;
 using Plugin.Media;
-using XHUD;
 
 namespace GBV_Emergency_Response.Fragments
 {
-    public class AwarenessFragment : HelpFragment, IOnSuccessListener, IOnFailureListener, IValueEventListener, IOnCompleteListener
+    public class AwarenessFragment : HelpFragment, IOnSuccessListener, IOnFailureListener, IOnCompleteListener
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -40,7 +32,6 @@ namespace GBV_Emergency_Response.Fragments
         private MaterialButton BtnCreateAwareness;
         private RecyclerView Recycler;
         private List<AwarenessMessages> items = new List<AwarenessMessages>();
-        private readonly AwarenessMessagesData awarenessMessages = new AwarenessMessagesData();
         private Context context;
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -49,9 +40,7 @@ namespace GBV_Emergency_Response.Fragments
 
             base.OnCreateView(inflater, container, savedInstanceState);
             View view = inflater.Inflate(Resource.Layout.awareness_fragment, container, false);
-            FirebaseDatabase.Instance.GetReference("Users")
-                .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-                .AddValueEventListener(this);
+            
             ConnectViews(view);
             return view;
         }
@@ -61,8 +50,15 @@ namespace GBV_Emergency_Response.Fragments
             context = view.Context;
             BtnCreateAwareness = view.FindViewById<MaterialButton>(Resource.Id.BtnCreateAwareness);
             Recycler = view.FindViewById<RecyclerView>(Resource.Id.RecyclerAwareness);
-            awarenessMessages.GetAwareness();
-            awarenessMessages.RetrivedAwareness += AwarenessMessages_RetrivedAwareness;
+
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
+            AwarenessAdapter adapter = new AwarenessAdapter(items, FirebaseAuth.Instance.CurrentUser.Uid);
+            linearLayoutManager.ReverseLayout = true;
+            Recycler.SetLayoutManager(linearLayoutManager);
+            Recycler.SetAdapter(adapter);
+            adapter.ItemDeleteClick += Adapter_ItemDeleteClick;
+
+
             BtnCreateAwareness.Click += BtnCreateAwareness_Click;
         }
 
@@ -114,11 +110,11 @@ namespace GBV_Emergency_Response.Fragments
             if (!string.IsNullOrEmpty(AwarenessInput.Text) && !string.IsNullOrWhiteSpace(AwarenessInput.Text))
             {
                 
-                dbRef = FirebaseDatabase.Instance.GetReference("Awareness").Push();
-                dbRef.SetValue(data);
+                //dbRef = FirebaseDatabase.Instance.GetReference("Awareness").Push();
+                //dbRef.SetValue(data);
                 if (imageArray != null)
                 {
-                    storageRef = FirebaseStorage.Instance.GetReference("Awareness").Child(dbRef.Key);
+                    storageRef = FirebaseStorage.Instance.GetReference("Awareness");
                     storageRef.PutBytes(imageArray)
                         .AddOnSuccessListener(this)
                         .AddOnFailureListener(this);
@@ -130,7 +126,6 @@ namespace GBV_Emergency_Response.Fragments
         }
         StorageReference storageRef;
         private byte[] imageArray;
-        private DatabaseReference dbRef;
 
         private async void ChosePicture()
         {
@@ -163,22 +158,11 @@ namespace GBV_Emergency_Response.Fragments
             }
 
         }
-        private void AwarenessMessages_RetrivedAwareness(object sender, AwarenessMessagesData.AwarenessHandler e)
-        {
-            items = e.Awarenesses;
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
-            AwarenessAdapter adapter = new AwarenessAdapter(items, FirebaseAuth.Instance.CurrentUser.Uid);
-            linearLayoutManager.ReverseLayout = true;
-            Recycler.SetLayoutManager(linearLayoutManager);
-            Recycler.SetAdapter(adapter);
-            adapter.ItemDeleteClick += Adapter_ItemDeleteClick;
-        }
+     
 
         private async void Adapter_ItemDeleteClick(object sender, AwarenessAdapterClickEventArgs e)
         {
-            FirebaseDatabase.Instance.GetReference("Awareness")
-                .Child(items[e.Position].MsgId)
-                .RemoveValue();
+           
             if(items[e.Position].ImgUrl != null)
             {
                 await FirebaseStorage.Instance.GetReferenceFromUrl(items[e.Position].ImgUrl).DeleteAsync();
@@ -194,11 +178,7 @@ namespace GBV_Emergency_Response.Fragments
                 //Toast.MakeText(context, $"{r.ToString()}", ToastLength.Long).Show();
                if(url != null)
                 {
-                    FirebaseDatabase.Instance
-                    .GetReference("Awareness")
-                    .Child(dbRef.Key)
-                    .Child("ImgUrl")
-                    .SetValue(url.ToString());
+                    
                 }
             }
            
@@ -209,21 +189,7 @@ namespace GBV_Emergency_Response.Fragments
             Toast.MakeText(context, e.Message, ToastLength.Long).Show();
         }
 
-        public void OnCancelled(DatabaseError error)
-        {
-            
-        }
-
-        public void OnDataChange(DataSnapshot snapshot)
-        {
-            if(snapshot.Exists())
-            {
-                if(snapshot.Child("Name").Exists())
-                {
-                    PersonNames = snapshot.Child("Name").Value.ToString();
-                }
-            }
-        }
+  
 
         public void OnComplete(Task task)
         {

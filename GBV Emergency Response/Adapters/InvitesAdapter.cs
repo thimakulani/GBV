@@ -17,7 +17,6 @@ namespace GBV_Emergency_Response.Adapters
         public event EventHandler<InvitesAdapterClickEventArgs> ItemClick;
         public event EventHandler<InvitesAdapterClickEventArgs> ItemLongClick;
         List<InviteModel> items = new List<InviteModel>();
-        DatabaseReference dbRef;
         public InvitesAdapter(List<InviteModel> data)
         {
             items = data;
@@ -58,8 +57,8 @@ namespace GBV_Emergency_Response.Adapters
             {
                 holder.BtnAction.Text = "Accept";
             }
-            dbRef = FirebaseDatabase.Instance.GetReference("Users");
-            dbRef.Child(item.Key).AddValueEventListener(new ValueEventListener(this, holder));
+            //dbRef = FirebaseDatabase.Instance.GetReference("Users");
+            //dbRef.Child(item.Key).AddValueEventListener(new ValueEventListener(this, holder));
 
         }
 
@@ -71,49 +70,7 @@ namespace GBV_Emergency_Response.Adapters
 
     }
 
-    internal class ValueEventListener :Java.Lang.Object, IValueEventListener
-    {
-        private InvitesAdapter invitesAdapter;
-        private InvitesAdapterViewHolder holder;
-
-        public ValueEventListener(InvitesAdapter invitesAdapter, InvitesAdapterViewHolder holder)
-        {
-            this.invitesAdapter = invitesAdapter;
-            this.holder = holder;
-        }
-
-        public void OnCancelled(DatabaseError error)
-        {
-            
-        }
-
-        public void OnDataChange(DataSnapshot snapshot)
-        {
-            if(snapshot.Exists())
-            {
-                
-                holder.TxtFullNames.Text = snapshot.Child("Name").Value.ToString() + " " + snapshot.Child("Surname").Value.ToString();
-                if (snapshot.Child("Username").Exists())
-                {
-                    holder.TxtDisplayName.Text = snapshot.Child("Username").Value.ToString();
-                }
-                else
-                {
-                    holder.TxtDisplayName.Text = string.Empty;
-                }
-                if (snapshot.Child("ImgUrl").Exists())
-                {
-                    ImageService.Instance
-                       .LoadUrl(snapshot.Child("ImgUrl").Value.ToString())
-                       .Retry(3, 200)
-                       .DownSampleInDip(250, 250)
-                       .Transform(new ImageTransformations.CircleTransformation())
-                       .FadeAnimation(true, true, 300)
-                       .IntoAsync(holder.ImgProfile);
-                }
-            }
-        }
-    }
+ 
 
     public class InvitesAdapterViewHolder : RecyclerView.ViewHolder
     {
@@ -131,9 +88,9 @@ namespace GBV_Emergency_Response.Adapters
             BtnAction = itemView.FindViewById<MaterialButton>(Resource.Id.BtnInviteAction);
             ImgProfile = itemView.FindViewById<ImageView>(Resource.Id.row_invite_image);
             //TextView = v;
-            BtnAction.Click += (sender, e) => btnActionClickListner(new InvitesAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.Click += (sender, e) => clickListener(new InvitesAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.LongClick += (sender, e) => longClickListener(new InvitesAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            BtnAction.Click += (sender, e) => btnActionClickListner(new InvitesAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.Click += (sender, e) => clickListener(new InvitesAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.LongClick += (sender, e) => longClickListener(new InvitesAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
         }
     }
 

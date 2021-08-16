@@ -18,7 +18,7 @@ using System.Text;
 
 namespace GBV_Emergency_Response.Dialogs
 {
-    public class FriendDialogFragment : DialogFragment, IValueEventListener
+    public class FriendDialogFragment : DialogFragment
     {
         private MaterialToolbar toolbar_friend;
         private readonly string id;
@@ -62,9 +62,7 @@ namespace GBV_Emergency_Response.Dialogs
 
             FabCallFriend = view.FindViewById<FloatingActionButton>(Resource.Id.FabCallFriend);
             FabCallFriend.Click += FabCallFriend_Click;
-            FirebaseDatabase.Instance.GetReference("Users")
-               .Child(id)
-               .AddValueEventListener(this);
+            
         }
 
         private void FabCallFriend_Click(object sender, EventArgs e)
@@ -85,50 +83,6 @@ namespace GBV_Emergency_Response.Dialogs
             Dismiss();
         }
 
-        public void OnCancelled(DatabaseError error)
-        {
-            
-        }
 
-        public void OnDataChange(DataSnapshot snapshot)
-        {
-            if (snapshot.Exists())
-            {
-                
-                if (snapshot.Child("Name").Exists())
-                {
-                    Names.Text = snapshot.Child("Name").Value.ToString();
-                }
-                if (snapshot.Child("Surname").Exists())
-                {
-                    Surname.Text = snapshot.Child("Surname").Value.ToString();
-
-                }
-                if (snapshot.Child("PhoneNumber").Exists())
-                {
-                    Phone.Text = snapshot.Child("PhoneNumber").Value.ToString();
-
-                }
-                if (snapshot.Child("ImgUrl").Exists())
-                {
-
-                    ImageService.Instance
-                        .LoadUrl(snapshot.Child("ImgUrl").Value.ToString())
-                        .Retry(3, 200)
-                        .DownSampleInDip(250, 250)
-                        .Transform(new ImageTransformations.CircleTransformation())
-                        .FadeAnimation(true, true, 300)
-                        .IntoAsync(ImgCover);
-                    ImageService.Instance
-                        .LoadUrl(snapshot.Child("ImgUrl").Value.ToString())
-                        .Retry(3, 200)
-                        .DownSampleInDip(250, 250)
-                        .Transform(new ImageTransformations.CircleTransformation())
-                        .FadeAnimation(true, true, 300)
-                        .IntoAsync(ImgProfile);
-                            
-                }
-            }
-        }
     }
 }

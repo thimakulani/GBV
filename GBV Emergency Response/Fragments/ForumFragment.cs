@@ -1,19 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
-using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
 using Com.Github.Library.Bubbleview;
-using Firebase.Database;
-using GBV_Emergency_Response.AppDataHelper;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.TextField;
@@ -21,7 +14,7 @@ using Java.Util;
 
 namespace GBV_Emergency_Response.Fragments
 {
-    public class ForumFragment : HelpFragment, IValueEventListener
+    public class ForumFragment : HelpFragment
     {
         private string SenderName;
         private Context context;
@@ -34,7 +27,6 @@ namespace GBV_Emergency_Response.Fragments
         private FloatingActionButton FabSend;
         private RecyclerView recycler;
         private TextInputEditText InputMessage;
-        private ForumMessagesData chatsData;
         private readonly List<ForumMessage> items = new List<ForumMessage>();
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -43,9 +35,6 @@ namespace GBV_Emergency_Response.Fragments
 
             base.OnCreateView(inflater, container, savedInstanceState);
             View view = inflater.Inflate(Resource.Layout.forum_fragment, container, false);
-            Firebase.Database.FirebaseDatabase.Instance.GetReference("Users")
-                .Child(Firebase.Auth.FirebaseAuth.Instance.Uid)
-                .AddValueEventListener(this);
             context = view.Context;
             ConnectViews(view);
             return view;
@@ -58,7 +47,6 @@ namespace GBV_Emergency_Response.Fragments
             msg.Put("DateTime", DateTime.Now.ToString("dd MMM yyyy HH:mm tt"));
             msg.Put("SenderId", Firebase.Auth.FirebaseAuth.Instance.Uid);
 
-            FirebaseDatabase.Instance.GetReference("ChatForum").Push().SetValue(msg);
             InputMessage.Text = string.Empty;
         }
         private void ConnectViews(View view)
@@ -66,14 +54,8 @@ namespace GBV_Emergency_Response.Fragments
             FabSend = view.FindViewById<FloatingActionButton>(Resource.Id.FabSendMessage);
             InputMessage = view.FindViewById<TextInputEditText>(Resource.Id.InputReplyMessage);
             recycler = view.FindViewById<RecyclerView>(Resource.Id.RecyclerChatForum);
-            chatsData = new ForumMessagesData();
-            chatsData.CreateMessages();
-            chatsData.RetrivedMsgs += ChatsData_RetrivedMsgs;
             FabSend.Click += FabSend_Click;
-        }
 
-        private void ChatsData_RetrivedMsgs(object sender, ForumMessagesData.RetriveMessages e)
-        {
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context)
             {
                 StackFromEnd = true
@@ -82,13 +64,12 @@ namespace GBV_Emergency_Response.Fragments
 
 
             recycler.SetLayoutManager(linearLayoutManager);
-            ChatAdapter adapter = new ChatAdapter(e.Messages, Firebase.Auth.FirebaseAuth.Instance.CurrentUser.Uid);
+            ChatAdapter adapter = new ChatAdapter(items, Firebase.Auth.FirebaseAuth.Instance.CurrentUser.Uid);
             recycler.SetAdapter(adapter);
-            
+
             recycler.SmoothScrollToPosition(adapter.ItemCount);
-            /// Toast.MakeText(context.ApplicationContext, adapter.ItemCount.ToString(), ToastLength.Long).Show();
-            //recycler.SmoothScrollToPosition(e.messages.Count - 1);
         }
+
 
         private void FabSend_Click(object sender, EventArgs e)
         {
@@ -98,21 +79,6 @@ namespace GBV_Emergency_Response.Fragments
             }
         }
 
-        public void OnCancelled(DatabaseError error)
-        {
-            
-        }
-
-        public void OnDataChange(DataSnapshot snapshot)
-        {
-            if (snapshot.Exists())
-            {
-                if (snapshot.Child("Name").Exists())
-                {
-                    SenderName = snapshot.Child("Name").Value.ToString();
-                }
-            }
-        }
     }
     class ChatAdapter : RecyclerView.Adapter
     {

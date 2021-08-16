@@ -92,9 +92,9 @@ namespace GBV_Emergency_Response.Adapters
             BtnAction = itemView.FindViewById<MaterialButton>(Resource.Id.BtnFriendAction);
             ImgProfile = itemView.FindViewById<ImageView>(Resource.Id.row_user_image);
             //TextView = v;
-            BtnAction.Click += (sender, e) => btnItemAction(new AppUsersAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.Click += (sender, e) => clickListener(new AppUsersAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
-            itemView.LongClick += (sender, e) => longClickListener(new AppUsersAdapterClickEventArgs { View = itemView, Position = AdapterPosition });
+            BtnAction.Click += (sender, e) => btnItemAction(new AppUsersAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.Click += (sender, e) => clickListener(new AppUsersAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
+            itemView.LongClick += (sender, e) => longClickListener(new AppUsersAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
         }
     }
 

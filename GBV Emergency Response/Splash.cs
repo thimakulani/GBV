@@ -22,7 +22,7 @@ namespace GBV_Emergency_Response
             base.OnCreate(savedInstanceState);
             if(savedInstanceState == null)
             {
-                FirebaseDatabase.Instance.SetPersistenceEnabled(true);
+
             }
             
         }

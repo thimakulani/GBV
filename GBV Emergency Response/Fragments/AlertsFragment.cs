@@ -1,20 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Android.Content;
-using Android.Locations;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
-using Android.Widget;
-using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
 using GBV_Emergency_Response.Adapters;
-using GBV_Emergency_Response.AppDataHelper;
 using GBV_Emergency_Response.Models;
 using Xamarin.Essentials;
 
@@ -49,17 +41,6 @@ namespace GBV_Emergency_Response.Fragments
             recyclerAlerts = view.FindViewById<RecyclerView>(Resource.Id.recyclerAlerts);
 
 
-            AlertsMessagesData data = new AlertsMessagesData(FirebaseAuth.Instance.CurrentUser.Uid);
-            data.GetAlerts();
-            data.RetrivedAlerts += Data_RetrivedAlerts;
-            
-
-
-        }
-
-        private void Data_RetrivedAlerts(object sender, AlertsMessagesData.AlertsHandler e)
-        {
-            items = e.Items;
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
             linearLayoutManager.StackFromEnd = true;
             linearLayoutManager.ReverseLayout = true;
@@ -69,7 +50,11 @@ namespace GBV_Emergency_Response.Fragments
             adapter.NotifyDataSetChanged();
             adapter.BtnNavClick += Adapter_BtnNavClick;
             adapter.FabCallClick += Adapter_FabCallClick;
+
+
         }
+
+      
 
         private void Adapter_FabCallClick(object sender, AlertsAdapterClickEventArgs e)
         {

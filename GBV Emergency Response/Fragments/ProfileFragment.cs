@@ -26,7 +26,7 @@ using Plugin.Media;
 
 namespace GBV_Emergency_Response.Fragments
 {
-    public class ProfileFragment : HelpFragment, IValueEventListener, IOnSuccessListener, IOnFailureListener
+    public class ProfileFragment : Fragment, IOnSuccessListener, IOnFailureListener
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -68,23 +68,14 @@ namespace GBV_Emergency_Response.Fragments
             BtnUpdate.Click += BtnUpdate_Click;
             ImgProfile.Click += ImgProfile_Click;
             auth = FirebaseAuth.Instance;
-            FirebaseDatabase.Instance.GetReference("Users")
-               .Child(auth.CurrentUser.Uid)
-               .AddValueEventListener(this);
-            CountFriends counterData = new CountFriends();
-            counterData.GetCount(auth.CurrentUser.Uid);
-            counterData.RetriveFreinds += CounterData_RetriveFreinds;
+            
                 
             pool = true;
             ImgBackground.Alpha = 0.3f;
             txt_friends.Text = $"{0} Friends";
         }
 
-        private void CounterData_RetriveFreinds(object sender, CountFriends.FirendsValueEventHandler e)
-        {
-            txt_friends.Text = $"{e.Counter} Connected Friends";
-        }
-
+      
         private void ImgProfile_Click(object sender, EventArgs e)
         {
             ChosePicture();
@@ -109,18 +100,18 @@ namespace GBV_Emergency_Response.Fragments
                 return;
             }
             
-            FirebaseDatabase.Instance.GetReference("Users")
-                .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-                .Child("Username").SetValue(InputUsername.Text.Trim());
-            FirebaseDatabase.Instance.GetReference("Users")
-                .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-                .Child("Name").SetValue(InputName.Text.Trim());
-            FirebaseDatabase.Instance.GetReference("Users")
-                .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-                .Child("Surname").SetValue(InputSurname.Text.Trim());
-            FirebaseDatabase.Instance.GetReference("Users")
-                .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-                .Child("PhoneNumber").SetValue(InputPhoneNr.Text.Trim());
+            //FirebaseDatabase.Instance.GetReference("Users")
+            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
+            //    .Child("Username").SetValue(InputUsername.Text.Trim());
+            //FirebaseDatabase.Instance.GetReference("Users")
+            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
+            //    .Child("Name").SetValue(InputName.Text.Trim());
+            //FirebaseDatabase.Instance.GetReference("Users")
+            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
+            //    .Child("Surname").SetValue(InputSurname.Text.Trim());
+            //FirebaseDatabase.Instance.GetReference("Users")
+            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
+            //    .Child("PhoneNumber").SetValue(InputPhoneNr.Text.Trim());
             AndHUD.Shared.ShowSuccess(context, "You have successfully updated your profile", AndroidHUD.MaskType.Black, TimeSpan.FromSeconds(2));
         }
         FirebaseAuth auth;
@@ -162,58 +153,7 @@ namespace GBV_Emergency_Response.Fragments
 
         }
     
-        public void OnCancelled(DatabaseError error)
-        {
-            
-        }
 
-        public void OnDataChange(DataSnapshot snapshot)
-        {
-            if (snapshot.Exists())
-            {
-                if (snapshot.Child("Username").Exists())
-                {
-                    InputUsername.Text = snapshot.Child("Username").Value.ToString();
-                }
-                if (snapshot.Child("Name").Exists())
-                {
-                    InputName.Text = snapshot.Child("Name").Value.ToString();
-                }
-                if (snapshot.Child("Surname").Exists())
-                {
-                    InputSurname.Text = snapshot.Child("Surname").Value.ToString();
-
-                }
-                if (snapshot.Child("PhoneNumber").Exists())
-                {
-                    InputPhoneNr.Text = snapshot.Child("PhoneNumber").Value.ToString();
-
-                }
-                if (snapshot.Child("ImgUrl").Exists())
-                {
-                    if (pool == true)
-                    {
-                        ImageService.Instance
-                            .LoadUrl(snapshot.Child("ImgUrl").Value.ToString())
-                            .Retry(3, 200)
-                            .DownSampleInDip(250, 250)
-                            .Transform(new ImageTransformations.CircleTransformation())
-                            .FadeAnimation(true, true, 300)
-                            .IntoAsync(ImgProfile);
-                        ImageService.Instance
-                            .LoadUrl(snapshot.Child("ImgUrl").Value.ToString())
-                            .Retry(3, 200)
-                            .FadeAnimation(true, true, 300)
-                            .DownSampleInDip(250, 250)
-                            .IntoAsync(ImgBackground);
-                        pool = false;
-                    }
-
-
-
-                }
-            }
-        }
 
         public async void OnSuccess(Java.Lang.Object result)
         {
@@ -222,11 +162,11 @@ namespace GBV_Emergency_Response.Fragments
                 var url = await storageRef.GetDownloadUrlAsync();
                 if (url != null)
                 {
-                    FirebaseDatabase.Instance
-                    .GetReference("Users")
-                    .Child(auth.CurrentUser.Uid)
-                    .Child("ImgUrl")
-                    .SetValue(url.ToString());
+                    //FirebaseDatabase.Instance
+                    //.GetReference("Users")
+                    //.Child(auth.CurrentUser.Uid)
+                    //.Child("ImgUrl")
+                    //.SetValue(url.ToString());
                     pool = true;
 
                 }
@@ -238,41 +178,5 @@ namespace GBV_Emergency_Response.Fragments
             Toast.MakeText(context, e.Message, ToastLength.Long).Show();
         }
     }
-    public class CountFriends : Java.Lang.Object, IValueEventListener
-    {
-        public event EventHandler<FirendsValueEventHandler> RetriveFreinds;
-        public class FirendsValueEventHandler : EventArgs
-        {
-            public int Counter { get; set; }
-        }
-        public void GetCount(string key)
-        {
-            FirebaseDatabase.Instance.GetReference("Request")
-            .Child(key)
-            .AddValueEventListener(this);
-        }
-        public void OnCancelled(DatabaseError error)
-        {
-            
-        }
-
-        public void OnDataChange(DataSnapshot snapshot)
-        {
-            int counter = 0;
-            if (snapshot.Exists())
-            {
-
-                var child = snapshot.Children.ToEnumerable<DataSnapshot>();
-                foreach (var data in child)
-                {
-                    if(data.Child("Type").Value.ToString() == "Approved")
-                    {
-                        counter++;
-                    }
-                    
-                }
-            }
-            RetriveFreinds.Invoke(this, new FirendsValueEventHandler { Counter = counter });
-        }
-    }
+   
 }

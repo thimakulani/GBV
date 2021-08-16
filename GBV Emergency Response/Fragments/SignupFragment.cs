@@ -1,23 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.Content;
 using Android.Gms.Tasks;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
-using Android.Widget;
 using AndroidHUD;
 using AndroidX.AppCompat.App;
-using AndroidX.Fragment.App;
 using Firebase.Auth;
-using Firebase.Database;
 using Google.Android.Material.Button;
 using Google.Android.Material.TextField;
 using Java.Util;
+using Plugin.CloudFirestore;
 
 namespace GBV_Emergency_Response.Fragments
 {
@@ -142,15 +135,18 @@ namespace GBV_Emergency_Response.Fragments
        
         public void OnSuccess(Java.Lang.Object result)
         {
-            HashMap data = new HashMap();
-            data.Put("Username", InputName.Text);
-            data.Put("Name", InputName.Text);
-            data.Put("Surname", InputSurname.Text);
-            data.Put("PhoneNumber", InputPhoneNumber.Text);
-            data.Put("Email", InputEmail.Text);
-            var dbRef = FirebaseDatabase.Instance.GetReference("Users").Child(auth.CurrentUser.Uid);
-
-            dbRef.SetValue(data);
+            Dictionary<string, object> data = new Dictionary<string, object>();
+            data.Add("Username", InputName.Text);
+            data.Add("Name", InputName.Text);
+            data.Add("Surname", InputSurname.Text);
+            data.Add("PhoneNumber", InputPhoneNumber.Text);
+            data.Add("Email", InputEmail.Text);
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("PEOPLE")
+                .Document(FirebaseAuth.Instance.Uid)
+                .SetAsync(data);
            
             AndHUD.Shared.ShowSuccess(context, "You have successfully created your account", MaskType.Black, TimeSpan.FromSeconds(2));
             BtnLogin.PerformClick();
