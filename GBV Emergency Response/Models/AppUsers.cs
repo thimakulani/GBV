@@ -2,17 +2,21 @@
 
 using Android.Views;
 using Android.Widget;
+using Plugin.CloudFirestore.Attributes;
 
 namespace GBV_Emergency_Response.Models
 {
     public class AppUsers
     {
-        public string Keyid { get; set; }
+        [Id]
+        public string Uid { get; set; }
         public string Name { get; set; }
-        public string EmailAddress { get; set; }
-        public string ImgUrl { get; set; }
-        public string PhoneNr { get; set; }
-        public string DisplayName { get; internal set; }
-        public string FriendStatus { get; set; }
+        public string Surname { get; set; }
+        public string Email { get; set; }
+        public string ImageUrl { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Username { get; set; }
+        
+        
     }
 }

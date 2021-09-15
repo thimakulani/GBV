@@ -22,6 +22,7 @@ using Firebase.Storage;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using Google.Android.Material.TextField;
+using Plugin.CloudFirestore;
 using Plugin.Media;
 
 namespace GBV_Emergency_Response.Fragments
@@ -35,6 +36,7 @@ namespace GBV_Emergency_Response.Fragments
             // Create your fragment here
         }
         private TextInputEditText InputName;
+        private TextInputEditText InputEmail;
         private TextInputEditText InputSurname;
         private TextInputEditText InputPhoneNr;
         private TextInputEditText InputUsername;
@@ -57,6 +59,7 @@ namespace GBV_Emergency_Response.Fragments
         private void ConnectViews(View view)
         {
             context = view.Context;
+            InputEmail = view.FindViewById<TextInputEditText>(Resource.Id.Input_Email);
             InputUsername = view.FindViewById<TextInputEditText>(Resource.Id.Input_Username);
             txt_friends = view.FindViewById<TextView>(Resource.Id.txt_friends);
             InputName = view.FindViewById<TextInputEditText>(Resource.Id.Input_Name);
@@ -67,12 +70,45 @@ namespace GBV_Emergency_Response.Fragments
             ImgProfile = view.FindViewById<ImageView>(Resource.Id.ImgProfile);
             BtnUpdate.Click += BtnUpdate_Click;
             ImgProfile.Click += ImgProfile_Click;
-            auth = FirebaseAuth.Instance;
+            //auth = FirebaseAuth.Instance;
             
                 
             pool = true;
             ImgBackground.Alpha = 0.3f;
             txt_friends.Text = $"{0} Friends";
+
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("PEOPLE")
+                .Document(FirebaseAuth.Instance.Uid)
+                .AddSnapshotListener((value, error) =>
+                {
+                    if (value.Exists)
+                    {
+                        var users = value.ToObject<AppUsers>();
+                        InputName.Text = users.Name;
+                        InputSurname.Text = users.Surname;
+                        ///InputUsername.Text = users.Username;
+                        InputPhoneNr.Text = users.PhoneNumber;
+                        InputEmail.Text = users.Email;
+                        if(pool == true)
+                        {
+                            ImageService.Instance
+                                .LoadUrl(users.ImageUrl)
+                                .DownSampleInDip(512, 512)
+                                .IntoAsync(ImgProfile);
+                            ImageService.Instance
+                                .LoadUrl(users.ImageUrl)
+                                .DownSampleInDip(512, 512)
+                                .IntoAsync(ImgBackground);
+                        }
+                    }
+                });
+
+
+
+
         }
 
       
@@ -84,6 +120,11 @@ namespace GBV_Emergency_Response.Fragments
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(InputUsername.Text.Trim()) && string.IsNullOrWhiteSpace(InputUsername.Text.Trim()))
+            {
+                InputUsername.Error = "Please provide your username";
+                return;
+            }
             if (string.IsNullOrEmpty(InputName.Text.Trim()) && string.IsNullOrWhiteSpace(InputName.Text.Trim()))
             {
                 InputName.Error = "Please provide your name";
@@ -99,22 +140,23 @@ namespace GBV_Emergency_Response.Fragments
                 InputPhoneNr.Error = "Please provide your phone number";//, ToastLength.Long).Show();
                 return;
             }
-            
-            //FirebaseDatabase.Instance.GetReference("Users")
-            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //    .Child("Username").SetValue(InputUsername.Text.Trim());
-            //FirebaseDatabase.Instance.GetReference("Users")
-            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //    .Child("Name").SetValue(InputName.Text.Trim());
-            //FirebaseDatabase.Instance.GetReference("Users")
-            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //    .Child("Surname").SetValue(InputSurname.Text.Trim());
-            //FirebaseDatabase.Instance.GetReference("Users")
-            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //    .Child("PhoneNumber").SetValue(InputPhoneNr.Text.Trim());
+
+            Dictionary<string, object> data = new Dictionary<string, object>();
+            data.Add("Username", InputName.Text);
+            data.Add("Name", InputName.Text);
+            data.Add("Surname", InputSurname.Text);
+            data.Add("PhoneNumber", InputPhoneNr.Text);
+            data.Add("Email", InputEmail.Text);
+
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("PEOPLE")
+                .Document(FirebaseAuth.Instance.Uid)
+                .UpdateAsync(data);
             AndHUD.Shared.ShowSuccess(context, "You have successfully updated your profile", AndroidHUD.MaskType.Black, TimeSpan.FromSeconds(2));
         }
-        FirebaseAuth auth;
+        
         private byte[] imageArray;
        
         StorageReference storageRef;
@@ -139,7 +181,7 @@ namespace GBV_Emergency_Response.Fragments
 
                 if (imageArray != null)
                 {
-                    storageRef = FirebaseStorage.Instance.GetReference("Profile").Child(auth.CurrentUser.Uid);//FirebaseHelper.FirebaseData.GetFirebaseStorage().GetReference("UserProfile").Child(auth.CurrentUser.Uid);
+                    storageRef = FirebaseStorage.Instance.GetReference("PROFILE").Child(FirebaseAuth.Instance.CurrentUser.Uid);//FirebaseHelper.FirebaseData.GetFirebaseStorage().GetReference("UserProfile").Child(auth.CurrentUser.Uid);
                     storageRef.PutBytes(imageArray)
                         .AddOnSuccessListener(this)
                         .AddOnFailureListener(this);
@@ -162,11 +204,12 @@ namespace GBV_Emergency_Response.Fragments
                 var url = await storageRef.GetDownloadUrlAsync();
                 if (url != null)
                 {
-                    //FirebaseDatabase.Instance
-                    //.GetReference("Users")
-                    //.Child(auth.CurrentUser.Uid)
-                    //.Child("ImgUrl")
-                    //.SetValue(url.ToString());
+                    await CrossCloudFirestore
+                        .Current
+                        .Instance
+                        .Collection("PEOPLE")
+                        .Document(FirebaseAuth.Instance.Uid)
+                        .UpdateAsync("ImageUrl", url);
                     pool = true;
 
                 }

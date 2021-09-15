@@ -13,15 +13,17 @@ using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
 using Firebase.Storage;
 using GBV_Emergency_Response.Adapters;
+using GBV_Emergency_Response.Dialogs;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using Google.Android.Material.FloatingActionButton;
 using Java.Util;
+using Plugin.CloudFirestore;
 using Plugin.Media;
 
 namespace GBV_Emergency_Response.Fragments
 {
-    public class AwarenessFragment : HelpFragment, IOnSuccessListener, IOnFailureListener, IOnCompleteListener
+    public class AwarenessFragment : HelpFragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,7 +31,7 @@ namespace GBV_Emergency_Response.Fragments
 
             // Create your fragment here
         }
-        private MaterialButton BtnCreateAwareness;
+        private ExtendedFloatingActionButton FabCreateAwareness;
         private RecyclerView Recycler;
         private List<AwarenessMessages> items = new List<AwarenessMessages>();
         private Context context;
@@ -48,7 +50,7 @@ namespace GBV_Emergency_Response.Fragments
         private void ConnectViews(View view)
         {
             context = view.Context;
-            BtnCreateAwareness = view.FindViewById<MaterialButton>(Resource.Id.BtnCreateAwareness);
+            FabCreateAwareness = view.FindViewById<ExtendedFloatingActionButton>(Resource.Id.FabCreateAwareness);
             Recycler = view.FindViewById<RecyclerView>(Resource.Id.RecyclerAwareness);
 
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
@@ -58,145 +60,70 @@ namespace GBV_Emergency_Response.Fragments
             Recycler.SetAdapter(adapter);
             adapter.ItemDeleteClick += Adapter_ItemDeleteClick;
 
+            
 
-            BtnCreateAwareness.Click += BtnCreateAwareness_Click;
-        }
-
-        private void BtnCreateAwareness_Click(object sender, EventArgs e)
-        {
-
-            DialogAddAwareness();
-        }
-        //Dialog
-        private AlertDialog.Builder dialogBuilder;
-        private AlertDialog AwarenessDialog;
-        private Button SubmitAwareness;
-        private EditText AwarenessInput;
-        private string PersonNames;
-        private ImageView ImgAwareness;
-        private FloatingActionButton FabChoseImg;
-        private void DialogAddAwareness()
-        {
-
-            dialogBuilder = new AlertDialog.Builder(context);
-            LayoutInflater inflater = (LayoutInflater)context.GetSystemService(Context.LayoutInflaterService);
-            View view = inflater.Inflate(Resource.Layout.awareness_dialog, null);
-            SubmitAwareness = view.FindViewById<Button>(Resource.Id.dlgBtnSubmiAwareness);
-            AwarenessInput = view.FindViewById<EditText>(Resource.Id.dlgInputAwareness);
-            ImgAwareness = view.FindViewById<ImageView>(Resource.Id.dlgImge);
-            FabChoseImg = view.FindViewById<FloatingActionButton>(Resource.Id.FabUploadImg);
-            FabChoseImg.Click += FabChoseImg_Click;
-            SubmitAwareness.Click += SubmitAwareness_Click;
-
-            dialogBuilder.SetView(view);
-            dialogBuilder.SetCancelable(true);
-            AwarenessDialog = dialogBuilder.Create();
-            AwarenessDialog.Show();
-        }
-
-        private void FabChoseImg_Click(object sender, EventArgs e)
-        {
-            ChosePicture();
-        }
-
-        private void SubmitAwareness_Click(object sender, EventArgs e)
-        {
-            HashMap data = new HashMap();
-            data.Put("SenderName", PersonNames);
-            data.Put("SenderId", FirebaseAuth.Instance.CurrentUser.Uid);
-            data.Put("Dates", DateTime.Now.ToString("dddd, dd/MMMM/yyyy, HH:mm tt"));
-            data.Put("Message", AwarenessInput.Text);
-
-            if (!string.IsNullOrEmpty(AwarenessInput.Text) && !string.IsNullOrWhiteSpace(AwarenessInput.Text))
-            {
-                
-                //dbRef = FirebaseDatabase.Instance.GetReference("Awareness").Push();
-                //dbRef.SetValue(data);
-                if (imageArray != null)
+            CrossCloudFirestore.Current.Instance
+                .Collection("AWARENESS")
+                .OrderBy("Dates", false)
+                .AddSnapshotListener((value, errors) =>
                 {
-                    storageRef = FirebaseStorage.Instance.GetReference("Awareness");
-                    storageRef.PutBytes(imageArray)
-                        .AddOnSuccessListener(this)
-                        .AddOnFailureListener(this);
-                }
-
-            }
-            AwarenessInput.Text = string.Empty;
-            AwarenessDialog.Dismiss();
-        }
-        StorageReference storageRef;
-        private byte[] imageArray;
-
-        private async void ChosePicture()
-        {
-            await CrossMedia.Current.Initialize();
-            if (!CrossMedia.Current.IsPickPhotoSupported)
-            {
-                Toast.MakeText(Android.App.Application.Context, "Upload not supported on this device", ToastLength.Short).Show();
-                return;
-            }
-            try
-            {
-                var file = await CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
-                {
-                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Full,
-                    CompressionQuality = 40,
-
+                    if (!value.IsEmpty)
+                    {
+                        foreach (var dc in value.DocumentChanges)
+                        {
+                            var awareness = dc.Document.ToObject<AwarenessMessages>();
+                            switch (dc.Type)
+                            {
+                                case DocumentChangeType.Added:
+                                    items.Add(awareness);
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Modified:
+                                    items[dc.OldIndex] = awareness;
+                                    Toast.MakeText(context, items[dc.OldIndex].Id, ToastLength.Long).Show();
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Removed:
+                                    items.RemoveAt(dc.OldIndex);
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
                 });
-                imageArray = System.IO.File.ReadAllBytes(file.Path);
 
-                if(imageArray != null)
-                {
-                    Android.Graphics.Bitmap bmp = BitmapFactory.DecodeByteArray(imageArray, 0, imageArray.Length);
-                    ImgAwareness.SetImageBitmap(bmp);
-                }
 
-            }
-            catch (Exception ex)
-            {
-                Toast.MakeText(context, ex.Message , ToastLength.Long).Show();
-            }
 
+            FabCreateAwareness.Click += FabCreateAwareness_Click;
+            //BtnCreateAwareness.Click += BtnCreateAwareness_Click;
         }
+
+        private void FabCreateAwareness_Click(object sender, EventArgs e)
+        {
+            AddAwarenessDialogFragment dialog = new AddAwarenessDialogFragment();
+            dialog.Show(ChildFragmentManager.BeginTransaction(), "");
+        }
+
+
+        //Dialog
      
+        
 
         private async void Adapter_ItemDeleteClick(object sender, AwarenessAdapterClickEventArgs e)
         {
-           
-            if(items[e.Position].ImgUrl != null)
+            await CrossCloudFirestore.Current.Instance
+                 .Collection("AWARENESS")
+                 .Document(items[e.Position].Id)
+                 .DeleteAsync();
+            if (items[e.Position].ImageUrl != null)
             {
-                await FirebaseStorage.Instance.GetReferenceFromUrl(items[e.Position].ImgUrl).DeleteAsync();
+                await FirebaseStorage.Instance.GetReferenceFromUrl(items[e.Position].ImageUrl).DeleteAsync();
             }
             AndHUD.Shared.ShowSuccess(context, "You have successfully deleted", AndroidHUD.MaskType.Black, TimeSpan.FromSeconds(2));
         }
 
-        public async void OnSuccess(Java.Lang.Object result)
-        {
-            if (storageRef != null)
-            {
-               var url = await storageRef.GetDownloadUrlAsync();
-                //Toast.MakeText(context, $"{r.ToString()}", ToastLength.Long).Show();
-               if(url != null)
-                {
-                    
-                }
-            }
-           
-        }
 
-        public void OnFailure(Java.Lang.Exception e)
-        {
-            Toast.MakeText(context, e.Message, ToastLength.Long).Show();
-        }
-
-  
-
-        public void OnComplete(Task task)
-        {
-            if(task.IsSuccessful)
-            {
-
-            }
-        }
     }
 }

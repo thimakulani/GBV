@@ -113,6 +113,25 @@
                 />
 
             </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textInputLayout4"
+                style="@style/Base.Widget.MaterialComponents.TextInputLayout"
+            >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:phoneNumber="true"
+                    android:inputType="phone"
+                    android:hint="@string/txt_email_address"
+                    android:id="@+id/Input_Email" 
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

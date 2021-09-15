@@ -28,7 +28,7 @@ namespace GBV_Emergency_Response.Adapters
             var id = Resource.Layout.contacts_row;
             itemView = LayoutInflater.From(parent.Context).
                    Inflate(id, parent, false);
-
+            
             var vh = new ContactsAdapterViewHolder(itemView, OnClick, OnLongClick);
             return vh;
         }
@@ -40,7 +40,6 @@ namespace GBV_Emergency_Response.Adapters
             var holder = viewHolder as ContactsAdapterViewHolder;
 
             var color = new XamarinTextDrawable.Util.ColorGenerator();
-            color.GetDefaultColor();
             var drawable = new XamarinTextDrawable.TextDrawable.Builder().BuildRect("", color.GetRandomColor());
             holder.Img.SetImageDrawable(drawable);
 

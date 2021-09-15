@@ -28,8 +28,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_toLeftOf="@+id/FabSendMessage"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
         >
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -48,6 +52,7 @@
             android:src="@android:drawable/ic_menu_send"
             app:fabSize="mini"
             android:layout_centerVertical="true"
+            app:elevation="0dp"
         />
     </RelativeLayout>
 

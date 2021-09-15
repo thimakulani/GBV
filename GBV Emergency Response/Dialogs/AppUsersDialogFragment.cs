@@ -10,6 +10,7 @@ using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
 using GBV_Emergency_Response.Adapters;
 using GBV_Emergency_Response.Models;
+using Plugin.CloudFirestore;
 using SearchView = AndroidX.AppCompat.Widget.SearchView;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
@@ -58,48 +59,65 @@ namespace GBV_Emergency_Response.Dialogs
             app_users_toolbar.Title = "GBV Users";
             app_users_toolbar.NavigationClick += App_users_toolbar_NavigationClick;
             //searchView.QueryTextSubmit += SearchView_QueryTextSubmit;
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
+            recyclerAppUsers.SetLayoutManager(linearLayoutManager);
+            AppUsersAdapter adapter = new AppUsersAdapter(items);
+            recyclerAppUsers.SetAdapter(adapter);
+            adapter.BtnClick += Adapter_BtnClick;
 
-            
 
 
-            
-            
+            CrossCloudFirestore.Current.Instance
+                .Collection("PEOPLE")
+                .AddSnapshotListener((value, errors) =>
+                {
+                    if (!value.IsEmpty)
+                    {
+                        foreach(var dc in value.DocumentChanges)
+                        {
+                            var user = dc.Document.ToObject<AppUsers>();
+                            switch (dc.Type)
+                            {
+                                case DocumentChangeType.Added:
+                                    items.Add(user);
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Modified:
+                                    items[dc.OldIndex] = user;
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Removed:
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                });
+
+
+
+
 
         }
 
-        
+
 
         private void SearchView_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
         {
             items = (from data in TempList
                          where
                          data.Name.Contains(e.NewText) ||
-                         data.EmailAddress.Contains(e.NewText) ||
-                         data.PhoneNr.Contains(e.NewText)
+                         data.Email.Contains(e.NewText) ||
+                         data.PhoneNumber.Contains(e.NewText)
                          select data)
                          .ToList();
             
-            SetUpRecycler(items);
+            
 
         }
 
-        //private void SearchView_QueryTextSubmit(object sender, AndroidX.AppCompat.Widget.SearchView.QueryTextSubmitEventArgs e)
-        //{
-        //    data.GetAllUsers();
-        //    data.RetrieveUsersHandler += Data_RetrieveUsersHandler;
-        //    searchView.ClearFocus();
-        //}
-
-        private void SetUpRecycler(List<AppUsers> users)
-        {
-            
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
-            recyclerAppUsers.SetLayoutManager(linearLayoutManager);
-            AppUsersAdapter adapter = new AppUsersAdapter(users);
-            recyclerAppUsers.SetAdapter(adapter);
-            adapter.BtnClick += Adapter_BtnClick;
-            
-        }
+       
 
         private void Adapter_BtnClick(object sender, AppUsersAdapterClickEventArgs e)
         {

@@ -7,8 +7,11 @@ using Android.Views;
 using AndroidHUD;
 using AndroidX.AppCompat.App;
 using Firebase.Auth;
+using GBV_Emergency_Response.Activities;
 using Google.Android.Material.Button;
+using Google.Android.Material.Dialog;
 using Google.Android.Material.TextField;
+using ID.IonBit.IonAlertLib;
 using Java.Util;
 using Plugin.CloudFirestore;
 
@@ -25,6 +28,7 @@ namespace GBV_Emergency_Response.Fragments
         private TextInputEditText InputPassword;
         private TextInputEditText InputPassword2;
         private TextInputEditText InputEmail;
+        private TextInputEditText InputUsername;
         Context context;
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -45,6 +49,7 @@ namespace GBV_Emergency_Response.Fragments
 
         private void ConnectViews(View view)
         {
+            InputUsername = view.FindViewById<TextInputEditText>(Resource.Id.Input_Username);
             InputName = view.FindViewById<TextInputEditText>(Resource.Id.InputFirstName);
             InputPassword = view.FindViewById<TextInputEditText>(Resource.Id.InputPassword);
             InputPassword2 = view.FindViewById<TextInputEditText>(Resource.Id.InputConfirmPassword);
@@ -57,6 +62,7 @@ namespace GBV_Emergency_Response.Fragments
             BtnLogin.Click += BtnLogin_Click;
         }
         private FirebaseAuth auth;
+        private IonAlert loadingDialog;
         private void BtnRegister_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(InputName.Text) && string.IsNullOrWhiteSpace(InputName.Text))
@@ -90,12 +96,18 @@ namespace GBV_Emergency_Response.Fragments
                 InputPassword.Error = "Password does not match";
                 return;
             }
+            BtnRegister.Enabled = false;
+            loadingDialog = new IonAlert(context, IonAlert.ProgressType);
+            loadingDialog.SetSpinKit("DoubleBounce")
+                .SetSpinColor("#008D91")
+                .ShowCancelButton(false)
+                .Show();
             auth = FirebaseAuth.Instance;
             auth.CreateUserWithEmailAndPassword(InputEmail.Text.Trim(), InputPassword.Text.Trim())
                 .AddOnFailureListener(this)
                 .AddOnSuccessListener(this)
                 .AddOnCompleteListener(this);
-            LoadingProgress();
+            
         }
 
         public event EventHandler LoginHandler;
@@ -106,24 +118,11 @@ namespace GBV_Emergency_Response.Fragments
             LoginHandler(sender, e);
         }
         //loading progress dialog
-        private AlertDialog loading;
-        private AlertDialog.Builder loadingBuilder;
-
-        private void LoadingProgress()
-        {
-            loadingBuilder = new AlertDialog.Builder(context);
-            LayoutInflater inflater = (LayoutInflater)context.GetSystemService(Context.LayoutInflaterService);
-            View view = inflater.Inflate(Resource.Layout.loading, null);
-
-
-            loadingBuilder.SetView(view);
-            loadingBuilder.SetCancelable(false);
-            loading = loadingBuilder.Create();
-            loading.Show();
-        }
+   
         public void OnFailure(Java.Lang.Exception e)
         {
-            Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(context);
+            MaterialAlertDialogBuilder alert = new MaterialAlertDialogBuilder(context);
+            //Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(context);
             alert.SetTitle("Error");
             alert.SetMessage(e.Message);
             alert.SetNeutralButton("OK", delegate
@@ -136,11 +135,12 @@ namespace GBV_Emergency_Response.Fragments
         public void OnSuccess(Java.Lang.Object result)
         {
             Dictionary<string, object> data = new Dictionary<string, object>();
-            data.Add("Username", InputName.Text);
+            data.Add("Username", InputUsername.Text);
             data.Add("Name", InputName.Text);
             data.Add("Surname", InputSurname.Text);
             data.Add("PhoneNumber", InputPhoneNumber.Text);
             data.Add("Email", InputEmail.Text);
+            data.Add("ImageUrl", InputEmail.Text);
             CrossCloudFirestore
                 .Current
                 .Instance
@@ -149,12 +149,13 @@ namespace GBV_Emergency_Response.Fragments
                 .SetAsync(data);
            
             AndHUD.Shared.ShowSuccess(context, "You have successfully created your account", MaskType.Black, TimeSpan.FromSeconds(2));
-            BtnLogin.PerformClick();
+            Intent intent = new Intent(context, typeof(HomeActivity));
+            StartActivity(intent);
         }
 
         public void OnComplete(Task task)
         {
-            loading.Dismiss();
+            loadingDialog.Dismiss();
         }
     }
 }

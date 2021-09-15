@@ -44,27 +44,27 @@ namespace GBV_Emergency_Response.Adapters
             var holder = viewHolder as AppUsersAdapterViewHolder;
             //holder.TextView.Text = items[position];
             holder.TxtFullNames.Text = items[position].Name;
-            holder.TxtDisplayName.Text = items[position].DisplayName;
-            if (!string.IsNullOrEmpty(items[position].ImgUrl))
+            holder.TxtDisplayName.Text = items[position].Username;
+            if (!string.IsNullOrEmpty(items[position].ImageUrl))
             {
                 ImageService.Instance
-                   .LoadUrl(items[position].ImgUrl)
+                   .LoadUrl(items[position].ImageUrl)
                    .Retry(3, 200)
                    .DownSampleInDip(250, 250)
                    .Transform(new ImageTransformations.CircleTransformation())
                    .FadeAnimation(true, true, 300)
                    .IntoAsync(holder.ImgProfile);
             }
-            if(items[position].Keyid == Firebase.Auth.FirebaseAuth.Instance.CurrentUser.Uid)
+            if(items[position].Uid == Firebase.Auth.FirebaseAuth.Instance.CurrentUser.Uid)
             {
                 holder.BtnAction.Visibility = ViewStates.Gone;
             }
             else
             {
-                if (items[position].FriendStatus != null)
-                {
-                    holder.BtnAction.Visibility = ViewStates.Gone;
-                }
+                //if (items[position].FriendStatus != null)
+                //{
+                //    holder.BtnAction.Visibility = ViewStates.Gone;
+                //}
             }
         }
 

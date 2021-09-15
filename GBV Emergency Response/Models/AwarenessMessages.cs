@@ -9,17 +9,19 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Plugin.CloudFirestore;
+using Plugin.CloudFirestore.Attributes;
 
 namespace GBV_Emergency_Response.Models
 {
     public class AwarenessMessages
     {
 
-        public string AwarenessMsg { get; set; }
-        public string Sender { get; set; }
-        public string SenderId { get; set; }
-        public string MsgId { get; set; }
-        public string Dates { get; set; }
-        public string ImgUrl { get; set; }
+        [Id]
+        public string Id { get; set; }
+        public string Message { get; set; }
+        public string Uid { get; set; }
+        public Timestamp Dates { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

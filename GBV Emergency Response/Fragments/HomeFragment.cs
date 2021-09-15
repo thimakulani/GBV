@@ -53,6 +53,10 @@ namespace GBV_Emergency_Response.Fragments
             BtnPanic.Click += BtnPanic_Click;
             
             FabInvites.Click += FabInvites_Click;
+
+            
+
+
         }
 
         private void BtnPanic_Click(object sender, EventArgs e)

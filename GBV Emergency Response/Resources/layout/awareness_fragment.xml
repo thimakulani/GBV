@@ -15,17 +15,19 @@
         android:id="@+id/RecyclerAwareness"
         android:scrollbars="vertical"
     />
-    <com.google.android.material.button.MaterialButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_gravity="right"
-        android:id="@+id/BtnCreateAwareness"
-        app:icon="@mipmap/ic_add_black_18dp"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:id="@+id/FabCreateAwareness"
+        app:icon="@mipmap/ic_add_white_18dp"
+        android:textColor="@color/color_white"
         android:text="@string/txt_add_awareness"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimary"
+        
         
     />
 

@@ -221,7 +221,7 @@ namespace GBV_Emergency_Response.Activities
             }
             else
             {
-                Android.Widget.Toast.MakeText(this, "Permission not granted", Android.Widget.ToastLength.Long).Show();
+                Toast.MakeText(this, "Permission not granted", ToastLength.Long).Show();
             }
         }
 
@@ -235,7 +235,7 @@ namespace GBV_Emergency_Response.Activities
 
         private void CreateLocationRequest()
         {
-            locationRequest = new LocationRequest();
+            locationRequest = LocationRequest.Create();
             locationRequest.SetInterval(UPDATE_INTERVAL);
             locationRequest.SetFastestInterval(UPDATE_FASTEST_INTERVAL);
             locationRequest.SetPriority(LocationRequest.PriorityHighAccuracy);
@@ -246,8 +246,7 @@ namespace GBV_Emergency_Response.Activities
         }
         private string CurrentKey = "X";
         private bool SendAlert = false;
-        private string PersonNames;
-        private string PersonPhoneNr;
+        
         private async void LocationCallBack_CurrentLocation(object sender, LocationCallBackHelper.OnLocationCapturedEventArgs e)
         {
             lastLocation = e.location;
@@ -260,10 +259,8 @@ namespace GBV_Emergency_Response.Activities
                 {
                     data.Add("Latitude", lastLocation.Latitude.ToString());
                     data.Add("Longitude", lastLocation.Longitude.ToString());
-                    data.Add("Name", PersonNames);
-                    data.Add("PhoneNr", PersonPhoneNr);
-                    data.Add("UserKey", FirebaseAuth.Instance.CurrentUser.Uid);
-                    data.Add("TimeDate", DateTime.Now.ToString("dddd, dd/MMMM/yyyy, HH:mm tt"));
+                    data.Add("Uid", FirebaseAuth.Instance.CurrentUser.Uid);
+                    data.Add("TimeDate", FieldValue.ServerTimestamp);
 
                     
                     var dbref = await CrossCloudFirestore
@@ -278,6 +275,7 @@ namespace GBV_Emergency_Response.Activities
                 {
                     data.Add("Latitude", lastLocation.Latitude.ToString());
                     data.Add("Longitude", lastLocation.Longitude.ToString());
+                    data.Add("LastTimeStamp", FieldValue.ServerTimestamp);
                     await CrossCloudFirestore
                         .Current
                         .Instance

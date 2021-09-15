@@ -8,6 +8,7 @@ using AndroidX.RecyclerView.Widget;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using FFImageLoading;
+using Plugin.CloudFirestore;
 
 namespace GBV_Emergency_Response.Adapters
 {
@@ -46,18 +47,18 @@ namespace GBV_Emergency_Response.Adapters
             // Replace the contents of the view with that element
             var holder = viewHolder as AwarenessAdapterViewHolder;
             //holder.TextView.Text = items[position];
-            if(string.IsNullOrWhiteSpace(items[position].ImgUrl))
+            if(string.IsNullOrWhiteSpace(items[position].ImageUrl))
             {
                 holder.ImgAwareness.Visibility = ViewStates.Gone;
             }
             else
             {
-                ImageService.Instance.LoadUrl(items[position].ImgUrl)
+                ImageService.Instance.LoadUrl(items[position].ImageUrl)
                     .Retry(3, 500)
                     .DownSampleInDip(512, 512)
                     .IntoAsync(holder.ImgAwareness);
             }
-            if (KeyId == items[position].SenderId)
+            if (KeyId == items[position].Uid)
             {
                 holder.BtnDeleteAwareness.Visibility = ViewStates.Visible;
             }
@@ -66,8 +67,23 @@ namespace GBV_Emergency_Response.Adapters
                 holder.BtnDeleteAwareness.Visibility = ViewStates.Gone;
 
             }
-            holder.AwarenessMsg.Text = items[position].AwarenessMsg;
-            holder.Sender.Text = $"{items[position].Sender} :{items[position].Dates}";
+            holder.AwarenessMsg.Text = items[position].Message;
+            holder.Sender.Text = $"{items[position].Uid} :{items[position].Dates}";
+
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("PEOPLE")
+                .Document(items[position].Uid)
+                .AddSnapshotListener((value, error) =>
+                {
+                    if (value.Exists)
+                    {
+                        var users = value.ToObject<AppUsers>();
+                        holder.Sender.Text = $"{users.Name} {users.Surname} \n {items[position].Dates.ToDateTime():ddd dd-MM-yyyy HH:mm tt}";
+                    }
+                });
+
 
         }
 
