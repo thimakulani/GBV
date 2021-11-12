@@ -7,6 +7,7 @@ using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using FFImageLoading;
 using AndroidX.RecyclerView.Widget;
+using Firebase.Auth;
 
 namespace GBV_Emergency_Response.Adapters
 {
@@ -55,7 +56,8 @@ namespace GBV_Emergency_Response.Adapters
                    .FadeAnimation(true, true, 300)
                    .IntoAsync(holder.ImgProfile);
             }
-            if(items[position].Uid == Firebase.Auth.FirebaseAuth.Instance.CurrentUser.Uid)
+            
+            if(items[position].Id == FirebaseAuth.Instance.CurrentUser.Uid)
             {
                 holder.BtnAction.Visibility = ViewStates.Gone;
             }

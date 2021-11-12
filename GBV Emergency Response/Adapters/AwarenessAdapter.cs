@@ -9,6 +9,8 @@ using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using FFImageLoading;
 using Plugin.CloudFirestore;
+using Google.Android.Material.ImageView;
+using Google.Android.Material.TextView;
 
 namespace GBV_Emergency_Response.Adapters
 {
@@ -55,7 +57,6 @@ namespace GBV_Emergency_Response.Adapters
             {
                 ImageService.Instance.LoadUrl(items[position].ImageUrl)
                     .Retry(3, 500)
-                    .DownSampleInDip(512, 512)
                     .IntoAsync(holder.ImgAwareness);
             }
             if (KeyId == items[position].Uid)
@@ -80,7 +81,8 @@ namespace GBV_Emergency_Response.Adapters
                     if (value.Exists)
                     {
                         var users = value.ToObject<AppUsers>();
-                        holder.Sender.Text = $"{users.Name} {users.Surname} \n {items[position].Dates.ToDateTime():ddd dd-MM-yyyy HH:mm tt}";
+                        holder.Sender.Text = $"{users.Name} {users.Surname}";
+                        holder.Dates.Text = $"{items[position].Dates.ToDateTime():ddd dd-MMM-yyyy HH:mm tt}";
                     }
                 });
 
@@ -97,20 +99,22 @@ namespace GBV_Emergency_Response.Adapters
     public class AwarenessAdapterViewHolder : RecyclerView.ViewHolder
     {
         
-        public TextView AwarenessMsg { get; set; }
-        public TextView Sender { get; set; }
+        public MaterialTextView AwarenessMsg { get; set; }
+        public MaterialTextView Sender { get; set; }
+        public MaterialTextView Dates { get; set; }
         public MaterialButton BtnDeleteAwareness { get; set; }
-        public ImageView ImgAwareness { get; set; }
+        public ShapeableImageView ImgAwareness { get; set; }
 
 
         public AwarenessAdapterViewHolder(View itemView, Action<AwarenessAdapterClickEventArgs> clickListener,
                             Action<AwarenessAdapterClickEventArgs> longClickListener, Action<AwarenessAdapterClickEventArgs> deleteClickListener) : base(itemView)
         {
             //TextView = v;
-            AwarenessMsg = itemView.FindViewById<TextView>(Resource.Id.txtAwareessmessage);
-            Sender = itemView.FindViewById<TextView>(Resource.Id.txtAwarenessSender);
+            Dates = itemView.FindViewById<MaterialTextView>(Resource.Id.txtDates);
+            AwarenessMsg = itemView.FindViewById<MaterialTextView>(Resource.Id.txtAwareessmessage);
+            Sender = itemView.FindViewById<MaterialTextView>(Resource.Id.txtAwarenessSender);
             BtnDeleteAwareness = itemView.FindViewById<MaterialButton>(Resource.Id.BtnDeleteAwareness);
-            ImgAwareness = itemView.FindViewById<ImageView>(Resource.Id.awareness_img);
+            ImgAwareness = itemView.FindViewById<ShapeableImageView>(Resource.Id.awareness_img);
 
 
             itemView.Click += (sender, e) => clickListener(new AwarenessAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });

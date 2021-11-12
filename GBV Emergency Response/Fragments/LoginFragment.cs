@@ -1,23 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Android.App;
 using Android.Content;
 using Android.Gms.Tasks;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
-using Android.Widget;
-using AndroidX.AppCompat.App;
-using AndroidX.Fragment.App;
 using Firebase.Auth;
-using GBV_Emergency_Response.Activities;
 using Google.Android.Material.Button;
+using Google.Android.Material.Dialog;
 using Google.Android.Material.TextField;
-using AlertDialog = AndroidX.AppCompat.App.AlertDialog;
-using Fragment = AndroidX.Fragment.App.Fragment;
+using ID.IonBit.IonAlertLib;
 
 namespace GBV_Emergency_Response.Fragments
 {
@@ -62,7 +52,7 @@ namespace GBV_Emergency_Response.Fragments
         {
             BtnSignUpClickEventHandler(sender, e);
         }
-
+        IonAlert loadingDialog;
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(InputEmail.Text) && string.IsNullOrWhiteSpace(InputEmail.Text))
@@ -75,34 +65,25 @@ namespace GBV_Emergency_Response.Fragments
                 InputPassword.Error = "Please provide your password";
                 return;
             }
+            loadingDialog = new IonAlert(context, IonAlert.ProgressType);
+            loadingDialog.SetSpinKit("DoubleBounce")
+                .SetSpinColor("#008D91")
+                .ShowCancelButton(false)
+                .Show();
             FirebaseAuth.Instance.SignInWithEmailAndPassword(InputEmail.Text.Trim(), InputPassword.Text.Trim())
                 .AddOnSuccessListener(this)
                 .AddOnFailureListener(this)
                 .AddOnCompleteListener(this);
-            LoadingProgress();
+            
         }
-        private AlertDialog loading;
-        private AlertDialog.Builder loadingBuilder;
 
-        private void LoadingProgress()
-        {
-            loadingBuilder = new AlertDialog.Builder(context);
-            LayoutInflater inflater = (LayoutInflater)context.GetSystemService(Context.LayoutInflaterService);
-            View view = inflater.Inflate(Resource.Layout.loading, null);
-
-
-            loadingBuilder.SetView(view);
-            loadingBuilder.SetCancelable(false);
-            loading = loadingBuilder.Create();
-            loading.Show();
-        }
         private void ForgotPassword_Click(object sender, EventArgs e)
         {
         }
 
         public void OnComplete(Task task)
         {
-            loading.Dismiss();
+            loadingDialog.Dismiss();
         }
         public event EventHandler SuccessEventHandler;
         
@@ -115,7 +96,7 @@ namespace GBV_Emergency_Response.Fragments
 
         public void OnFailure(Java.Lang.Exception e)
         {
-            AlertDialog.Builder alert = new AlertDialog.Builder(context);
+            MaterialAlertDialogBuilder alert = new MaterialAlertDialogBuilder(context);
             alert.SetTitle("Error");
             alert.SetMessage(e.Message);
             alert.SetNeutralButton("OK", delegate

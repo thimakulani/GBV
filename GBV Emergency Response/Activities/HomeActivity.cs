@@ -14,18 +14,20 @@ using GBV_Emergency_Response.Fragments;
 using GBV_Emergency_Response.MapHelper;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.BottomNavigation;
+using IsmaelDiVita.ChipNavigationLib;
 using Plugin.CloudFirestore;
 using System;
 using System.Collections.Generic;
+using static IsmaelDiVita.ChipNavigationLib.ChipNavigationBar;
 using PopupMenu = AndroidX.AppCompat.Widget.PopupMenu;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace GBV_Emergency_Response.Activities
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
-    public class HomeActivity : AndroidX.AppCompat.App.AppCompatActivity
+    public class HomeActivity : AndroidX.AppCompat.App.AppCompatActivity, IOnItemSelectedListener
     {
-        private Google.Android.Material.BottomNavigation.BottomNavigationView nav_menu;
+        private ChipNavigationBar nav_menu;
         private Toolbar home_toolbar;
         private ImageView ImgBackground;
 
@@ -52,29 +54,29 @@ namespace GBV_Emergency_Response.Activities
 
 
 
-        private View badge;
-        private TextView _notificationBadgeTextView;
-        private List<AlertsMessages> items = new List<AlertsMessages>();
+
+        private readonly List<AlertsMessages> items = new List<AlertsMessages>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            RequestedOrientation = Android.Content.PM.ScreenOrientation.Portrait;
+            RequestedOrientation = ScreenOrientation.Portrait;
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
             var response = FirebaseMessaging.Instance.SubscribeToTopic("requests").AsAsync();
             Toast.MakeText(this, response.Id.ToString(), ToastLength.Long).Show();
 
-            nav_menu = FindViewById<BottomNavigationView>(Resource.Id.bottom_nav_view);
+            nav_menu = FindViewById<ChipNavigationBar>(Resource.Id.bottom_nav_view);
             //nav_menu.InflateMenu(Resource.Menu.nav_menu);
             //nav_menu.SetOnNavigationItemSelectedListener += Nav_menu_NavigationItemSelected;
-            nav_menu.ItemSelected += Nav_menu_ItemSelected;
+            nav_menu.SetItemSelected(Resource.Id.navHome);
+            nav_menu.SetOnItemSelectedListener(this);
 
-            var notificationsTab = nav_menu.FindViewById<BottomNavigationItemView>(Resource.Id.navAlerts);
-            badge = LayoutInflater.From(this).Inflate(Resource.Layout.component_badge, notificationsTab, false);
-            _notificationBadgeTextView = badge.FindViewById<TextView>(Resource.Id.badgeTextView);
-            notificationsTab.AddView(badge);
-            _notificationBadgeTextView.Text = "0";
+            //var notificationsTab = nav_menu.FindViewById<BottomNavigationItemView>(Resource.Id.navAlerts);
+            //badge = LayoutInflater.From(this).Inflate(Resource.Layout.component_badge, notificationsTab, false);
+            //_notificationBadgeTextView = badge.FindViewById<TextView>(Resource.Id.badgeTextView);
+            //notificationsTab.AddView(badge);
+            //_notificationBadgeTextView.Text = "0";
 
             ImgBackground = FindViewById<ImageView>(Resource.Id.ImgBackground);
             ImgBackground.Alpha = 0.3f;
@@ -102,10 +104,20 @@ namespace GBV_Emergency_Response.Activities
                     .Document(FirebaseAuth.Instance.Uid)
                     .AddSnapshotListener((snapshot, error) =>
                     {
-
+                        if (snapshot.Exists)
+                        {
+                            var user = snapshot.ToObject<AppUsers>();
+                            home_toolbar.Title = $"{user.Name} {user.Surname}".ToUpper();
+                        }
                     });
             }
-           
+            CrossCloudFirestore.Current.Instance
+                 .Collection("AWARENESS")
+                 .OrderBy("Dates", false)
+                 .AddSnapshotListener((value, errors) =>
+                 {
+                     nav_menu.ShowBadge(Resource.Id.navAlerts, value.Count);
+                 });
             if (CheckPermission())
             {
                 CreateLocationRequest();
@@ -115,44 +127,13 @@ namespace GBV_Emergency_Response.Activities
     
         }
 
-        private void Nav_menu_ItemSelected(object sender, Google.Android.Material.Navigation.NavigationBarView.ItemSelectedEventArgs e)
+
+        private void Alerts_ShowMapHandler(object sender, AlertsFragment.ShowMapFragmentArgs e)
         {
-            if (e.P0.ItemId == Resource.Id.navHome)
-            {
-                HomeFragment home = new HomeFragment();
-                home.PanicButtonEventHandler += Home_PanicButtonEventHandler;
-                SupportFragmentManager.BeginTransaction()
-                    .Replace(Resource.Id.fragHost, home)
-                    .Commit();
-            }
-            if (e.P0.ItemId == Resource.Id.navAwareness)
-            {
-                AwarenessFragment awareness = new AwarenessFragment();
-                SupportFragmentManager.BeginTransaction()
-                    .Replace(Resource.Id.fragHost, awareness)
-                    .Commit();
-            }
-            if (e.P0.ItemId == Resource.Id.navForum)
-            {
-                ForumFragment forum = new ForumFragment();
-                SupportFragmentManager.BeginTransaction()
-                    .Replace(Resource.Id.fragHost, forum)
-                    .Commit();
-            }
-            if (e.P0.ItemId == Resource.Id.navAlerts)
-            {
-                AlertsFragment alerts = new AlertsFragment();
-                SupportFragmentManager.BeginTransaction()
-                    .Replace(Resource.Id.fragHost, alerts)
-                    .Commit();
-            }
-            if (e.P0.ItemId == Resource.Id.navUserProfile)
-            {
-                ProfileFragment profile = new ProfileFragment();
-                SupportFragmentManager.BeginTransaction()
-                    .Replace(Resource.Id.fragHost, profile)
-                    .Commit();
-            }
+            MapFragmentDialog profile = new MapFragmentDialog();
+            SupportFragmentManager.BeginTransaction()
+                .Replace(Resource.Id.fragHost, profile)
+                .Commit();
         }
 
         protected override  void OnResume()
@@ -316,9 +297,48 @@ namespace GBV_Emergency_Response.Activities
             lastLocation = await locationClient.GetLastLocationAsync();
 
         }
- 
 
-        
+        public void OnItemSelected(int id)
+        {
+            if (id == Resource.Id.navHome)
+            {
+                HomeFragment home = new HomeFragment();
+                home.PanicButtonEventHandler += Home_PanicButtonEventHandler;
+                SupportFragmentManager.BeginTransaction()
+                    .Replace(Resource.Id.fragHost, home)
+                    .Commit();
+            }
+            if (id == Resource.Id.navAwareness)
+            {
+                AwarenessFragment awareness = new AwarenessFragment();
+                SupportFragmentManager.BeginTransaction()
+                    .Replace(Resource.Id.fragHost, awareness)
+                    .Commit();
+            }
+            if (id == Resource.Id.navForum)
+            {
+                ForumFragment forum = new ForumFragment();
+                SupportFragmentManager.BeginTransaction()
+                    .Replace(Resource.Id.fragHost, forum)
+                    .Commit();
+
+            }
+            if (id == Resource.Id.navAlerts)
+            {
+                AlertsFragment alerts = new AlertsFragment();
+                SupportFragmentManager.BeginTransaction()
+                    .Replace(Resource.Id.fragHost, alerts)
+                    .Commit();
+                alerts.ShowMapHandler += Alerts_ShowMapHandler;
+            }
+            if (id == Resource.Id.navUserProfile)
+            {
+                ProfileFragment profile = new ProfileFragment();
+                SupportFragmentManager.BeginTransaction()
+                    .Replace(Resource.Id.fragHost, profile)
+                    .Commit();
+            }
+        }
     }
 
 

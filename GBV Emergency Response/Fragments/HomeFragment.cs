@@ -6,11 +6,13 @@ using Android.Views;
 using Android.Widget;
 using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
+using Com.Amulyakhare.Textdrawable;
 using GBV_Emergency_Response.Adapters;
 using GBV_Emergency_Response.Dialogs;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using Google.Android.Material.FloatingActionButton;
+using Plugin.CloudFirestore;
 
 namespace GBV_Emergency_Response.Fragments
 {
@@ -20,7 +22,7 @@ namespace GBV_Emergency_Response.Fragments
         private FloatingActionButton FabInvites;
         private TextView txt_invite_count;
         private RecyclerView recycler;
-        private readonly List<InviteModel> items = new List<InviteModel>();
+        private readonly List<AppUsers> items = new List<AppUsers>();
        // private ContactsData data = new ContactsData();
         private Context context;
         
@@ -54,9 +56,50 @@ namespace GBV_Emergency_Response.Fragments
             
             FabInvites.Click += FabInvites_Click;
 
+
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
+            ContactsAdapter adapter = new ContactsAdapter(items);
+            linearLayoutManager.Orientation = RecyclerView.Horizontal;
+            recycler.HasFixedSize = true;
+            recycler.SetLayoutManager(linearLayoutManager);
+
+            recycler.SetAdapter(adapter);
+            adapter.ItemClick += Adapter_ItemClick1;
+
+            CrossCloudFirestore.Current.Instance
+                .Collection("PEOPLE")
+                .AddSnapshotListener((value, errors) =>
+                {
+                    if (!value.IsEmpty)
+                    {
+                        foreach (var dc in value.DocumentChanges)
+                        {
+                            var users = dc.Document.ToObject<AppUsers>();
+                            switch (dc.Type)
+                            {
+                                case DocumentChangeType.Added:
+                                    items.Add(users);
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Modified:
+                                    items[dc.OldIndex] = users;
+                                    //Toast.MakeText(context, items[dc.OldIndex].Id, ToastLength.Long).Show();
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Removed:
+                                    items.RemoveAt(dc.OldIndex);
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                });
+
+
             
-
-
+                
         }
 
         private void BtnPanic_Click(object sender, EventArgs e)
@@ -70,39 +113,15 @@ namespace GBV_Emergency_Response.Fragments
             var fm = ChildFragmentManager.BeginTransaction();
             invitesDialogFragment.Show(fm, invitesDialogFragment.Tag);
         }
-
- 
-
-        private void Adapter_ItemClick(object sender, ContactsAdapterClickEventArgs e)
-        {
-            
-        }
-
         public event EventHandler PanicButtonEventHandler;
         private void BtnPanic_LongClick(object sender, View.LongClickEventArgs e)
         {
             PanicButtonEventHandler(sender, e);
         }
 
-
- 
-
-        private void SetUpRecycler(List<InviteModel> items)
-        {
-            
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
-            ContactsAdapter adapter = new ContactsAdapter(items);
-            linearLayoutManager.Orientation = RecyclerView.Horizontal;
-            recycler.HasFixedSize = true;
-            recycler.SetLayoutManager(linearLayoutManager);
-            
-            recycler.SetAdapter(adapter);
-            adapter.ItemClick += Adapter_ItemClick1;
-        }
-
         private void Adapter_ItemClick1(object sender, ContactsAdapterClickEventArgs e)
         {
-            FriendDialogFragment friendFragment = new FriendDialogFragment(items[e.Position].Key);
+            FriendDialogFragment friendFragment = new FriendDialogFragment(items[e.Position].Id);
             friendFragment.Show(ChildFragmentManager.BeginTransaction(), "Friends");
 
         }

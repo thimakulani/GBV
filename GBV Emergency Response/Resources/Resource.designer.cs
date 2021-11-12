@@ -14,7 +14,7 @@ namespace GBV_Emergency_Response
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "12.1.0.11")]
 	public partial class Resource
 	{
 		
@@ -1476,1486 +1476,6 @@ namespace GBV_Emergency_Response
 			global::AndroidAboutPage.Resource.Styleable.ViewStubCompat_android_id = global::GBV_Emergency_Response.Resource.Styleable.ViewStubCompat_android_id;
 			global::AndroidAboutPage.Resource.Styleable.ViewStubCompat_android_inflatedId = global::GBV_Emergency_Response.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::AndroidAboutPage.Resource.Styleable.ViewStubCompat_android_layout = global::GBV_Emergency_Response.Resource.Styleable.ViewStubCompat_android_layout;
-			global::XamarinTextDrawable.Resource.Animation.abc_fade_in = global::GBV_Emergency_Response.Resource.Animation.abc_fade_in;
-			global::XamarinTextDrawable.Resource.Animation.abc_fade_out = global::GBV_Emergency_Response.Resource.Animation.abc_fade_out;
-			global::XamarinTextDrawable.Resource.Animation.abc_grow_fade_in_from_bottom = global::GBV_Emergency_Response.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::XamarinTextDrawable.Resource.Animation.abc_popup_enter = global::GBV_Emergency_Response.Resource.Animation.abc_popup_enter;
-			global::XamarinTextDrawable.Resource.Animation.abc_popup_exit = global::GBV_Emergency_Response.Resource.Animation.abc_popup_exit;
-			global::XamarinTextDrawable.Resource.Animation.abc_shrink_fade_out_from_bottom = global::GBV_Emergency_Response.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::XamarinTextDrawable.Resource.Animation.abc_slide_in_bottom = global::GBV_Emergency_Response.Resource.Animation.abc_slide_in_bottom;
-			global::XamarinTextDrawable.Resource.Animation.abc_slide_in_top = global::GBV_Emergency_Response.Resource.Animation.abc_slide_in_top;
-			global::XamarinTextDrawable.Resource.Animation.abc_slide_out_bottom = global::GBV_Emergency_Response.Resource.Animation.abc_slide_out_bottom;
-			global::XamarinTextDrawable.Resource.Animation.abc_slide_out_top = global::GBV_Emergency_Response.Resource.Animation.abc_slide_out_top;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarDivider = global::GBV_Emergency_Response.Resource.Attribute.actionBarDivider;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarItemBackground = global::GBV_Emergency_Response.Resource.Attribute.actionBarItemBackground;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarPopupTheme = global::GBV_Emergency_Response.Resource.Attribute.actionBarPopupTheme;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarSize = global::GBV_Emergency_Response.Resource.Attribute.actionBarSize;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarSplitStyle = global::GBV_Emergency_Response.Resource.Attribute.actionBarSplitStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarStyle = global::GBV_Emergency_Response.Resource.Attribute.actionBarStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarTabBarStyle = global::GBV_Emergency_Response.Resource.Attribute.actionBarTabBarStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarTabStyle = global::GBV_Emergency_Response.Resource.Attribute.actionBarTabStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarTabTextStyle = global::GBV_Emergency_Response.Resource.Attribute.actionBarTabTextStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarTheme = global::GBV_Emergency_Response.Resource.Attribute.actionBarTheme;
-			global::XamarinTextDrawable.Resource.Attribute.actionBarWidgetTheme = global::GBV_Emergency_Response.Resource.Attribute.actionBarWidgetTheme;
-			global::XamarinTextDrawable.Resource.Attribute.actionButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.actionButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionDropDownStyle = global::GBV_Emergency_Response.Resource.Attribute.actionDropDownStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionLayout = global::GBV_Emergency_Response.Resource.Attribute.actionLayout;
-			global::XamarinTextDrawable.Resource.Attribute.actionMenuTextAppearance = global::GBV_Emergency_Response.Resource.Attribute.actionMenuTextAppearance;
-			global::XamarinTextDrawable.Resource.Attribute.actionMenuTextColor = global::GBV_Emergency_Response.Resource.Attribute.actionMenuTextColor;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeBackground = global::GBV_Emergency_Response.Resource.Attribute.actionModeBackground;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeCloseButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.actionModeCloseButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeCloseDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModeCloseDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeCopyDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModeCopyDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeCutDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModeCutDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeFindDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModeFindDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionModePasteDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModePasteDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionModePopupWindowStyle = global::GBV_Emergency_Response.Resource.Attribute.actionModePopupWindowStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeSelectAllDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModeSelectAllDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeShareDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModeShareDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeSplitBackground = global::GBV_Emergency_Response.Resource.Attribute.actionModeSplitBackground;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeStyle = global::GBV_Emergency_Response.Resource.Attribute.actionModeStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionModeWebSearchDrawable = global::GBV_Emergency_Response.Resource.Attribute.actionModeWebSearchDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.actionOverflowButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.actionOverflowButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionOverflowMenuStyle = global::GBV_Emergency_Response.Resource.Attribute.actionOverflowMenuStyle;
-			global::XamarinTextDrawable.Resource.Attribute.actionProviderClass = global::GBV_Emergency_Response.Resource.Attribute.actionProviderClass;
-			global::XamarinTextDrawable.Resource.Attribute.actionViewClass = global::GBV_Emergency_Response.Resource.Attribute.actionViewClass;
-			global::XamarinTextDrawable.Resource.Attribute.activityChooserViewStyle = global::GBV_Emergency_Response.Resource.Attribute.activityChooserViewStyle;
-			global::XamarinTextDrawable.Resource.Attribute.alertDialogButtonGroupStyle = global::GBV_Emergency_Response.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::XamarinTextDrawable.Resource.Attribute.alertDialogCenterButtons = global::GBV_Emergency_Response.Resource.Attribute.alertDialogCenterButtons;
-			global::XamarinTextDrawable.Resource.Attribute.alertDialogStyle = global::GBV_Emergency_Response.Resource.Attribute.alertDialogStyle;
-			global::XamarinTextDrawable.Resource.Attribute.alertDialogTheme = global::GBV_Emergency_Response.Resource.Attribute.alertDialogTheme;
-			global::XamarinTextDrawable.Resource.Attribute.allowStacking = global::GBV_Emergency_Response.Resource.Attribute.allowStacking;
-			global::XamarinTextDrawable.Resource.Attribute.alpha = global::GBV_Emergency_Response.Resource.Attribute.alpha;
-			global::XamarinTextDrawable.Resource.Attribute.alphabeticModifiers = global::GBV_Emergency_Response.Resource.Attribute.alphabeticModifiers;
-			global::XamarinTextDrawable.Resource.Attribute.arrowHeadLength = global::GBV_Emergency_Response.Resource.Attribute.arrowHeadLength;
-			global::XamarinTextDrawable.Resource.Attribute.arrowShaftLength = global::GBV_Emergency_Response.Resource.Attribute.arrowShaftLength;
-			global::XamarinTextDrawable.Resource.Attribute.autoCompleteTextViewStyle = global::GBV_Emergency_Response.Resource.Attribute.autoCompleteTextViewStyle;
-			global::XamarinTextDrawable.Resource.Attribute.autoSizeMaxTextSize = global::GBV_Emergency_Response.Resource.Attribute.autoSizeMaxTextSize;
-			global::XamarinTextDrawable.Resource.Attribute.autoSizeMinTextSize = global::GBV_Emergency_Response.Resource.Attribute.autoSizeMinTextSize;
-			global::XamarinTextDrawable.Resource.Attribute.autoSizePresetSizes = global::GBV_Emergency_Response.Resource.Attribute.autoSizePresetSizes;
-			global::XamarinTextDrawable.Resource.Attribute.autoSizeStepGranularity = global::GBV_Emergency_Response.Resource.Attribute.autoSizeStepGranularity;
-			global::XamarinTextDrawable.Resource.Attribute.autoSizeTextType = global::GBV_Emergency_Response.Resource.Attribute.autoSizeTextType;
-			global::XamarinTextDrawable.Resource.Attribute.background = global::GBV_Emergency_Response.Resource.Attribute.background;
-			global::XamarinTextDrawable.Resource.Attribute.backgroundSplit = global::GBV_Emergency_Response.Resource.Attribute.backgroundSplit;
-			global::XamarinTextDrawable.Resource.Attribute.backgroundStacked = global::GBV_Emergency_Response.Resource.Attribute.backgroundStacked;
-			global::XamarinTextDrawable.Resource.Attribute.backgroundTint = global::GBV_Emergency_Response.Resource.Attribute.backgroundTint;
-			global::XamarinTextDrawable.Resource.Attribute.backgroundTintMode = global::GBV_Emergency_Response.Resource.Attribute.backgroundTintMode;
-			global::XamarinTextDrawable.Resource.Attribute.barLength = global::GBV_Emergency_Response.Resource.Attribute.barLength;
-			global::XamarinTextDrawable.Resource.Attribute.borderlessButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.borderlessButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.buttonBarButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.buttonBarButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.buttonBarNegativeButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.buttonBarNeutralButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.buttonBarPositiveButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.buttonBarStyle = global::GBV_Emergency_Response.Resource.Attribute.buttonBarStyle;
-			global::XamarinTextDrawable.Resource.Attribute.buttonGravity = global::GBV_Emergency_Response.Resource.Attribute.buttonGravity;
-			global::XamarinTextDrawable.Resource.Attribute.buttonPanelSideLayout = global::GBV_Emergency_Response.Resource.Attribute.buttonPanelSideLayout;
-			global::XamarinTextDrawable.Resource.Attribute.buttonStyle = global::GBV_Emergency_Response.Resource.Attribute.buttonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.buttonStyleSmall = global::GBV_Emergency_Response.Resource.Attribute.buttonStyleSmall;
-			global::XamarinTextDrawable.Resource.Attribute.buttonTint = global::GBV_Emergency_Response.Resource.Attribute.buttonTint;
-			global::XamarinTextDrawable.Resource.Attribute.buttonTintMode = global::GBV_Emergency_Response.Resource.Attribute.buttonTintMode;
-			global::XamarinTextDrawable.Resource.Attribute.checkboxStyle = global::GBV_Emergency_Response.Resource.Attribute.checkboxStyle;
-			global::XamarinTextDrawable.Resource.Attribute.checkedTextViewStyle = global::GBV_Emergency_Response.Resource.Attribute.checkedTextViewStyle;
-			global::XamarinTextDrawable.Resource.Attribute.closeIcon = global::GBV_Emergency_Response.Resource.Attribute.closeIcon;
-			global::XamarinTextDrawable.Resource.Attribute.closeItemLayout = global::GBV_Emergency_Response.Resource.Attribute.closeItemLayout;
-			global::XamarinTextDrawable.Resource.Attribute.collapseContentDescription = global::GBV_Emergency_Response.Resource.Attribute.collapseContentDescription;
-			global::XamarinTextDrawable.Resource.Attribute.collapseIcon = global::GBV_Emergency_Response.Resource.Attribute.collapseIcon;
-			global::XamarinTextDrawable.Resource.Attribute.color = global::GBV_Emergency_Response.Resource.Attribute.color;
-			global::XamarinTextDrawable.Resource.Attribute.colorAccent = global::GBV_Emergency_Response.Resource.Attribute.colorAccent;
-			global::XamarinTextDrawable.Resource.Attribute.colorBackgroundFloating = global::GBV_Emergency_Response.Resource.Attribute.colorBackgroundFloating;
-			global::XamarinTextDrawable.Resource.Attribute.colorButtonNormal = global::GBV_Emergency_Response.Resource.Attribute.colorButtonNormal;
-			global::XamarinTextDrawable.Resource.Attribute.colorControlActivated = global::GBV_Emergency_Response.Resource.Attribute.colorControlActivated;
-			global::XamarinTextDrawable.Resource.Attribute.colorControlHighlight = global::GBV_Emergency_Response.Resource.Attribute.colorControlHighlight;
-			global::XamarinTextDrawable.Resource.Attribute.colorControlNormal = global::GBV_Emergency_Response.Resource.Attribute.colorControlNormal;
-			global::XamarinTextDrawable.Resource.Attribute.colorError = global::GBV_Emergency_Response.Resource.Attribute.colorError;
-			global::XamarinTextDrawable.Resource.Attribute.colorPrimary = global::GBV_Emergency_Response.Resource.Attribute.colorPrimary;
-			global::XamarinTextDrawable.Resource.Attribute.colorPrimaryDark = global::GBV_Emergency_Response.Resource.Attribute.colorPrimaryDark;
-			global::XamarinTextDrawable.Resource.Attribute.colorSwitchThumbNormal = global::GBV_Emergency_Response.Resource.Attribute.colorSwitchThumbNormal;
-			global::XamarinTextDrawable.Resource.Attribute.commitIcon = global::GBV_Emergency_Response.Resource.Attribute.commitIcon;
-			global::XamarinTextDrawable.Resource.Attribute.contentDescription = global::GBV_Emergency_Response.Resource.Attribute.contentDescription;
-			global::XamarinTextDrawable.Resource.Attribute.contentInsetEnd = global::GBV_Emergency_Response.Resource.Attribute.contentInsetEnd;
-			global::XamarinTextDrawable.Resource.Attribute.contentInsetEndWithActions = global::GBV_Emergency_Response.Resource.Attribute.contentInsetEndWithActions;
-			global::XamarinTextDrawable.Resource.Attribute.contentInsetLeft = global::GBV_Emergency_Response.Resource.Attribute.contentInsetLeft;
-			global::XamarinTextDrawable.Resource.Attribute.contentInsetRight = global::GBV_Emergency_Response.Resource.Attribute.contentInsetRight;
-			global::XamarinTextDrawable.Resource.Attribute.contentInsetStart = global::GBV_Emergency_Response.Resource.Attribute.contentInsetStart;
-			global::XamarinTextDrawable.Resource.Attribute.contentInsetStartWithNavigation = global::GBV_Emergency_Response.Resource.Attribute.contentInsetStartWithNavigation;
-			global::XamarinTextDrawable.Resource.Attribute.controlBackground = global::GBV_Emergency_Response.Resource.Attribute.controlBackground;
-			global::XamarinTextDrawable.Resource.Attribute.customNavigationLayout = global::GBV_Emergency_Response.Resource.Attribute.customNavigationLayout;
-			global::XamarinTextDrawable.Resource.Attribute.defaultQueryHint = global::GBV_Emergency_Response.Resource.Attribute.defaultQueryHint;
-			global::XamarinTextDrawable.Resource.Attribute.dialogPreferredPadding = global::GBV_Emergency_Response.Resource.Attribute.dialogPreferredPadding;
-			global::XamarinTextDrawable.Resource.Attribute.dialogTheme = global::GBV_Emergency_Response.Resource.Attribute.dialogTheme;
-			global::XamarinTextDrawable.Resource.Attribute.displayOptions = global::GBV_Emergency_Response.Resource.Attribute.displayOptions;
-			global::XamarinTextDrawable.Resource.Attribute.divider = global::GBV_Emergency_Response.Resource.Attribute.divider;
-			global::XamarinTextDrawable.Resource.Attribute.dividerHorizontal = global::GBV_Emergency_Response.Resource.Attribute.dividerHorizontal;
-			global::XamarinTextDrawable.Resource.Attribute.dividerPadding = global::GBV_Emergency_Response.Resource.Attribute.dividerPadding;
-			global::XamarinTextDrawable.Resource.Attribute.dividerVertical = global::GBV_Emergency_Response.Resource.Attribute.dividerVertical;
-			global::XamarinTextDrawable.Resource.Attribute.drawableSize = global::GBV_Emergency_Response.Resource.Attribute.drawableSize;
-			global::XamarinTextDrawable.Resource.Attribute.drawerArrowStyle = global::GBV_Emergency_Response.Resource.Attribute.drawerArrowStyle;
-			global::XamarinTextDrawable.Resource.Attribute.dropDownListViewStyle = global::GBV_Emergency_Response.Resource.Attribute.dropDownListViewStyle;
-			global::XamarinTextDrawable.Resource.Attribute.dropdownListPreferredItemHeight = global::GBV_Emergency_Response.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::XamarinTextDrawable.Resource.Attribute.editTextBackground = global::GBV_Emergency_Response.Resource.Attribute.editTextBackground;
-			global::XamarinTextDrawable.Resource.Attribute.editTextColor = global::GBV_Emergency_Response.Resource.Attribute.editTextColor;
-			global::XamarinTextDrawable.Resource.Attribute.editTextStyle = global::GBV_Emergency_Response.Resource.Attribute.editTextStyle;
-			global::XamarinTextDrawable.Resource.Attribute.elevation = global::GBV_Emergency_Response.Resource.Attribute.elevation;
-			global::XamarinTextDrawable.Resource.Attribute.expandActivityOverflowButtonDrawable = global::GBV_Emergency_Response.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::XamarinTextDrawable.Resource.Attribute.font = global::GBV_Emergency_Response.Resource.Attribute.font;
-			global::XamarinTextDrawable.Resource.Attribute.fontFamily = global::GBV_Emergency_Response.Resource.Attribute.fontFamily;
-			global::XamarinTextDrawable.Resource.Attribute.fontProviderAuthority = global::GBV_Emergency_Response.Resource.Attribute.fontProviderAuthority;
-			global::XamarinTextDrawable.Resource.Attribute.fontProviderCerts = global::GBV_Emergency_Response.Resource.Attribute.fontProviderCerts;
-			global::XamarinTextDrawable.Resource.Attribute.fontProviderFetchStrategy = global::GBV_Emergency_Response.Resource.Attribute.fontProviderFetchStrategy;
-			global::XamarinTextDrawable.Resource.Attribute.fontProviderFetchTimeout = global::GBV_Emergency_Response.Resource.Attribute.fontProviderFetchTimeout;
-			global::XamarinTextDrawable.Resource.Attribute.fontProviderPackage = global::GBV_Emergency_Response.Resource.Attribute.fontProviderPackage;
-			global::XamarinTextDrawable.Resource.Attribute.fontProviderQuery = global::GBV_Emergency_Response.Resource.Attribute.fontProviderQuery;
-			global::XamarinTextDrawable.Resource.Attribute.fontStyle = global::GBV_Emergency_Response.Resource.Attribute.fontStyle;
-			global::XamarinTextDrawable.Resource.Attribute.fontWeight = global::GBV_Emergency_Response.Resource.Attribute.fontWeight;
-			global::XamarinTextDrawable.Resource.Attribute.gapBetweenBars = global::GBV_Emergency_Response.Resource.Attribute.gapBetweenBars;
-			global::XamarinTextDrawable.Resource.Attribute.goIcon = global::GBV_Emergency_Response.Resource.Attribute.goIcon;
-			global::XamarinTextDrawable.Resource.Attribute.height = global::GBV_Emergency_Response.Resource.Attribute.height;
-			global::XamarinTextDrawable.Resource.Attribute.hideOnContentScroll = global::GBV_Emergency_Response.Resource.Attribute.hideOnContentScroll;
-			global::XamarinTextDrawable.Resource.Attribute.homeAsUpIndicator = global::GBV_Emergency_Response.Resource.Attribute.homeAsUpIndicator;
-			global::XamarinTextDrawable.Resource.Attribute.homeLayout = global::GBV_Emergency_Response.Resource.Attribute.homeLayout;
-			global::XamarinTextDrawable.Resource.Attribute.icon = global::GBV_Emergency_Response.Resource.Attribute.icon;
-			global::XamarinTextDrawable.Resource.Attribute.iconTint = global::GBV_Emergency_Response.Resource.Attribute.iconTint;
-			global::XamarinTextDrawable.Resource.Attribute.iconTintMode = global::GBV_Emergency_Response.Resource.Attribute.iconTintMode;
-			global::XamarinTextDrawable.Resource.Attribute.iconifiedByDefault = global::GBV_Emergency_Response.Resource.Attribute.iconifiedByDefault;
-			global::XamarinTextDrawable.Resource.Attribute.imageButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.imageButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.indeterminateProgressStyle = global::GBV_Emergency_Response.Resource.Attribute.indeterminateProgressStyle;
-			global::XamarinTextDrawable.Resource.Attribute.initialActivityCount = global::GBV_Emergency_Response.Resource.Attribute.initialActivityCount;
-			global::XamarinTextDrawable.Resource.Attribute.isLightTheme = global::GBV_Emergency_Response.Resource.Attribute.isLightTheme;
-			global::XamarinTextDrawable.Resource.Attribute.itemPadding = global::GBV_Emergency_Response.Resource.Attribute.itemPadding;
-			global::XamarinTextDrawable.Resource.Attribute.layout = global::GBV_Emergency_Response.Resource.Attribute.layout;
-			global::XamarinTextDrawable.Resource.Attribute.listChoiceBackgroundIndicator = global::GBV_Emergency_Response.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::XamarinTextDrawable.Resource.Attribute.listDividerAlertDialog = global::GBV_Emergency_Response.Resource.Attribute.listDividerAlertDialog;
-			global::XamarinTextDrawable.Resource.Attribute.listItemLayout = global::GBV_Emergency_Response.Resource.Attribute.listItemLayout;
-			global::XamarinTextDrawable.Resource.Attribute.listLayout = global::GBV_Emergency_Response.Resource.Attribute.listLayout;
-			global::XamarinTextDrawable.Resource.Attribute.listMenuViewStyle = global::GBV_Emergency_Response.Resource.Attribute.listMenuViewStyle;
-			global::XamarinTextDrawable.Resource.Attribute.listPopupWindowStyle = global::GBV_Emergency_Response.Resource.Attribute.listPopupWindowStyle;
-			global::XamarinTextDrawable.Resource.Attribute.listPreferredItemHeight = global::GBV_Emergency_Response.Resource.Attribute.listPreferredItemHeight;
-			global::XamarinTextDrawable.Resource.Attribute.listPreferredItemHeightLarge = global::GBV_Emergency_Response.Resource.Attribute.listPreferredItemHeightLarge;
-			global::XamarinTextDrawable.Resource.Attribute.listPreferredItemHeightSmall = global::GBV_Emergency_Response.Resource.Attribute.listPreferredItemHeightSmall;
-			global::XamarinTextDrawable.Resource.Attribute.listPreferredItemPaddingLeft = global::GBV_Emergency_Response.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::XamarinTextDrawable.Resource.Attribute.listPreferredItemPaddingRight = global::GBV_Emergency_Response.Resource.Attribute.listPreferredItemPaddingRight;
-			global::XamarinTextDrawable.Resource.Attribute.logo = global::GBV_Emergency_Response.Resource.Attribute.logo;
-			global::XamarinTextDrawable.Resource.Attribute.logoDescription = global::GBV_Emergency_Response.Resource.Attribute.logoDescription;
-			global::XamarinTextDrawable.Resource.Attribute.maxButtonHeight = global::GBV_Emergency_Response.Resource.Attribute.maxButtonHeight;
-			global::XamarinTextDrawable.Resource.Attribute.measureWithLargestChild = global::GBV_Emergency_Response.Resource.Attribute.measureWithLargestChild;
-			global::XamarinTextDrawable.Resource.Attribute.multiChoiceItemLayout = global::GBV_Emergency_Response.Resource.Attribute.multiChoiceItemLayout;
-			global::XamarinTextDrawable.Resource.Attribute.navigationContentDescription = global::GBV_Emergency_Response.Resource.Attribute.navigationContentDescription;
-			global::XamarinTextDrawable.Resource.Attribute.navigationIcon = global::GBV_Emergency_Response.Resource.Attribute.navigationIcon;
-			global::XamarinTextDrawable.Resource.Attribute.navigationMode = global::GBV_Emergency_Response.Resource.Attribute.navigationMode;
-			global::XamarinTextDrawable.Resource.Attribute.numericModifiers = global::GBV_Emergency_Response.Resource.Attribute.numericModifiers;
-			global::XamarinTextDrawable.Resource.Attribute.overlapAnchor = global::GBV_Emergency_Response.Resource.Attribute.overlapAnchor;
-			global::XamarinTextDrawable.Resource.Attribute.paddingBottomNoButtons = global::GBV_Emergency_Response.Resource.Attribute.paddingBottomNoButtons;
-			global::XamarinTextDrawable.Resource.Attribute.paddingEnd = global::GBV_Emergency_Response.Resource.Attribute.paddingEnd;
-			global::XamarinTextDrawable.Resource.Attribute.paddingStart = global::GBV_Emergency_Response.Resource.Attribute.paddingStart;
-			global::XamarinTextDrawable.Resource.Attribute.paddingTopNoTitle = global::GBV_Emergency_Response.Resource.Attribute.paddingTopNoTitle;
-			global::XamarinTextDrawable.Resource.Attribute.panelBackground = global::GBV_Emergency_Response.Resource.Attribute.panelBackground;
-			global::XamarinTextDrawable.Resource.Attribute.panelMenuListTheme = global::GBV_Emergency_Response.Resource.Attribute.panelMenuListTheme;
-			global::XamarinTextDrawable.Resource.Attribute.panelMenuListWidth = global::GBV_Emergency_Response.Resource.Attribute.panelMenuListWidth;
-			global::XamarinTextDrawable.Resource.Attribute.popupMenuStyle = global::GBV_Emergency_Response.Resource.Attribute.popupMenuStyle;
-			global::XamarinTextDrawable.Resource.Attribute.popupTheme = global::GBV_Emergency_Response.Resource.Attribute.popupTheme;
-			global::XamarinTextDrawable.Resource.Attribute.popupWindowStyle = global::GBV_Emergency_Response.Resource.Attribute.popupWindowStyle;
-			global::XamarinTextDrawable.Resource.Attribute.preserveIconSpacing = global::GBV_Emergency_Response.Resource.Attribute.preserveIconSpacing;
-			global::XamarinTextDrawable.Resource.Attribute.progressBarPadding = global::GBV_Emergency_Response.Resource.Attribute.progressBarPadding;
-			global::XamarinTextDrawable.Resource.Attribute.progressBarStyle = global::GBV_Emergency_Response.Resource.Attribute.progressBarStyle;
-			global::XamarinTextDrawable.Resource.Attribute.queryBackground = global::GBV_Emergency_Response.Resource.Attribute.queryBackground;
-			global::XamarinTextDrawable.Resource.Attribute.queryHint = global::GBV_Emergency_Response.Resource.Attribute.queryHint;
-			global::XamarinTextDrawable.Resource.Attribute.radioButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.radioButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.ratingBarStyle = global::GBV_Emergency_Response.Resource.Attribute.ratingBarStyle;
-			global::XamarinTextDrawable.Resource.Attribute.ratingBarStyleIndicator = global::GBV_Emergency_Response.Resource.Attribute.ratingBarStyleIndicator;
-			global::XamarinTextDrawable.Resource.Attribute.ratingBarStyleSmall = global::GBV_Emergency_Response.Resource.Attribute.ratingBarStyleSmall;
-			global::XamarinTextDrawable.Resource.Attribute.searchHintIcon = global::GBV_Emergency_Response.Resource.Attribute.searchHintIcon;
-			global::XamarinTextDrawable.Resource.Attribute.searchIcon = global::GBV_Emergency_Response.Resource.Attribute.searchIcon;
-			global::XamarinTextDrawable.Resource.Attribute.searchViewStyle = global::GBV_Emergency_Response.Resource.Attribute.searchViewStyle;
-			global::XamarinTextDrawable.Resource.Attribute.seekBarStyle = global::GBV_Emergency_Response.Resource.Attribute.seekBarStyle;
-			global::XamarinTextDrawable.Resource.Attribute.selectableItemBackground = global::GBV_Emergency_Response.Resource.Attribute.selectableItemBackground;
-			global::XamarinTextDrawable.Resource.Attribute.selectableItemBackgroundBorderless = global::GBV_Emergency_Response.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::XamarinTextDrawable.Resource.Attribute.showAsAction = global::GBV_Emergency_Response.Resource.Attribute.showAsAction;
-			global::XamarinTextDrawable.Resource.Attribute.showDividers = global::GBV_Emergency_Response.Resource.Attribute.showDividers;
-			global::XamarinTextDrawable.Resource.Attribute.showText = global::GBV_Emergency_Response.Resource.Attribute.showText;
-			global::XamarinTextDrawable.Resource.Attribute.showTitle = global::GBV_Emergency_Response.Resource.Attribute.showTitle;
-			global::XamarinTextDrawable.Resource.Attribute.singleChoiceItemLayout = global::GBV_Emergency_Response.Resource.Attribute.singleChoiceItemLayout;
-			global::XamarinTextDrawable.Resource.Attribute.spinBars = global::GBV_Emergency_Response.Resource.Attribute.spinBars;
-			global::XamarinTextDrawable.Resource.Attribute.spinnerDropDownItemStyle = global::GBV_Emergency_Response.Resource.Attribute.spinnerDropDownItemStyle;
-			global::XamarinTextDrawable.Resource.Attribute.spinnerStyle = global::GBV_Emergency_Response.Resource.Attribute.spinnerStyle;
-			global::XamarinTextDrawable.Resource.Attribute.splitTrack = global::GBV_Emergency_Response.Resource.Attribute.splitTrack;
-			global::XamarinTextDrawable.Resource.Attribute.srcCompat = global::GBV_Emergency_Response.Resource.Attribute.srcCompat;
-			global::XamarinTextDrawable.Resource.Attribute.state_above_anchor = global::GBV_Emergency_Response.Resource.Attribute.state_above_anchor;
-			global::XamarinTextDrawable.Resource.Attribute.subMenuArrow = global::GBV_Emergency_Response.Resource.Attribute.subMenuArrow;
-			global::XamarinTextDrawable.Resource.Attribute.submitBackground = global::GBV_Emergency_Response.Resource.Attribute.submitBackground;
-			global::XamarinTextDrawable.Resource.Attribute.subtitle = global::GBV_Emergency_Response.Resource.Attribute.subtitle;
-			global::XamarinTextDrawable.Resource.Attribute.subtitleTextAppearance = global::GBV_Emergency_Response.Resource.Attribute.subtitleTextAppearance;
-			global::XamarinTextDrawable.Resource.Attribute.subtitleTextColor = global::GBV_Emergency_Response.Resource.Attribute.subtitleTextColor;
-			global::XamarinTextDrawable.Resource.Attribute.subtitleTextStyle = global::GBV_Emergency_Response.Resource.Attribute.subtitleTextStyle;
-			global::XamarinTextDrawable.Resource.Attribute.suggestionRowLayout = global::GBV_Emergency_Response.Resource.Attribute.suggestionRowLayout;
-			global::XamarinTextDrawable.Resource.Attribute.switchMinWidth = global::GBV_Emergency_Response.Resource.Attribute.switchMinWidth;
-			global::XamarinTextDrawable.Resource.Attribute.switchPadding = global::GBV_Emergency_Response.Resource.Attribute.switchPadding;
-			global::XamarinTextDrawable.Resource.Attribute.switchStyle = global::GBV_Emergency_Response.Resource.Attribute.switchStyle;
-			global::XamarinTextDrawable.Resource.Attribute.switchTextAppearance = global::GBV_Emergency_Response.Resource.Attribute.switchTextAppearance;
-			global::XamarinTextDrawable.Resource.Attribute.textAllCaps = global::GBV_Emergency_Response.Resource.Attribute.textAllCaps;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearanceLargePopupMenu = global::GBV_Emergency_Response.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearanceListItem = global::GBV_Emergency_Response.Resource.Attribute.textAppearanceListItem;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearanceListItemSecondary = global::GBV_Emergency_Response.Resource.Attribute.textAppearanceListItemSecondary;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearanceListItemSmall = global::GBV_Emergency_Response.Resource.Attribute.textAppearanceListItemSmall;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearancePopupMenuHeader = global::GBV_Emergency_Response.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearanceSearchResultSubtitle = global::GBV_Emergency_Response.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearanceSearchResultTitle = global::GBV_Emergency_Response.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::XamarinTextDrawable.Resource.Attribute.textAppearanceSmallPopupMenu = global::GBV_Emergency_Response.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::XamarinTextDrawable.Resource.Attribute.textColorAlertDialogListItem = global::GBV_Emergency_Response.Resource.Attribute.textColorAlertDialogListItem;
-			global::XamarinTextDrawable.Resource.Attribute.textColorSearchUrl = global::GBV_Emergency_Response.Resource.Attribute.textColorSearchUrl;
-			global::XamarinTextDrawable.Resource.Attribute.theme = global::GBV_Emergency_Response.Resource.Attribute.theme;
-			global::XamarinTextDrawable.Resource.Attribute.thickness = global::GBV_Emergency_Response.Resource.Attribute.thickness;
-			global::XamarinTextDrawable.Resource.Attribute.thumbTextPadding = global::GBV_Emergency_Response.Resource.Attribute.thumbTextPadding;
-			global::XamarinTextDrawable.Resource.Attribute.thumbTint = global::GBV_Emergency_Response.Resource.Attribute.thumbTint;
-			global::XamarinTextDrawable.Resource.Attribute.thumbTintMode = global::GBV_Emergency_Response.Resource.Attribute.thumbTintMode;
-			global::XamarinTextDrawable.Resource.Attribute.tickMark = global::GBV_Emergency_Response.Resource.Attribute.tickMark;
-			global::XamarinTextDrawable.Resource.Attribute.tickMarkTint = global::GBV_Emergency_Response.Resource.Attribute.tickMarkTint;
-			global::XamarinTextDrawable.Resource.Attribute.tickMarkTintMode = global::GBV_Emergency_Response.Resource.Attribute.tickMarkTintMode;
-			global::XamarinTextDrawable.Resource.Attribute.tint = global::GBV_Emergency_Response.Resource.Attribute.tint;
-			global::XamarinTextDrawable.Resource.Attribute.tintMode = global::GBV_Emergency_Response.Resource.Attribute.tintMode;
-			global::XamarinTextDrawable.Resource.Attribute.title = global::GBV_Emergency_Response.Resource.Attribute.title;
-			global::XamarinTextDrawable.Resource.Attribute.titleMargin = global::GBV_Emergency_Response.Resource.Attribute.titleMargin;
-			global::XamarinTextDrawable.Resource.Attribute.titleMarginBottom = global::GBV_Emergency_Response.Resource.Attribute.titleMarginBottom;
-			global::XamarinTextDrawable.Resource.Attribute.titleMarginEnd = global::GBV_Emergency_Response.Resource.Attribute.titleMarginEnd;
-			global::XamarinTextDrawable.Resource.Attribute.titleMarginStart = global::GBV_Emergency_Response.Resource.Attribute.titleMarginStart;
-			global::XamarinTextDrawable.Resource.Attribute.titleMarginTop = global::GBV_Emergency_Response.Resource.Attribute.titleMarginTop;
-			global::XamarinTextDrawable.Resource.Attribute.titleMargins = global::GBV_Emergency_Response.Resource.Attribute.titleMargins;
-			global::XamarinTextDrawable.Resource.Attribute.titleTextAppearance = global::GBV_Emergency_Response.Resource.Attribute.titleTextAppearance;
-			global::XamarinTextDrawable.Resource.Attribute.titleTextColor = global::GBV_Emergency_Response.Resource.Attribute.titleTextColor;
-			global::XamarinTextDrawable.Resource.Attribute.titleTextStyle = global::GBV_Emergency_Response.Resource.Attribute.titleTextStyle;
-			global::XamarinTextDrawable.Resource.Attribute.toolbarNavigationButtonStyle = global::GBV_Emergency_Response.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::XamarinTextDrawable.Resource.Attribute.toolbarStyle = global::GBV_Emergency_Response.Resource.Attribute.toolbarStyle;
-			global::XamarinTextDrawable.Resource.Attribute.tooltipForegroundColor = global::GBV_Emergency_Response.Resource.Attribute.tooltipForegroundColor;
-			global::XamarinTextDrawable.Resource.Attribute.tooltipFrameBackground = global::GBV_Emergency_Response.Resource.Attribute.tooltipFrameBackground;
-			global::XamarinTextDrawable.Resource.Attribute.tooltipText = global::GBV_Emergency_Response.Resource.Attribute.tooltipText;
-			global::XamarinTextDrawable.Resource.Attribute.track = global::GBV_Emergency_Response.Resource.Attribute.track;
-			global::XamarinTextDrawable.Resource.Attribute.trackTint = global::GBV_Emergency_Response.Resource.Attribute.trackTint;
-			global::XamarinTextDrawable.Resource.Attribute.trackTintMode = global::GBV_Emergency_Response.Resource.Attribute.trackTintMode;
-			global::XamarinTextDrawable.Resource.Attribute.voiceIcon = global::GBV_Emergency_Response.Resource.Attribute.voiceIcon;
-			global::XamarinTextDrawable.Resource.Attribute.windowActionBar = global::GBV_Emergency_Response.Resource.Attribute.windowActionBar;
-			global::XamarinTextDrawable.Resource.Attribute.windowActionBarOverlay = global::GBV_Emergency_Response.Resource.Attribute.windowActionBarOverlay;
-			global::XamarinTextDrawable.Resource.Attribute.windowActionModeOverlay = global::GBV_Emergency_Response.Resource.Attribute.windowActionModeOverlay;
-			global::XamarinTextDrawable.Resource.Attribute.windowFixedHeightMajor = global::GBV_Emergency_Response.Resource.Attribute.windowFixedHeightMajor;
-			global::XamarinTextDrawable.Resource.Attribute.windowFixedHeightMinor = global::GBV_Emergency_Response.Resource.Attribute.windowFixedHeightMinor;
-			global::XamarinTextDrawable.Resource.Attribute.windowFixedWidthMajor = global::GBV_Emergency_Response.Resource.Attribute.windowFixedWidthMajor;
-			global::XamarinTextDrawable.Resource.Attribute.windowFixedWidthMinor = global::GBV_Emergency_Response.Resource.Attribute.windowFixedWidthMinor;
-			global::XamarinTextDrawable.Resource.Attribute.windowMinWidthMajor = global::GBV_Emergency_Response.Resource.Attribute.windowMinWidthMajor;
-			global::XamarinTextDrawable.Resource.Attribute.windowMinWidthMinor = global::GBV_Emergency_Response.Resource.Attribute.windowMinWidthMinor;
-			global::XamarinTextDrawable.Resource.Attribute.windowNoTitle = global::GBV_Emergency_Response.Resource.Attribute.windowNoTitle;
-			global::XamarinTextDrawable.Resource.Boolean.abc_action_bar_embed_tabs = global::GBV_Emergency_Response.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::XamarinTextDrawable.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::GBV_Emergency_Response.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::XamarinTextDrawable.Resource.Color.abc_background_cache_hint_selector_material_dark = global::GBV_Emergency_Response.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::XamarinTextDrawable.Resource.Color.abc_background_cache_hint_selector_material_light = global::GBV_Emergency_Response.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::XamarinTextDrawable.Resource.Color.abc_btn_colored_borderless_text_material = global::GBV_Emergency_Response.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::XamarinTextDrawable.Resource.Color.abc_btn_colored_text_material = global::GBV_Emergency_Response.Resource.Color.abc_btn_colored_text_material;
-			global::XamarinTextDrawable.Resource.Color.abc_color_highlight_material = global::GBV_Emergency_Response.Resource.Color.abc_color_highlight_material;
-			global::XamarinTextDrawable.Resource.Color.abc_hint_foreground_material_dark = global::GBV_Emergency_Response.Resource.Color.abc_hint_foreground_material_dark;
-			global::XamarinTextDrawable.Resource.Color.abc_hint_foreground_material_light = global::GBV_Emergency_Response.Resource.Color.abc_hint_foreground_material_light;
-			global::XamarinTextDrawable.Resource.Color.abc_primary_text_disable_only_material_dark = global::GBV_Emergency_Response.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::XamarinTextDrawable.Resource.Color.abc_primary_text_disable_only_material_light = global::GBV_Emergency_Response.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::XamarinTextDrawable.Resource.Color.abc_primary_text_material_dark = global::GBV_Emergency_Response.Resource.Color.abc_primary_text_material_dark;
-			global::XamarinTextDrawable.Resource.Color.abc_primary_text_material_light = global::GBV_Emergency_Response.Resource.Color.abc_primary_text_material_light;
-			global::XamarinTextDrawable.Resource.Color.abc_search_url_text = global::GBV_Emergency_Response.Resource.Color.abc_search_url_text;
-			global::XamarinTextDrawable.Resource.Color.abc_search_url_text_normal = global::GBV_Emergency_Response.Resource.Color.abc_search_url_text_normal;
-			global::XamarinTextDrawable.Resource.Color.abc_search_url_text_pressed = global::GBV_Emergency_Response.Resource.Color.abc_search_url_text_pressed;
-			global::XamarinTextDrawable.Resource.Color.abc_search_url_text_selected = global::GBV_Emergency_Response.Resource.Color.abc_search_url_text_selected;
-			global::XamarinTextDrawable.Resource.Color.abc_secondary_text_material_dark = global::GBV_Emergency_Response.Resource.Color.abc_secondary_text_material_dark;
-			global::XamarinTextDrawable.Resource.Color.abc_secondary_text_material_light = global::GBV_Emergency_Response.Resource.Color.abc_secondary_text_material_light;
-			global::XamarinTextDrawable.Resource.Color.abc_tint_btn_checkable = global::GBV_Emergency_Response.Resource.Color.abc_tint_btn_checkable;
-			global::XamarinTextDrawable.Resource.Color.abc_tint_default = global::GBV_Emergency_Response.Resource.Color.abc_tint_default;
-			global::XamarinTextDrawable.Resource.Color.abc_tint_edittext = global::GBV_Emergency_Response.Resource.Color.abc_tint_edittext;
-			global::XamarinTextDrawable.Resource.Color.abc_tint_seek_thumb = global::GBV_Emergency_Response.Resource.Color.abc_tint_seek_thumb;
-			global::XamarinTextDrawable.Resource.Color.abc_tint_spinner = global::GBV_Emergency_Response.Resource.Color.abc_tint_spinner;
-			global::XamarinTextDrawable.Resource.Color.abc_tint_switch_track = global::GBV_Emergency_Response.Resource.Color.abc_tint_switch_track;
-			global::XamarinTextDrawable.Resource.Color.accent_material_dark = global::GBV_Emergency_Response.Resource.Color.accent_material_dark;
-			global::XamarinTextDrawable.Resource.Color.accent_material_light = global::GBV_Emergency_Response.Resource.Color.accent_material_light;
-			global::XamarinTextDrawable.Resource.Color.background_floating_material_dark = global::GBV_Emergency_Response.Resource.Color.background_floating_material_dark;
-			global::XamarinTextDrawable.Resource.Color.background_floating_material_light = global::GBV_Emergency_Response.Resource.Color.background_floating_material_light;
-			global::XamarinTextDrawable.Resource.Color.background_material_dark = global::GBV_Emergency_Response.Resource.Color.background_material_dark;
-			global::XamarinTextDrawable.Resource.Color.background_material_light = global::GBV_Emergency_Response.Resource.Color.background_material_light;
-			global::XamarinTextDrawable.Resource.Color.bright_foreground_disabled_material_dark = global::GBV_Emergency_Response.Resource.Color.bright_foreground_disabled_material_dark;
-			global::XamarinTextDrawable.Resource.Color.bright_foreground_disabled_material_light = global::GBV_Emergency_Response.Resource.Color.bright_foreground_disabled_material_light;
-			global::XamarinTextDrawable.Resource.Color.bright_foreground_inverse_material_dark = global::GBV_Emergency_Response.Resource.Color.bright_foreground_inverse_material_dark;
-			global::XamarinTextDrawable.Resource.Color.bright_foreground_inverse_material_light = global::GBV_Emergency_Response.Resource.Color.bright_foreground_inverse_material_light;
-			global::XamarinTextDrawable.Resource.Color.bright_foreground_material_dark = global::GBV_Emergency_Response.Resource.Color.bright_foreground_material_dark;
-			global::XamarinTextDrawable.Resource.Color.bright_foreground_material_light = global::GBV_Emergency_Response.Resource.Color.bright_foreground_material_light;
-			global::XamarinTextDrawable.Resource.Color.button_material_dark = global::GBV_Emergency_Response.Resource.Color.button_material_dark;
-			global::XamarinTextDrawable.Resource.Color.button_material_light = global::GBV_Emergency_Response.Resource.Color.button_material_light;
-			global::XamarinTextDrawable.Resource.Color.dim_foreground_disabled_material_dark = global::GBV_Emergency_Response.Resource.Color.dim_foreground_disabled_material_dark;
-			global::XamarinTextDrawable.Resource.Color.dim_foreground_disabled_material_light = global::GBV_Emergency_Response.Resource.Color.dim_foreground_disabled_material_light;
-			global::XamarinTextDrawable.Resource.Color.dim_foreground_material_dark = global::GBV_Emergency_Response.Resource.Color.dim_foreground_material_dark;
-			global::XamarinTextDrawable.Resource.Color.dim_foreground_material_light = global::GBV_Emergency_Response.Resource.Color.dim_foreground_material_light;
-			global::XamarinTextDrawable.Resource.Color.foreground_material_dark = global::GBV_Emergency_Response.Resource.Color.foreground_material_dark;
-			global::XamarinTextDrawable.Resource.Color.foreground_material_light = global::GBV_Emergency_Response.Resource.Color.foreground_material_light;
-			global::XamarinTextDrawable.Resource.Color.highlighted_text_material_dark = global::GBV_Emergency_Response.Resource.Color.highlighted_text_material_dark;
-			global::XamarinTextDrawable.Resource.Color.highlighted_text_material_light = global::GBV_Emergency_Response.Resource.Color.highlighted_text_material_light;
-			global::XamarinTextDrawable.Resource.Color.material_blue_grey_800 = global::GBV_Emergency_Response.Resource.Color.material_blue_grey_800;
-			global::XamarinTextDrawable.Resource.Color.material_blue_grey_900 = global::GBV_Emergency_Response.Resource.Color.material_blue_grey_900;
-			global::XamarinTextDrawable.Resource.Color.material_blue_grey_950 = global::GBV_Emergency_Response.Resource.Color.material_blue_grey_950;
-			global::XamarinTextDrawable.Resource.Color.material_deep_teal_200 = global::GBV_Emergency_Response.Resource.Color.material_deep_teal_200;
-			global::XamarinTextDrawable.Resource.Color.material_deep_teal_500 = global::GBV_Emergency_Response.Resource.Color.material_deep_teal_500;
-			global::XamarinTextDrawable.Resource.Color.material_grey_100 = global::GBV_Emergency_Response.Resource.Color.material_grey_100;
-			global::XamarinTextDrawable.Resource.Color.material_grey_300 = global::GBV_Emergency_Response.Resource.Color.material_grey_300;
-			global::XamarinTextDrawable.Resource.Color.material_grey_50 = global::GBV_Emergency_Response.Resource.Color.material_grey_50;
-			global::XamarinTextDrawable.Resource.Color.material_grey_600 = global::GBV_Emergency_Response.Resource.Color.material_grey_600;
-			global::XamarinTextDrawable.Resource.Color.material_grey_800 = global::GBV_Emergency_Response.Resource.Color.material_grey_800;
-			global::XamarinTextDrawable.Resource.Color.material_grey_850 = global::GBV_Emergency_Response.Resource.Color.material_grey_850;
-			global::XamarinTextDrawable.Resource.Color.material_grey_900 = global::GBV_Emergency_Response.Resource.Color.material_grey_900;
-			global::XamarinTextDrawable.Resource.Color.notification_action_color_filter = global::GBV_Emergency_Response.Resource.Color.notification_action_color_filter;
-			global::XamarinTextDrawable.Resource.Color.notification_icon_bg_color = global::GBV_Emergency_Response.Resource.Color.notification_icon_bg_color;
-			global::XamarinTextDrawable.Resource.Color.notification_material_background_media_default_color = global::GBV_Emergency_Response.Resource.Color.notification_material_background_media_default_color;
-			global::XamarinTextDrawable.Resource.Color.primary_dark_material_dark = global::GBV_Emergency_Response.Resource.Color.primary_dark_material_dark;
-			global::XamarinTextDrawable.Resource.Color.primary_dark_material_light = global::GBV_Emergency_Response.Resource.Color.primary_dark_material_light;
-			global::XamarinTextDrawable.Resource.Color.primary_material_dark = global::GBV_Emergency_Response.Resource.Color.primary_material_dark;
-			global::XamarinTextDrawable.Resource.Color.primary_material_light = global::GBV_Emergency_Response.Resource.Color.primary_material_light;
-			global::XamarinTextDrawable.Resource.Color.primary_text_default_material_dark = global::GBV_Emergency_Response.Resource.Color.primary_text_default_material_dark;
-			global::XamarinTextDrawable.Resource.Color.primary_text_default_material_light = global::GBV_Emergency_Response.Resource.Color.primary_text_default_material_light;
-			global::XamarinTextDrawable.Resource.Color.primary_text_disabled_material_dark = global::GBV_Emergency_Response.Resource.Color.primary_text_disabled_material_dark;
-			global::XamarinTextDrawable.Resource.Color.primary_text_disabled_material_light = global::GBV_Emergency_Response.Resource.Color.primary_text_disabled_material_light;
-			global::XamarinTextDrawable.Resource.Color.ripple_material_dark = global::GBV_Emergency_Response.Resource.Color.ripple_material_dark;
-			global::XamarinTextDrawable.Resource.Color.ripple_material_light = global::GBV_Emergency_Response.Resource.Color.ripple_material_light;
-			global::XamarinTextDrawable.Resource.Color.secondary_text_default_material_dark = global::GBV_Emergency_Response.Resource.Color.secondary_text_default_material_dark;
-			global::XamarinTextDrawable.Resource.Color.secondary_text_default_material_light = global::GBV_Emergency_Response.Resource.Color.secondary_text_default_material_light;
-			global::XamarinTextDrawable.Resource.Color.secondary_text_disabled_material_dark = global::GBV_Emergency_Response.Resource.Color.secondary_text_disabled_material_dark;
-			global::XamarinTextDrawable.Resource.Color.secondary_text_disabled_material_light = global::GBV_Emergency_Response.Resource.Color.secondary_text_disabled_material_light;
-			global::XamarinTextDrawable.Resource.Color.switch_thumb_disabled_material_dark = global::GBV_Emergency_Response.Resource.Color.switch_thumb_disabled_material_dark;
-			global::XamarinTextDrawable.Resource.Color.switch_thumb_disabled_material_light = global::GBV_Emergency_Response.Resource.Color.switch_thumb_disabled_material_light;
-			global::XamarinTextDrawable.Resource.Color.switch_thumb_material_dark = global::GBV_Emergency_Response.Resource.Color.switch_thumb_material_dark;
-			global::XamarinTextDrawable.Resource.Color.switch_thumb_material_light = global::GBV_Emergency_Response.Resource.Color.switch_thumb_material_light;
-			global::XamarinTextDrawable.Resource.Color.switch_thumb_normal_material_dark = global::GBV_Emergency_Response.Resource.Color.switch_thumb_normal_material_dark;
-			global::XamarinTextDrawable.Resource.Color.switch_thumb_normal_material_light = global::GBV_Emergency_Response.Resource.Color.switch_thumb_normal_material_light;
-			global::XamarinTextDrawable.Resource.Color.tooltip_background_dark = global::GBV_Emergency_Response.Resource.Color.tooltip_background_dark;
-			global::XamarinTextDrawable.Resource.Color.tooltip_background_light = global::GBV_Emergency_Response.Resource.Color.tooltip_background_light;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_content_inset_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_default_height_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_default_height_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_default_padding_end_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_default_padding_start_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_elevation_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_elevation_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_stacked_max_height = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_button_min_height_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_button_min_height_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_button_min_width_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_button_min_width_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_action_button_min_width_overflow_material = global::GBV_Emergency_Response.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_alert_dialog_button_bar_height = global::GBV_Emergency_Response.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::XamarinTextDrawable.Resource.Dimension.abc_button_inset_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_button_inset_vertical_material = global::GBV_Emergency_Response.Resource.Dimension.abc_button_inset_vertical_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_button_padding_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_button_padding_vertical_material = global::GBV_Emergency_Response.Resource.Dimension.abc_button_padding_vertical_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::GBV_Emergency_Response.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::XamarinTextDrawable.Resource.Dimension.abc_config_prefDialogWidth = global::GBV_Emergency_Response.Resource.Dimension.abc_config_prefDialogWidth;
-			global::XamarinTextDrawable.Resource.Dimension.abc_control_corner_material = global::GBV_Emergency_Response.Resource.Dimension.abc_control_corner_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_control_inset_material = global::GBV_Emergency_Response.Resource.Dimension.abc_control_inset_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_control_padding_material = global::GBV_Emergency_Response.Resource.Dimension.abc_control_padding_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_fixed_height_major = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_fixed_height_minor = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_fixed_width_major = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_fixed_width_minor = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_list_padding_top_no_title;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_min_width_major = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_min_width_major;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_min_width_minor = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_min_width_minor;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_padding_material = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_padding_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_padding_top_material = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_padding_top_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dialog_title_divider_material = global::GBV_Emergency_Response.Resource.Dimension.abc_dialog_title_divider_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_disabled_alpha_material_dark = global::GBV_Emergency_Response.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::XamarinTextDrawable.Resource.Dimension.abc_disabled_alpha_material_light = global::GBV_Emergency_Response.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dropdownitem_icon_width = global::GBV_Emergency_Response.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dropdownitem_text_padding_left = global::GBV_Emergency_Response.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::XamarinTextDrawable.Resource.Dimension.abc_dropdownitem_text_padding_right = global::GBV_Emergency_Response.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::XamarinTextDrawable.Resource.Dimension.abc_edit_text_inset_bottom_material = global::GBV_Emergency_Response.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_edit_text_inset_top_material = global::GBV_Emergency_Response.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_floating_window_z = global::GBV_Emergency_Response.Resource.Dimension.abc_floating_window_z;
-			global::XamarinTextDrawable.Resource.Dimension.abc_list_item_padding_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_panel_menu_list_width = global::GBV_Emergency_Response.Resource.Dimension.abc_panel_menu_list_width;
-			global::XamarinTextDrawable.Resource.Dimension.abc_progress_bar_height_material = global::GBV_Emergency_Response.Resource.Dimension.abc_progress_bar_height_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_search_view_preferred_height = global::GBV_Emergency_Response.Resource.Dimension.abc_search_view_preferred_height;
-			global::XamarinTextDrawable.Resource.Dimension.abc_search_view_preferred_width = global::GBV_Emergency_Response.Resource.Dimension.abc_search_view_preferred_width;
-			global::XamarinTextDrawable.Resource.Dimension.abc_seekbar_track_background_height_material = global::GBV_Emergency_Response.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_seekbar_track_progress_height_material = global::GBV_Emergency_Response.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_select_dialog_padding_start_material = global::GBV_Emergency_Response.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_switch_padding = global::GBV_Emergency_Response.Resource.Dimension.abc_switch_padding;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_body_1_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_body_1_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_body_2_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_body_2_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_button_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_button_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_caption_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_caption_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_display_1_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_display_1_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_display_2_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_display_2_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_display_3_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_display_3_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_display_4_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_display_4_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_headline_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_headline_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_large_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_large_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_medium_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_medium_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_menu_header_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_menu_header_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_menu_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_menu_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_small_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_small_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_subhead_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_subhead_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_title_material = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_title_material;
-			global::XamarinTextDrawable.Resource.Dimension.abc_text_size_title_material_toolbar = global::GBV_Emergency_Response.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::XamarinTextDrawable.Resource.Dimension.compat_button_inset_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_inset_horizontal_material;
-			global::XamarinTextDrawable.Resource.Dimension.compat_button_inset_vertical_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_inset_vertical_material;
-			global::XamarinTextDrawable.Resource.Dimension.compat_button_padding_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_padding_horizontal_material;
-			global::XamarinTextDrawable.Resource.Dimension.compat_button_padding_vertical_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_padding_vertical_material;
-			global::XamarinTextDrawable.Resource.Dimension.compat_control_corner_material = global::GBV_Emergency_Response.Resource.Dimension.compat_control_corner_material;
-			global::XamarinTextDrawable.Resource.Dimension.disabled_alpha_material_dark = global::GBV_Emergency_Response.Resource.Dimension.disabled_alpha_material_dark;
-			global::XamarinTextDrawable.Resource.Dimension.disabled_alpha_material_light = global::GBV_Emergency_Response.Resource.Dimension.disabled_alpha_material_light;
-			global::XamarinTextDrawable.Resource.Dimension.highlight_alpha_material_colored = global::GBV_Emergency_Response.Resource.Dimension.highlight_alpha_material_colored;
-			global::XamarinTextDrawable.Resource.Dimension.highlight_alpha_material_dark = global::GBV_Emergency_Response.Resource.Dimension.highlight_alpha_material_dark;
-			global::XamarinTextDrawable.Resource.Dimension.highlight_alpha_material_light = global::GBV_Emergency_Response.Resource.Dimension.highlight_alpha_material_light;
-			global::XamarinTextDrawable.Resource.Dimension.hint_alpha_material_dark = global::GBV_Emergency_Response.Resource.Dimension.hint_alpha_material_dark;
-			global::XamarinTextDrawable.Resource.Dimension.hint_alpha_material_light = global::GBV_Emergency_Response.Resource.Dimension.hint_alpha_material_light;
-			global::XamarinTextDrawable.Resource.Dimension.hint_pressed_alpha_material_dark = global::GBV_Emergency_Response.Resource.Dimension.hint_pressed_alpha_material_dark;
-			global::XamarinTextDrawable.Resource.Dimension.hint_pressed_alpha_material_light = global::GBV_Emergency_Response.Resource.Dimension.hint_pressed_alpha_material_light;
-			global::XamarinTextDrawable.Resource.Dimension.notification_action_icon_size = global::GBV_Emergency_Response.Resource.Dimension.notification_action_icon_size;
-			global::XamarinTextDrawable.Resource.Dimension.notification_action_text_size = global::GBV_Emergency_Response.Resource.Dimension.notification_action_text_size;
-			global::XamarinTextDrawable.Resource.Dimension.notification_big_circle_margin = global::GBV_Emergency_Response.Resource.Dimension.notification_big_circle_margin;
-			global::XamarinTextDrawable.Resource.Dimension.notification_content_margin_start = global::GBV_Emergency_Response.Resource.Dimension.notification_content_margin_start;
-			global::XamarinTextDrawable.Resource.Dimension.notification_large_icon_height = global::GBV_Emergency_Response.Resource.Dimension.notification_large_icon_height;
-			global::XamarinTextDrawable.Resource.Dimension.notification_large_icon_width = global::GBV_Emergency_Response.Resource.Dimension.notification_large_icon_width;
-			global::XamarinTextDrawable.Resource.Dimension.notification_main_column_padding_top = global::GBV_Emergency_Response.Resource.Dimension.notification_main_column_padding_top;
-			global::XamarinTextDrawable.Resource.Dimension.notification_media_narrow_margin = global::GBV_Emergency_Response.Resource.Dimension.notification_media_narrow_margin;
-			global::XamarinTextDrawable.Resource.Dimension.notification_right_icon_size = global::GBV_Emergency_Response.Resource.Dimension.notification_right_icon_size;
-			global::XamarinTextDrawable.Resource.Dimension.notification_right_side_padding_top = global::GBV_Emergency_Response.Resource.Dimension.notification_right_side_padding_top;
-			global::XamarinTextDrawable.Resource.Dimension.notification_small_icon_background_padding = global::GBV_Emergency_Response.Resource.Dimension.notification_small_icon_background_padding;
-			global::XamarinTextDrawable.Resource.Dimension.notification_small_icon_size_as_large = global::GBV_Emergency_Response.Resource.Dimension.notification_small_icon_size_as_large;
-			global::XamarinTextDrawable.Resource.Dimension.notification_subtext_size = global::GBV_Emergency_Response.Resource.Dimension.notification_subtext_size;
-			global::XamarinTextDrawable.Resource.Dimension.notification_top_pad = global::GBV_Emergency_Response.Resource.Dimension.notification_top_pad;
-			global::XamarinTextDrawable.Resource.Dimension.notification_top_pad_large_text = global::GBV_Emergency_Response.Resource.Dimension.notification_top_pad_large_text;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_corner_radius = global::GBV_Emergency_Response.Resource.Dimension.tooltip_corner_radius;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_horizontal_padding = global::GBV_Emergency_Response.Resource.Dimension.tooltip_horizontal_padding;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_margin = global::GBV_Emergency_Response.Resource.Dimension.tooltip_margin;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::GBV_Emergency_Response.Resource.Dimension.tooltip_precise_anchor_extra_offset;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_precise_anchor_threshold = global::GBV_Emergency_Response.Resource.Dimension.tooltip_precise_anchor_threshold;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_vertical_padding = global::GBV_Emergency_Response.Resource.Dimension.tooltip_vertical_padding;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_y_offset_non_touch = global::GBV_Emergency_Response.Resource.Dimension.tooltip_y_offset_non_touch;
-			global::XamarinTextDrawable.Resource.Dimension.tooltip_y_offset_touch = global::GBV_Emergency_Response.Resource.Dimension.tooltip_y_offset_touch;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_action_bar_item_background_material = global::GBV_Emergency_Response.Resource.Drawable.abc_action_bar_item_background_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_borderless_material = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_borderless_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_check_material = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_check_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_colored_material = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_colored_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_default_mtrl_shape = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_radio_material = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_radio_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::XamarinTextDrawable.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::GBV_Emergency_Response.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::XamarinTextDrawable.Resource.Drawable.abc_cab_background_internal_bg = global::GBV_Emergency_Response.Resource.Drawable.abc_cab_background_internal_bg;
-			global::XamarinTextDrawable.Resource.Drawable.abc_cab_background_top_material = global::GBV_Emergency_Response.Resource.Drawable.abc_cab_background_top_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_control_background_material = global::GBV_Emergency_Response.Resource.Drawable.abc_control_background_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_dialog_material_background = global::GBV_Emergency_Response.Resource.Drawable.abc_dialog_material_background;
-			global::XamarinTextDrawable.Resource.Drawable.abc_edit_text_material = global::GBV_Emergency_Response.Resource.Drawable.abc_edit_text_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_ab_back_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_ab_back_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_clear_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_clear_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_go_search_api_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_go_search_api_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_menu_overflow_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_search_api_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_search_api_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ic_voice_search_api_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_item_background_holo_dark = global::GBV_Emergency_Response.Resource.Drawable.abc_item_background_holo_dark;
-			global::XamarinTextDrawable.Resource.Drawable.abc_item_background_holo_light = global::GBV_Emergency_Response.Resource.Drawable.abc_item_background_holo_light;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_divider_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_focused_holo = global::GBV_Emergency_Response.Resource.Drawable.abc_list_focused_holo;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_longpressed_holo = global::GBV_Emergency_Response.Resource.Drawable.abc_list_longpressed_holo;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_pressed_holo_dark = global::GBV_Emergency_Response.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_pressed_holo_light = global::GBV_Emergency_Response.Resource.Drawable.abc_list_pressed_holo_light;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::GBV_Emergency_Response.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::GBV_Emergency_Response.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::GBV_Emergency_Response.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_selector_disabled_holo_light = global::GBV_Emergency_Response.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_selector_holo_dark = global::GBV_Emergency_Response.Resource.Drawable.abc_list_selector_holo_dark;
-			global::XamarinTextDrawable.Resource.Drawable.abc_list_selector_holo_light = global::GBV_Emergency_Response.Resource.Drawable.abc_list_selector_holo_light;
-			global::XamarinTextDrawable.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::GBV_Emergency_Response.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::XamarinTextDrawable.Resource.Drawable.abc_popup_background_mtrl_mult = global::GBV_Emergency_Response.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ratingbar_indicator_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ratingbar_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ratingbar_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_ratingbar_small_material = global::GBV_Emergency_Response.Resource.Drawable.abc_ratingbar_small_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::GBV_Emergency_Response.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::XamarinTextDrawable.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::GBV_Emergency_Response.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::XamarinTextDrawable.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_seekbar_thumb_material = global::GBV_Emergency_Response.Resource.Drawable.abc_seekbar_thumb_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_seekbar_tick_mark_material = global::GBV_Emergency_Response.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_seekbar_track_material = global::GBV_Emergency_Response.Resource.Drawable.abc_seekbar_track_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_spinner_textfield_background_material = global::GBV_Emergency_Response.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_switch_thumb_material = global::GBV_Emergency_Response.Resource.Drawable.abc_switch_thumb_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_switch_track_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_tab_indicator_material = global::GBV_Emergency_Response.Resource.Drawable.abc_tab_indicator_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_text_cursor_material = global::GBV_Emergency_Response.Resource.Drawable.abc_text_cursor_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::GBV_Emergency_Response.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::XamarinTextDrawable.Resource.Drawable.abc_textfield_search_material = global::GBV_Emergency_Response.Resource.Drawable.abc_textfield_search_material;
-			global::XamarinTextDrawable.Resource.Drawable.abc_vector_test = global::GBV_Emergency_Response.Resource.Drawable.abc_vector_test;
-			global::XamarinTextDrawable.Resource.Drawable.notification_action_background = global::GBV_Emergency_Response.Resource.Drawable.notification_action_background;
-			global::XamarinTextDrawable.Resource.Drawable.notification_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_bg;
-			global::XamarinTextDrawable.Resource.Drawable.notification_bg_low = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_low;
-			global::XamarinTextDrawable.Resource.Drawable.notification_bg_low_normal = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_low_normal;
-			global::XamarinTextDrawable.Resource.Drawable.notification_bg_low_pressed = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_low_pressed;
-			global::XamarinTextDrawable.Resource.Drawable.notification_bg_normal = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_normal;
-			global::XamarinTextDrawable.Resource.Drawable.notification_bg_normal_pressed = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_normal_pressed;
-			global::XamarinTextDrawable.Resource.Drawable.notification_icon_background = global::GBV_Emergency_Response.Resource.Drawable.notification_icon_background;
-			global::XamarinTextDrawable.Resource.Drawable.notification_template_icon_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_template_icon_bg;
-			global::XamarinTextDrawable.Resource.Drawable.notification_template_icon_low_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_template_icon_low_bg;
-			global::XamarinTextDrawable.Resource.Drawable.notification_tile_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_tile_bg;
-			global::XamarinTextDrawable.Resource.Drawable.notify_panel_notification_icon_bg = global::GBV_Emergency_Response.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::XamarinTextDrawable.Resource.Drawable.tooltip_frame_dark = global::GBV_Emergency_Response.Resource.Drawable.tooltip_frame_dark;
-			global::XamarinTextDrawable.Resource.Drawable.tooltip_frame_light = global::GBV_Emergency_Response.Resource.Drawable.tooltip_frame_light;
-			global::XamarinTextDrawable.Resource.Id.ALT = global::GBV_Emergency_Response.Resource.Id.ALT;
-			global::XamarinTextDrawable.Resource.Id.CTRL = global::GBV_Emergency_Response.Resource.Id.CTRL;
-			global::XamarinTextDrawable.Resource.Id.FUNCTION = global::GBV_Emergency_Response.Resource.Id.FUNCTION;
-			global::XamarinTextDrawable.Resource.Id.META = global::GBV_Emergency_Response.Resource.Id.META;
-			global::XamarinTextDrawable.Resource.Id.SHIFT = global::GBV_Emergency_Response.Resource.Id.SHIFT;
-			global::XamarinTextDrawable.Resource.Id.SYM = global::GBV_Emergency_Response.Resource.Id.SYM;
-			global::XamarinTextDrawable.Resource.Id.action0 = global::GBV_Emergency_Response.Resource.Id.action0;
-			global::XamarinTextDrawable.Resource.Id.action_bar = global::GBV_Emergency_Response.Resource.Id.action_bar;
-			global::XamarinTextDrawable.Resource.Id.action_bar_activity_content = global::GBV_Emergency_Response.Resource.Id.action_bar_activity_content;
-			global::XamarinTextDrawable.Resource.Id.action_bar_container = global::GBV_Emergency_Response.Resource.Id.action_bar_container;
-			global::XamarinTextDrawable.Resource.Id.action_bar_root = global::GBV_Emergency_Response.Resource.Id.action_bar_root;
-			global::XamarinTextDrawable.Resource.Id.action_bar_spinner = global::GBV_Emergency_Response.Resource.Id.action_bar_spinner;
-			global::XamarinTextDrawable.Resource.Id.action_bar_subtitle = global::GBV_Emergency_Response.Resource.Id.action_bar_subtitle;
-			global::XamarinTextDrawable.Resource.Id.action_bar_title = global::GBV_Emergency_Response.Resource.Id.action_bar_title;
-			global::XamarinTextDrawable.Resource.Id.action_container = global::GBV_Emergency_Response.Resource.Id.action_container;
-			global::XamarinTextDrawable.Resource.Id.action_context_bar = global::GBV_Emergency_Response.Resource.Id.action_context_bar;
-			global::XamarinTextDrawable.Resource.Id.action_divider = global::GBV_Emergency_Response.Resource.Id.action_divider;
-			global::XamarinTextDrawable.Resource.Id.action_image = global::GBV_Emergency_Response.Resource.Id.action_image;
-			global::XamarinTextDrawable.Resource.Id.action_menu_divider = global::GBV_Emergency_Response.Resource.Id.action_menu_divider;
-			global::XamarinTextDrawable.Resource.Id.action_menu_presenter = global::GBV_Emergency_Response.Resource.Id.action_menu_presenter;
-			global::XamarinTextDrawable.Resource.Id.action_mode_bar = global::GBV_Emergency_Response.Resource.Id.action_mode_bar;
-			global::XamarinTextDrawable.Resource.Id.action_mode_bar_stub = global::GBV_Emergency_Response.Resource.Id.action_mode_bar_stub;
-			global::XamarinTextDrawable.Resource.Id.action_mode_close_button = global::GBV_Emergency_Response.Resource.Id.action_mode_close_button;
-			global::XamarinTextDrawable.Resource.Id.action_text = global::GBV_Emergency_Response.Resource.Id.action_text;
-			global::XamarinTextDrawable.Resource.Id.actions = global::GBV_Emergency_Response.Resource.Id.actions;
-			global::XamarinTextDrawable.Resource.Id.activity_chooser_view_content = global::GBV_Emergency_Response.Resource.Id.activity_chooser_view_content;
-			global::XamarinTextDrawable.Resource.Id.add = global::GBV_Emergency_Response.Resource.Id.add;
-			global::XamarinTextDrawable.Resource.Id.alertTitle = global::GBV_Emergency_Response.Resource.Id.alertTitle;
-			global::XamarinTextDrawable.Resource.Id.always = global::GBV_Emergency_Response.Resource.Id.always;
-			global::XamarinTextDrawable.Resource.Id.async = global::GBV_Emergency_Response.Resource.Id.async;
-			global::XamarinTextDrawable.Resource.Id.beginning = global::GBV_Emergency_Response.Resource.Id.beginning;
-			global::XamarinTextDrawable.Resource.Id.blocking = global::GBV_Emergency_Response.Resource.Id.blocking;
-			global::XamarinTextDrawable.Resource.Id.bottom = global::GBV_Emergency_Response.Resource.Id.bottom;
-			global::XamarinTextDrawable.Resource.Id.buttonPanel = global::GBV_Emergency_Response.Resource.Id.buttonPanel;
-			global::XamarinTextDrawable.Resource.Id.cancel_action = global::GBV_Emergency_Response.Resource.Id.cancel_action;
-			global::XamarinTextDrawable.Resource.Id.checkbox = global::GBV_Emergency_Response.Resource.Id.checkbox;
-			global::XamarinTextDrawable.Resource.Id.chronometer = global::GBV_Emergency_Response.Resource.Id.chronometer;
-			global::XamarinTextDrawable.Resource.Id.collapseActionView = global::GBV_Emergency_Response.Resource.Id.collapseActionView;
-			global::XamarinTextDrawable.Resource.Id.contentPanel = global::GBV_Emergency_Response.Resource.Id.contentPanel;
-			global::XamarinTextDrawable.Resource.Id.custom = global::GBV_Emergency_Response.Resource.Id.custom;
-			global::XamarinTextDrawable.Resource.Id.customPanel = global::GBV_Emergency_Response.Resource.Id.customPanel;
-			global::XamarinTextDrawable.Resource.Id.decor_content_parent = global::GBV_Emergency_Response.Resource.Id.decor_content_parent;
-			global::XamarinTextDrawable.Resource.Id.default_activity_button = global::GBV_Emergency_Response.Resource.Id.default_activity_button;
-			global::XamarinTextDrawable.Resource.Id.disableHome = global::GBV_Emergency_Response.Resource.Id.disableHome;
-			global::XamarinTextDrawable.Resource.Id.edit_query = global::GBV_Emergency_Response.Resource.Id.edit_query;
-			global::XamarinTextDrawable.Resource.Id.end = global::GBV_Emergency_Response.Resource.Id.end;
-			global::XamarinTextDrawable.Resource.Id.end_padder = global::GBV_Emergency_Response.Resource.Id.end_padder;
-			global::XamarinTextDrawable.Resource.Id.expand_activities_button = global::GBV_Emergency_Response.Resource.Id.expand_activities_button;
-			global::XamarinTextDrawable.Resource.Id.expanded_menu = global::GBV_Emergency_Response.Resource.Id.expanded_menu;
-			global::XamarinTextDrawable.Resource.Id.forever = global::GBV_Emergency_Response.Resource.Id.forever;
-			global::XamarinTextDrawable.Resource.Id.home = global::GBV_Emergency_Response.Resource.Id.home;
-			global::XamarinTextDrawable.Resource.Id.homeAsUp = global::GBV_Emergency_Response.Resource.Id.homeAsUp;
-			global::XamarinTextDrawable.Resource.Id.icon = global::GBV_Emergency_Response.Resource.Id.icon;
-			global::XamarinTextDrawable.Resource.Id.icon_group = global::GBV_Emergency_Response.Resource.Id.icon_group;
-			global::XamarinTextDrawable.Resource.Id.ifRoom = global::GBV_Emergency_Response.Resource.Id.ifRoom;
-			global::XamarinTextDrawable.Resource.Id.image = global::GBV_Emergency_Response.Resource.Id.image;
-			global::XamarinTextDrawable.Resource.Id.info = global::GBV_Emergency_Response.Resource.Id.info;
-			global::XamarinTextDrawable.Resource.Id.italic = global::GBV_Emergency_Response.Resource.Id.italic;
-			global::XamarinTextDrawable.Resource.Id.line1 = global::GBV_Emergency_Response.Resource.Id.line1;
-			global::XamarinTextDrawable.Resource.Id.line3 = global::GBV_Emergency_Response.Resource.Id.line3;
-			global::XamarinTextDrawable.Resource.Id.listMode = global::GBV_Emergency_Response.Resource.Id.listMode;
-			global::XamarinTextDrawable.Resource.Id.list_item = global::GBV_Emergency_Response.Resource.Id.list_item;
-			global::XamarinTextDrawable.Resource.Id.media_actions = global::GBV_Emergency_Response.Resource.Id.media_actions;
-			global::XamarinTextDrawable.Resource.Id.message = global::GBV_Emergency_Response.Resource.Id.message;
-			global::XamarinTextDrawable.Resource.Id.middle = global::GBV_Emergency_Response.Resource.Id.middle;
-			global::XamarinTextDrawable.Resource.Id.multiply = global::GBV_Emergency_Response.Resource.Id.multiply;
-			global::XamarinTextDrawable.Resource.Id.never = global::GBV_Emergency_Response.Resource.Id.never;
-			global::XamarinTextDrawable.Resource.Id.none = global::GBV_Emergency_Response.Resource.Id.none;
-			global::XamarinTextDrawable.Resource.Id.normal = global::GBV_Emergency_Response.Resource.Id.normal;
-			global::XamarinTextDrawable.Resource.Id.notification_background = global::GBV_Emergency_Response.Resource.Id.notification_background;
-			global::XamarinTextDrawable.Resource.Id.notification_main_column = global::GBV_Emergency_Response.Resource.Id.notification_main_column;
-			global::XamarinTextDrawable.Resource.Id.notification_main_column_container = global::GBV_Emergency_Response.Resource.Id.notification_main_column_container;
-			global::XamarinTextDrawable.Resource.Id.parentPanel = global::GBV_Emergency_Response.Resource.Id.parentPanel;
-			global::XamarinTextDrawable.Resource.Id.progress_circular = global::GBV_Emergency_Response.Resource.Id.progress_circular;
-			global::XamarinTextDrawable.Resource.Id.progress_horizontal = global::GBV_Emergency_Response.Resource.Id.progress_horizontal;
-			global::XamarinTextDrawable.Resource.Id.radio = global::GBV_Emergency_Response.Resource.Id.radio;
-			global::XamarinTextDrawable.Resource.Id.right_icon = global::GBV_Emergency_Response.Resource.Id.right_icon;
-			global::XamarinTextDrawable.Resource.Id.right_side = global::GBV_Emergency_Response.Resource.Id.right_side;
-			global::XamarinTextDrawable.Resource.Id.screen = global::GBV_Emergency_Response.Resource.Id.screen;
-			global::XamarinTextDrawable.Resource.Id.scrollIndicatorDown = global::GBV_Emergency_Response.Resource.Id.scrollIndicatorDown;
-			global::XamarinTextDrawable.Resource.Id.scrollIndicatorUp = global::GBV_Emergency_Response.Resource.Id.scrollIndicatorUp;
-			global::XamarinTextDrawable.Resource.Id.scrollView = global::GBV_Emergency_Response.Resource.Id.scrollView;
-			global::XamarinTextDrawable.Resource.Id.search_badge = global::GBV_Emergency_Response.Resource.Id.search_badge;
-			global::XamarinTextDrawable.Resource.Id.search_bar = global::GBV_Emergency_Response.Resource.Id.search_bar;
-			global::XamarinTextDrawable.Resource.Id.search_button = global::GBV_Emergency_Response.Resource.Id.search_button;
-			global::XamarinTextDrawable.Resource.Id.search_close_btn = global::GBV_Emergency_Response.Resource.Id.search_close_btn;
-			global::XamarinTextDrawable.Resource.Id.search_edit_frame = global::GBV_Emergency_Response.Resource.Id.search_edit_frame;
-			global::XamarinTextDrawable.Resource.Id.search_go_btn = global::GBV_Emergency_Response.Resource.Id.search_go_btn;
-			global::XamarinTextDrawable.Resource.Id.search_mag_icon = global::GBV_Emergency_Response.Resource.Id.search_mag_icon;
-			global::XamarinTextDrawable.Resource.Id.search_plate = global::GBV_Emergency_Response.Resource.Id.search_plate;
-			global::XamarinTextDrawable.Resource.Id.search_src_text = global::GBV_Emergency_Response.Resource.Id.search_src_text;
-			global::XamarinTextDrawable.Resource.Id.search_voice_btn = global::GBV_Emergency_Response.Resource.Id.search_voice_btn;
-			global::XamarinTextDrawable.Resource.Id.select_dialog_listview = global::GBV_Emergency_Response.Resource.Id.select_dialog_listview;
-			global::XamarinTextDrawable.Resource.Id.shortcut = global::GBV_Emergency_Response.Resource.Id.shortcut;
-			global::XamarinTextDrawable.Resource.Id.showCustom = global::GBV_Emergency_Response.Resource.Id.showCustom;
-			global::XamarinTextDrawable.Resource.Id.showHome = global::GBV_Emergency_Response.Resource.Id.showHome;
-			global::XamarinTextDrawable.Resource.Id.showTitle = global::GBV_Emergency_Response.Resource.Id.showTitle;
-			global::XamarinTextDrawable.Resource.Id.spacer = global::GBV_Emergency_Response.Resource.Id.spacer;
-			global::XamarinTextDrawable.Resource.Id.split_action_bar = global::GBV_Emergency_Response.Resource.Id.split_action_bar;
-			global::XamarinTextDrawable.Resource.Id.src_atop = global::GBV_Emergency_Response.Resource.Id.src_atop;
-			global::XamarinTextDrawable.Resource.Id.src_in = global::GBV_Emergency_Response.Resource.Id.src_in;
-			global::XamarinTextDrawable.Resource.Id.src_over = global::GBV_Emergency_Response.Resource.Id.src_over;
-			global::XamarinTextDrawable.Resource.Id.status_bar_latest_event_content = global::GBV_Emergency_Response.Resource.Id.status_bar_latest_event_content;
-			global::XamarinTextDrawable.Resource.Id.submenuarrow = global::GBV_Emergency_Response.Resource.Id.submenuarrow;
-			global::XamarinTextDrawable.Resource.Id.submit_area = global::GBV_Emergency_Response.Resource.Id.submit_area;
-			global::XamarinTextDrawable.Resource.Id.tabMode = global::GBV_Emergency_Response.Resource.Id.tabMode;
-			global::XamarinTextDrawable.Resource.Id.tag_transition_group = global::GBV_Emergency_Response.Resource.Id.tag_transition_group;
-			global::XamarinTextDrawable.Resource.Id.text = global::GBV_Emergency_Response.Resource.Id.text;
-			global::XamarinTextDrawable.Resource.Id.text2 = global::GBV_Emergency_Response.Resource.Id.text2;
-			global::XamarinTextDrawable.Resource.Id.textSpacerNoButtons = global::GBV_Emergency_Response.Resource.Id.textSpacerNoButtons;
-			global::XamarinTextDrawable.Resource.Id.textSpacerNoTitle = global::GBV_Emergency_Response.Resource.Id.textSpacerNoTitle;
-			global::XamarinTextDrawable.Resource.Id.time = global::GBV_Emergency_Response.Resource.Id.time;
-			global::XamarinTextDrawable.Resource.Id.title = global::GBV_Emergency_Response.Resource.Id.title;
-			global::XamarinTextDrawable.Resource.Id.titleDividerNoCustom = global::GBV_Emergency_Response.Resource.Id.titleDividerNoCustom;
-			global::XamarinTextDrawable.Resource.Id.title_template = global::GBV_Emergency_Response.Resource.Id.title_template;
-			global::XamarinTextDrawable.Resource.Id.top = global::GBV_Emergency_Response.Resource.Id.top;
-			global::XamarinTextDrawable.Resource.Id.topPanel = global::GBV_Emergency_Response.Resource.Id.topPanel;
-			global::XamarinTextDrawable.Resource.Id.uniform = global::GBV_Emergency_Response.Resource.Id.uniform;
-			global::XamarinTextDrawable.Resource.Id.up = global::GBV_Emergency_Response.Resource.Id.up;
-			global::XamarinTextDrawable.Resource.Id.useLogo = global::GBV_Emergency_Response.Resource.Id.useLogo;
-			global::XamarinTextDrawable.Resource.Id.withText = global::GBV_Emergency_Response.Resource.Id.withText;
-			global::XamarinTextDrawable.Resource.Id.wrap_content = global::GBV_Emergency_Response.Resource.Id.wrap_content;
-			global::XamarinTextDrawable.Resource.Integer.abc_config_activityDefaultDur = global::GBV_Emergency_Response.Resource.Integer.abc_config_activityDefaultDur;
-			global::XamarinTextDrawable.Resource.Integer.abc_config_activityShortDur = global::GBV_Emergency_Response.Resource.Integer.abc_config_activityShortDur;
-			global::XamarinTextDrawable.Resource.Integer.cancel_button_image_alpha = global::GBV_Emergency_Response.Resource.Integer.cancel_button_image_alpha;
-			global::XamarinTextDrawable.Resource.Integer.config_tooltipAnimTime = global::GBV_Emergency_Response.Resource.Integer.config_tooltipAnimTime;
-			global::XamarinTextDrawable.Resource.Integer.status_bar_notification_info_maxnum = global::GBV_Emergency_Response.Resource.Integer.status_bar_notification_info_maxnum;
-			global::XamarinTextDrawable.Resource.Layout.abc_action_bar_title_item = global::GBV_Emergency_Response.Resource.Layout.abc_action_bar_title_item;
-			global::XamarinTextDrawable.Resource.Layout.abc_action_bar_up_container = global::GBV_Emergency_Response.Resource.Layout.abc_action_bar_up_container;
-			global::XamarinTextDrawable.Resource.Layout.abc_action_menu_item_layout = global::GBV_Emergency_Response.Resource.Layout.abc_action_menu_item_layout;
-			global::XamarinTextDrawable.Resource.Layout.abc_action_menu_layout = global::GBV_Emergency_Response.Resource.Layout.abc_action_menu_layout;
-			global::XamarinTextDrawable.Resource.Layout.abc_action_mode_bar = global::GBV_Emergency_Response.Resource.Layout.abc_action_mode_bar;
-			global::XamarinTextDrawable.Resource.Layout.abc_action_mode_close_item_material = global::GBV_Emergency_Response.Resource.Layout.abc_action_mode_close_item_material;
-			global::XamarinTextDrawable.Resource.Layout.abc_activity_chooser_view = global::GBV_Emergency_Response.Resource.Layout.abc_activity_chooser_view;
-			global::XamarinTextDrawable.Resource.Layout.abc_activity_chooser_view_list_item = global::GBV_Emergency_Response.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::XamarinTextDrawable.Resource.Layout.abc_alert_dialog_button_bar_material = global::GBV_Emergency_Response.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::XamarinTextDrawable.Resource.Layout.abc_alert_dialog_material = global::GBV_Emergency_Response.Resource.Layout.abc_alert_dialog_material;
-			global::XamarinTextDrawable.Resource.Layout.abc_alert_dialog_title_material = global::GBV_Emergency_Response.Resource.Layout.abc_alert_dialog_title_material;
-			global::XamarinTextDrawable.Resource.Layout.abc_dialog_title_material = global::GBV_Emergency_Response.Resource.Layout.abc_dialog_title_material;
-			global::XamarinTextDrawable.Resource.Layout.abc_expanded_menu_layout = global::GBV_Emergency_Response.Resource.Layout.abc_expanded_menu_layout;
-			global::XamarinTextDrawable.Resource.Layout.abc_list_menu_item_checkbox = global::GBV_Emergency_Response.Resource.Layout.abc_list_menu_item_checkbox;
-			global::XamarinTextDrawable.Resource.Layout.abc_list_menu_item_icon = global::GBV_Emergency_Response.Resource.Layout.abc_list_menu_item_icon;
-			global::XamarinTextDrawable.Resource.Layout.abc_list_menu_item_layout = global::GBV_Emergency_Response.Resource.Layout.abc_list_menu_item_layout;
-			global::XamarinTextDrawable.Resource.Layout.abc_list_menu_item_radio = global::GBV_Emergency_Response.Resource.Layout.abc_list_menu_item_radio;
-			global::XamarinTextDrawable.Resource.Layout.abc_popup_menu_header_item_layout = global::GBV_Emergency_Response.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::XamarinTextDrawable.Resource.Layout.abc_popup_menu_item_layout = global::GBV_Emergency_Response.Resource.Layout.abc_popup_menu_item_layout;
-			global::XamarinTextDrawable.Resource.Layout.abc_screen_content_include = global::GBV_Emergency_Response.Resource.Layout.abc_screen_content_include;
-			global::XamarinTextDrawable.Resource.Layout.abc_screen_simple = global::GBV_Emergency_Response.Resource.Layout.abc_screen_simple;
-			global::XamarinTextDrawable.Resource.Layout.abc_screen_simple_overlay_action_mode = global::GBV_Emergency_Response.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::XamarinTextDrawable.Resource.Layout.abc_screen_toolbar = global::GBV_Emergency_Response.Resource.Layout.abc_screen_toolbar;
-			global::XamarinTextDrawable.Resource.Layout.abc_search_dropdown_item_icons_2line = global::GBV_Emergency_Response.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::XamarinTextDrawable.Resource.Layout.abc_search_view = global::GBV_Emergency_Response.Resource.Layout.abc_search_view;
-			global::XamarinTextDrawable.Resource.Layout.abc_select_dialog_material = global::GBV_Emergency_Response.Resource.Layout.abc_select_dialog_material;
-			global::XamarinTextDrawable.Resource.Layout.notification_action = global::GBV_Emergency_Response.Resource.Layout.notification_action;
-			global::XamarinTextDrawable.Resource.Layout.notification_action_tombstone = global::GBV_Emergency_Response.Resource.Layout.notification_action_tombstone;
-			global::XamarinTextDrawable.Resource.Layout.notification_media_action = global::GBV_Emergency_Response.Resource.Layout.notification_media_action;
-			global::XamarinTextDrawable.Resource.Layout.notification_media_cancel_action = global::GBV_Emergency_Response.Resource.Layout.notification_media_cancel_action;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_big_media = global::GBV_Emergency_Response.Resource.Layout.notification_template_big_media;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_big_media_custom = global::GBV_Emergency_Response.Resource.Layout.notification_template_big_media_custom;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_big_media_narrow = global::GBV_Emergency_Response.Resource.Layout.notification_template_big_media_narrow;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_big_media_narrow_custom = global::GBV_Emergency_Response.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_custom_big = global::GBV_Emergency_Response.Resource.Layout.notification_template_custom_big;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_icon_group = global::GBV_Emergency_Response.Resource.Layout.notification_template_icon_group;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_lines_media = global::GBV_Emergency_Response.Resource.Layout.notification_template_lines_media;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_media = global::GBV_Emergency_Response.Resource.Layout.notification_template_media;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_media_custom = global::GBV_Emergency_Response.Resource.Layout.notification_template_media_custom;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_part_chronometer = global::GBV_Emergency_Response.Resource.Layout.notification_template_part_chronometer;
-			global::XamarinTextDrawable.Resource.Layout.notification_template_part_time = global::GBV_Emergency_Response.Resource.Layout.notification_template_part_time;
-			global::XamarinTextDrawable.Resource.Layout.select_dialog_item_material = global::GBV_Emergency_Response.Resource.Layout.select_dialog_item_material;
-			global::XamarinTextDrawable.Resource.Layout.select_dialog_multichoice_material = global::GBV_Emergency_Response.Resource.Layout.select_dialog_multichoice_material;
-			global::XamarinTextDrawable.Resource.Layout.select_dialog_singlechoice_material = global::GBV_Emergency_Response.Resource.Layout.select_dialog_singlechoice_material;
-			global::XamarinTextDrawable.Resource.Layout.support_simple_spinner_dropdown_item = global::GBV_Emergency_Response.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::XamarinTextDrawable.Resource.String.abc_action_bar_home_description = global::GBV_Emergency_Response.Resource.String.abc_action_bar_home_description;
-			global::XamarinTextDrawable.Resource.String.abc_action_bar_up_description = global::GBV_Emergency_Response.Resource.String.abc_action_bar_up_description;
-			global::XamarinTextDrawable.Resource.String.abc_action_menu_overflow_description = global::GBV_Emergency_Response.Resource.String.abc_action_menu_overflow_description;
-			global::XamarinTextDrawable.Resource.String.abc_action_mode_done = global::GBV_Emergency_Response.Resource.String.abc_action_mode_done;
-			global::XamarinTextDrawable.Resource.String.abc_activity_chooser_view_see_all = global::GBV_Emergency_Response.Resource.String.abc_activity_chooser_view_see_all;
-			global::XamarinTextDrawable.Resource.String.abc_activitychooserview_choose_application = global::GBV_Emergency_Response.Resource.String.abc_activitychooserview_choose_application;
-			global::XamarinTextDrawable.Resource.String.abc_capital_off = global::GBV_Emergency_Response.Resource.String.abc_capital_off;
-			global::XamarinTextDrawable.Resource.String.abc_capital_on = global::GBV_Emergency_Response.Resource.String.abc_capital_on;
-			global::XamarinTextDrawable.Resource.String.abc_search_hint = global::GBV_Emergency_Response.Resource.String.abc_search_hint;
-			global::XamarinTextDrawable.Resource.String.abc_searchview_description_clear = global::GBV_Emergency_Response.Resource.String.abc_searchview_description_clear;
-			global::XamarinTextDrawable.Resource.String.abc_searchview_description_query = global::GBV_Emergency_Response.Resource.String.abc_searchview_description_query;
-			global::XamarinTextDrawable.Resource.String.abc_searchview_description_search = global::GBV_Emergency_Response.Resource.String.abc_searchview_description_search;
-			global::XamarinTextDrawable.Resource.String.abc_searchview_description_submit = global::GBV_Emergency_Response.Resource.String.abc_searchview_description_submit;
-			global::XamarinTextDrawable.Resource.String.abc_searchview_description_voice = global::GBV_Emergency_Response.Resource.String.abc_searchview_description_voice;
-			global::XamarinTextDrawable.Resource.String.abc_shareactionprovider_share_with = global::GBV_Emergency_Response.Resource.String.abc_shareactionprovider_share_with;
-			global::XamarinTextDrawable.Resource.String.abc_shareactionprovider_share_with_application = global::GBV_Emergency_Response.Resource.String.abc_shareactionprovider_share_with_application;
-			global::XamarinTextDrawable.Resource.String.abc_toolbar_collapse_description = global::GBV_Emergency_Response.Resource.String.abc_toolbar_collapse_description;
-			global::XamarinTextDrawable.Resource.String.app_name = global::GBV_Emergency_Response.Resource.String.app_name;
-			global::XamarinTextDrawable.Resource.String.hello = global::GBV_Emergency_Response.Resource.String.hello;
-			global::XamarinTextDrawable.Resource.String.search_menu_title = global::GBV_Emergency_Response.Resource.String.search_menu_title;
-			global::XamarinTextDrawable.Resource.String.status_bar_notification_info_overflow = global::GBV_Emergency_Response.Resource.String.status_bar_notification_info_overflow;
-			global::XamarinTextDrawable.Resource.Style.AlertDialog_AppCompat = global::GBV_Emergency_Response.Resource.Style.AlertDialog_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.AlertDialog_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.AlertDialog_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Animation_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Animation_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Animation_AppCompat_DropDownUp = global::GBV_Emergency_Response.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::XamarinTextDrawable.Resource.Style.Animation_AppCompat_Tooltip = global::GBV_Emergency_Response.Resource.Style.Animation_AppCompat_Tooltip;
-			global::XamarinTextDrawable.Resource.Style.Base_AlertDialog_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_AlertDialog_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_AlertDialog_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_Animation_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::GBV_Emergency_Response.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::XamarinTextDrawable.Resource.Style.Base_Animation_AppCompat_Tooltip = global::GBV_Emergency_Response.Resource.Style.Base_Animation_AppCompat_Tooltip;
-			global::XamarinTextDrawable.Resource.Style.Base_DialogWindowTitle_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Button = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Large = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Small = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Title = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::GBV_Emergency_Response.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::XamarinTextDrawable.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::GBV_Emergency_Response.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::XamarinTextDrawable.Resource.Style.Base_ThemeOverlay_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::GBV_Emergency_Response.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::GBV_Emergency_Response.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::XamarinTextDrawable.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::GBV_Emergency_Response.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::GBV_Emergency_Response.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::XamarinTextDrawable.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_V21_Theme_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_V21_Theme_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_V21_Theme_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_V22_Theme_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_V22_Theme_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_V22_Theme_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_V23_Theme_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_V23_Theme_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_V23_Theme_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_V26_Theme_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_V26_Theme_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_V26_Theme_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_V26_Theme_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::GBV_Emergency_Response.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_Theme_AppCompat = global::GBV_Emergency_Response.Resource.Style.Base_V7_Theme_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_Theme_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::GBV_Emergency_Response.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::GBV_Emergency_Response.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::XamarinTextDrawable.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::GBV_Emergency_Response.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionButton = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActionMode = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Button = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Button;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Button_Small = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_EditText = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ImageButton = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ListView = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_RatingBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_SearchView = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_SeekBar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Spinner = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Toolbar = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::XamarinTextDrawable.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::GBV_Emergency_Response.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::XamarinTextDrawable.Resource.Style.Platform_AppCompat = global::GBV_Emergency_Response.Resource.Style.Platform_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Platform_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Platform_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Platform_ThemeOverlay_AppCompat = global::GBV_Emergency_Response.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::GBV_Emergency_Response.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::XamarinTextDrawable.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Platform_V21_AppCompat = global::GBV_Emergency_Response.Resource.Style.Platform_V21_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Platform_V21_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Platform_V21_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Platform_V25_AppCompat = global::GBV_Emergency_Response.Resource.Style.Platform_V25_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Platform_V25_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Platform_V25_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Platform_Widget_AppCompat_Spinner = global::GBV_Emergency_Response.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::XamarinTextDrawable.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::GBV_Emergency_Response.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::XamarinTextDrawable.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::GBV_Emergency_Response.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::XamarinTextDrawable.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::GBV_Emergency_Response.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Body1 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Body2 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Button = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Button;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Caption = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Display1 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Display2 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Display3 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Display4 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Headline = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Large = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Large;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Medium = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Menu = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Small = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Small;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Subhead = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Title;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Tooltip = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Tooltip;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::GBV_Emergency_Response.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Info = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Info;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Line2;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Media = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Media;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Time = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Time;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Title;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::XamarinTextDrawable.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_CompactMenu = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DayNight = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DayNight;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Dialog_Alert = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Light_Dialog = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::XamarinTextDrawable.Resource.Style.Theme_AppCompat_NoActionBar = global::GBV_Emergency_Response.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::XamarinTextDrawable.Resource.Style.ThemeOverlay_AppCompat = global::GBV_Emergency_Response.Resource.Style.ThemeOverlay_AppCompat;
-			global::XamarinTextDrawable.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::GBV_Emergency_Response.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.ThemeOverlay_AppCompat_Dark = global::GBV_Emergency_Response.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::XamarinTextDrawable.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::GBV_Emergency_Response.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::GBV_Emergency_Response.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::XamarinTextDrawable.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::GBV_Emergency_Response.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::XamarinTextDrawable.Resource.Style.ThemeOverlay_AppCompat_Light = global::GBV_Emergency_Response.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionButton = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionButton;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActionMode = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActionMode;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ActivityChooserView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Button = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Button;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Button_Borderless = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Button_Colored = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Button_Small = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Button_Small;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ButtonBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_EditText = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_EditText;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ImageButton = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ImageButton;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionButton = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_SearchView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ListMenuView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ListPopupWindow = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ListView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ListView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ListView_DropDown = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ListView_Menu = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_PopupMenu = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_PopupWindow = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ProgressBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_RatingBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_RatingBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_RatingBar_Small = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_SearchView = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_SearchView;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_SeekBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_SeekBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Spinner = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Spinner;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Toolbar = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Toolbar;
-			global::XamarinTextDrawable.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::GBV_Emergency_Response.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::XamarinTextDrawable.Resource.Style.Widget_Compat_NotificationActionContainer = global::GBV_Emergency_Response.Resource.Style.Widget_Compat_NotificationActionContainer;
-			global::XamarinTextDrawable.Resource.Style.Widget_Compat_NotificationActionText = global::GBV_Emergency_Response.Resource.Style.Widget_Compat_NotificationActionText;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar = global::GBV_Emergency_Response.Resource.Styleable.ActionBar;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_background = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_background;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_backgroundSplit = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_backgroundSplit;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_backgroundStacked = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_backgroundStacked;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_contentInsetEnd = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_contentInsetLeft = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_contentInsetRight = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_contentInsetRight;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_contentInsetStart = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_contentInsetStart;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_customNavigationLayout = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_displayOptions = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_displayOptions;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_divider = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_divider;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_elevation = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_elevation;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_height = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_height;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_hideOnContentScroll = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_homeAsUpIndicator = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_homeLayout = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_homeLayout;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_icon = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_icon;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_itemPadding = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_itemPadding;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_logo = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_logo;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_navigationMode = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_navigationMode;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_popupTheme = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_popupTheme;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_progressBarPadding = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_progressBarPadding;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_progressBarStyle = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_progressBarStyle;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_subtitle = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_subtitle;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_subtitleTextStyle = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_title = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_title;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBar_titleTextStyle = global::GBV_Emergency_Response.Resource.Styleable.ActionBar_titleTextStyle;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBarLayout = global::GBV_Emergency_Response.Resource.Styleable.ActionBarLayout;
-			global::XamarinTextDrawable.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::GBV_Emergency_Response.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMenuItemView = global::GBV_Emergency_Response.Resource.Styleable.ActionMenuItemView;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMenuItemView_android_minWidth = global::GBV_Emergency_Response.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMenuView = global::GBV_Emergency_Response.Resource.Styleable.ActionMenuView;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMode = global::GBV_Emergency_Response.Resource.Styleable.ActionMode;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMode_background = global::GBV_Emergency_Response.Resource.Styleable.ActionMode_background;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMode_backgroundSplit = global::GBV_Emergency_Response.Resource.Styleable.ActionMode_backgroundSplit;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMode_closeItemLayout = global::GBV_Emergency_Response.Resource.Styleable.ActionMode_closeItemLayout;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMode_height = global::GBV_Emergency_Response.Resource.Styleable.ActionMode_height;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMode_subtitleTextStyle = global::GBV_Emergency_Response.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::XamarinTextDrawable.Resource.Styleable.ActionMode_titleTextStyle = global::GBV_Emergency_Response.Resource.Styleable.ActionMode_titleTextStyle;
-			global::XamarinTextDrawable.Resource.Styleable.ActivityChooserView = global::GBV_Emergency_Response.Resource.Styleable.ActivityChooserView;
-			global::XamarinTextDrawable.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::GBV_Emergency_Response.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.ActivityChooserView_initialActivityCount = global::GBV_Emergency_Response.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog_android_layout = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog_android_layout;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog_listItemLayout = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog_listItemLayout;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog_listLayout = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog_listLayout;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog_showTitle = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog_showTitle;
-			global::XamarinTextDrawable.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::GBV_Emergency_Response.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatImageView = global::GBV_Emergency_Response.Resource.Styleable.AppCompatImageView;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatImageView_android_src = global::GBV_Emergency_Response.Resource.Styleable.AppCompatImageView_android_src;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatImageView_srcCompat = global::GBV_Emergency_Response.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatImageView_tint = global::GBV_Emergency_Response.Resource.Styleable.AppCompatImageView_tint;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatImageView_tintMode = global::GBV_Emergency_Response.Resource.Styleable.AppCompatImageView_tintMode;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatSeekBar = global::GBV_Emergency_Response.Resource.Styleable.AppCompatSeekBar;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatSeekBar_android_thumb = global::GBV_Emergency_Response.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatSeekBar_tickMark = global::GBV_Emergency_Response.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::GBV_Emergency_Response.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::GBV_Emergency_Response.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_android_textAppearance = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_fontFamily = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTextView_textAllCaps = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarDivider = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarSize = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarTheme = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_buttonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_checkboxStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorAccent = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorControlActivated = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorControlNormal = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorError = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorError;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorPrimary = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_controlBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_dialogTheme = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_dividerVertical = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_editTextBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_editTextColor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_editTextStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_panelBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_searchViewStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_seekBarStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_spinnerStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_switchStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_toolbarStyle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowActionBar = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::XamarinTextDrawable.Resource.Styleable.AppCompatTheme_windowNoTitle = global::GBV_Emergency_Response.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::XamarinTextDrawable.Resource.Styleable.ButtonBarLayout = global::GBV_Emergency_Response.Resource.Styleable.ButtonBarLayout;
-			global::XamarinTextDrawable.Resource.Styleable.ButtonBarLayout_allowStacking = global::GBV_Emergency_Response.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::XamarinTextDrawable.Resource.Styleable.ColorStateListItem = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem;
-			global::XamarinTextDrawable.Resource.Styleable.ColorStateListItem_alpha = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem_alpha;
-			global::XamarinTextDrawable.Resource.Styleable.ColorStateListItem_android_alpha = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::XamarinTextDrawable.Resource.Styleable.ColorStateListItem_android_color = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem_android_color;
-			global::XamarinTextDrawable.Resource.Styleable.CompoundButton = global::GBV_Emergency_Response.Resource.Styleable.CompoundButton;
-			global::XamarinTextDrawable.Resource.Styleable.CompoundButton_android_button = global::GBV_Emergency_Response.Resource.Styleable.CompoundButton_android_button;
-			global::XamarinTextDrawable.Resource.Styleable.CompoundButton_buttonTint = global::GBV_Emergency_Response.Resource.Styleable.CompoundButton_buttonTint;
-			global::XamarinTextDrawable.Resource.Styleable.CompoundButton_buttonTintMode = global::GBV_Emergency_Response.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_barLength = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_color = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_color;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_drawableSize = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_spinBars = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::XamarinTextDrawable.Resource.Styleable.DrawerArrowToggle_thickness = global::GBV_Emergency_Response.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamily = global::GBV_Emergency_Response.Resource.Styleable.FontFamily;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamily_fontProviderAuthority = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamily_fontProviderCerts = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamily_fontProviderPackage = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamily_fontProviderQuery = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderQuery;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamilyFont = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamilyFont_android_font = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_font;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamilyFont_android_fontStyle = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_fontStyle;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamilyFont_android_fontWeight = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_fontWeight;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamilyFont_font = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_font;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamilyFont_fontStyle = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_fontStyle;
-			global::XamarinTextDrawable.Resource.Styleable.FontFamilyFont_fontWeight = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_fontWeight;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_android_gravity = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_android_orientation = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_divider = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_divider;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_showDividers = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_Layout = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::XamarinTextDrawable.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::GBV_Emergency_Response.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::XamarinTextDrawable.Resource.Styleable.ListPopupWindow = global::GBV_Emergency_Response.Resource.Styleable.ListPopupWindow;
-			global::XamarinTextDrawable.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::GBV_Emergency_Response.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::XamarinTextDrawable.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::GBV_Emergency_Response.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::XamarinTextDrawable.Resource.Styleable.MenuGroup = global::GBV_Emergency_Response.Resource.Styleable.MenuGroup;
-			global::XamarinTextDrawable.Resource.Styleable.MenuGroup_android_checkableBehavior = global::GBV_Emergency_Response.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::XamarinTextDrawable.Resource.Styleable.MenuGroup_android_enabled = global::GBV_Emergency_Response.Resource.Styleable.MenuGroup_android_enabled;
-			global::XamarinTextDrawable.Resource.Styleable.MenuGroup_android_id = global::GBV_Emergency_Response.Resource.Styleable.MenuGroup_android_id;
-			global::XamarinTextDrawable.Resource.Styleable.MenuGroup_android_menuCategory = global::GBV_Emergency_Response.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::XamarinTextDrawable.Resource.Styleable.MenuGroup_android_orderInCategory = global::GBV_Emergency_Response.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::XamarinTextDrawable.Resource.Styleable.MenuGroup_android_visible = global::GBV_Emergency_Response.Resource.Styleable.MenuGroup_android_visible;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem = global::GBV_Emergency_Response.Resource.Styleable.MenuItem;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_actionLayout = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_actionLayout;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_actionProviderClass = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_actionProviderClass;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_actionViewClass = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_actionViewClass;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_alphabeticModifiers = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_alphabeticModifiers;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_checkable = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_checkable;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_checked = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_checked;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_enabled = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_enabled;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_icon = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_icon;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_id = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_id;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_menuCategory = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_menuCategory;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_numericShortcut = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_onClick = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_onClick;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_orderInCategory = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_title = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_title;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_titleCondensed = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_android_visible = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_android_visible;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_contentDescription = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_contentDescription;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_iconTint = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_iconTint;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_iconTintMode = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_iconTintMode;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_numericModifiers = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_numericModifiers;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_showAsAction = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_showAsAction;
-			global::XamarinTextDrawable.Resource.Styleable.MenuItem_tooltipText = global::GBV_Emergency_Response.Resource.Styleable.MenuItem_tooltipText;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView = global::GBV_Emergency_Response.Resource.Styleable.MenuView;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_android_headerBackground = global::GBV_Emergency_Response.Resource.Styleable.MenuView_android_headerBackground;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_android_horizontalDivider = global::GBV_Emergency_Response.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_android_itemBackground = global::GBV_Emergency_Response.Resource.Styleable.MenuView_android_itemBackground;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::GBV_Emergency_Response.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_android_itemTextAppearance = global::GBV_Emergency_Response.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_android_verticalDivider = global::GBV_Emergency_Response.Resource.Styleable.MenuView_android_verticalDivider;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_android_windowAnimationStyle = global::GBV_Emergency_Response.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_preserveIconSpacing = global::GBV_Emergency_Response.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::XamarinTextDrawable.Resource.Styleable.MenuView_subMenuArrow = global::GBV_Emergency_Response.Resource.Styleable.MenuView_subMenuArrow;
-			global::XamarinTextDrawable.Resource.Styleable.PopupWindow = global::GBV_Emergency_Response.Resource.Styleable.PopupWindow;
-			global::XamarinTextDrawable.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::GBV_Emergency_Response.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::XamarinTextDrawable.Resource.Styleable.PopupWindow_android_popupBackground = global::GBV_Emergency_Response.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::XamarinTextDrawable.Resource.Styleable.PopupWindow_overlapAnchor = global::GBV_Emergency_Response.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::XamarinTextDrawable.Resource.Styleable.PopupWindowBackgroundState = global::GBV_Emergency_Response.Resource.Styleable.PopupWindowBackgroundState;
-			global::XamarinTextDrawable.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::GBV_Emergency_Response.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::XamarinTextDrawable.Resource.Styleable.RecycleListView = global::GBV_Emergency_Response.Resource.Styleable.RecycleListView;
-			global::XamarinTextDrawable.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::GBV_Emergency_Response.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
-			global::XamarinTextDrawable.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::GBV_Emergency_Response.Resource.Styleable.RecycleListView_paddingTopNoTitle;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView = global::GBV_Emergency_Response.Resource.Styleable.SearchView;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_android_focusable = global::GBV_Emergency_Response.Resource.Styleable.SearchView_android_focusable;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_android_imeOptions = global::GBV_Emergency_Response.Resource.Styleable.SearchView_android_imeOptions;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_android_inputType = global::GBV_Emergency_Response.Resource.Styleable.SearchView_android_inputType;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_android_maxWidth = global::GBV_Emergency_Response.Resource.Styleable.SearchView_android_maxWidth;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_closeIcon = global::GBV_Emergency_Response.Resource.Styleable.SearchView_closeIcon;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_commitIcon = global::GBV_Emergency_Response.Resource.Styleable.SearchView_commitIcon;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_defaultQueryHint = global::GBV_Emergency_Response.Resource.Styleable.SearchView_defaultQueryHint;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_goIcon = global::GBV_Emergency_Response.Resource.Styleable.SearchView_goIcon;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_iconifiedByDefault = global::GBV_Emergency_Response.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_layout = global::GBV_Emergency_Response.Resource.Styleable.SearchView_layout;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_queryBackground = global::GBV_Emergency_Response.Resource.Styleable.SearchView_queryBackground;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_queryHint = global::GBV_Emergency_Response.Resource.Styleable.SearchView_queryHint;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_searchHintIcon = global::GBV_Emergency_Response.Resource.Styleable.SearchView_searchHintIcon;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_searchIcon = global::GBV_Emergency_Response.Resource.Styleable.SearchView_searchIcon;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_submitBackground = global::GBV_Emergency_Response.Resource.Styleable.SearchView_submitBackground;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_suggestionRowLayout = global::GBV_Emergency_Response.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::XamarinTextDrawable.Resource.Styleable.SearchView_voiceIcon = global::GBV_Emergency_Response.Resource.Styleable.SearchView_voiceIcon;
-			global::XamarinTextDrawable.Resource.Styleable.Spinner = global::GBV_Emergency_Response.Resource.Styleable.Spinner;
-			global::XamarinTextDrawable.Resource.Styleable.Spinner_android_dropDownWidth = global::GBV_Emergency_Response.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::XamarinTextDrawable.Resource.Styleable.Spinner_android_entries = global::GBV_Emergency_Response.Resource.Styleable.Spinner_android_entries;
-			global::XamarinTextDrawable.Resource.Styleable.Spinner_android_popupBackground = global::GBV_Emergency_Response.Resource.Styleable.Spinner_android_popupBackground;
-			global::XamarinTextDrawable.Resource.Styleable.Spinner_android_prompt = global::GBV_Emergency_Response.Resource.Styleable.Spinner_android_prompt;
-			global::XamarinTextDrawable.Resource.Styleable.Spinner_popupTheme = global::GBV_Emergency_Response.Resource.Styleable.Spinner_popupTheme;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_android_textOff = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_android_textOff;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_android_textOn = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_android_textOn;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_android_thumb = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_android_thumb;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_showText = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_showText;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_splitTrack = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_splitTrack;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_switchMinWidth = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_switchPadding = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_switchPadding;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_switchTextAppearance = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_thumbTextPadding = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_thumbTint = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_thumbTint;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_thumbTintMode = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_track = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_track;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_trackTint = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_trackTint;
-			global::XamarinTextDrawable.Resource.Styleable.SwitchCompat_trackTintMode = global::GBV_Emergency_Response.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_fontFamily = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_fontFamily;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_shadowColor = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_shadowDx = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_shadowDy = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_shadowRadius = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_textColor = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_textColor;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_textColorHint = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_textColorHint;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_textColorLink = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_textSize = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_textSize;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_textStyle = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_textStyle;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_android_typeface = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_android_typeface;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_fontFamily = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_fontFamily;
-			global::XamarinTextDrawable.Resource.Styleable.TextAppearance_textAllCaps = global::GBV_Emergency_Response.Resource.Styleable.TextAppearance_textAllCaps;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar = global::GBV_Emergency_Response.Resource.Styleable.Toolbar;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_android_gravity = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_android_gravity;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_android_minHeight = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_android_minHeight;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_buttonGravity = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_buttonGravity;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_collapseContentDescription = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_collapseIcon = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_collapseIcon;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_contentInsetEnd = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_contentInsetLeft = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_contentInsetRight = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_contentInsetRight;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_contentInsetStart = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_contentInsetStart;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_logo = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_logo;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_logoDescription = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_logoDescription;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_maxButtonHeight = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_navigationContentDescription = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_navigationIcon = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_navigationIcon;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_popupTheme = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_popupTheme;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_subtitle = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_subtitle;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_subtitleTextAppearance = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_subtitleTextColor = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_title = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_title;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleMargin = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleMargin;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleMarginBottom = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleMarginEnd = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleMarginStart = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleMarginStart;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleMarginTop = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleMarginTop;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleMargins = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleMargins;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleTextAppearance = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::XamarinTextDrawable.Resource.Styleable.Toolbar_titleTextColor = global::GBV_Emergency_Response.Resource.Styleable.Toolbar_titleTextColor;
-			global::XamarinTextDrawable.Resource.Styleable.View = global::GBV_Emergency_Response.Resource.Styleable.View;
-			global::XamarinTextDrawable.Resource.Styleable.View_android_focusable = global::GBV_Emergency_Response.Resource.Styleable.View_android_focusable;
-			global::XamarinTextDrawable.Resource.Styleable.View_android_theme = global::GBV_Emergency_Response.Resource.Styleable.View_android_theme;
-			global::XamarinTextDrawable.Resource.Styleable.View_paddingEnd = global::GBV_Emergency_Response.Resource.Styleable.View_paddingEnd;
-			global::XamarinTextDrawable.Resource.Styleable.View_paddingStart = global::GBV_Emergency_Response.Resource.Styleable.View_paddingStart;
-			global::XamarinTextDrawable.Resource.Styleable.View_theme = global::GBV_Emergency_Response.Resource.Styleable.View_theme;
-			global::XamarinTextDrawable.Resource.Styleable.ViewBackgroundHelper = global::GBV_Emergency_Response.Resource.Styleable.ViewBackgroundHelper;
-			global::XamarinTextDrawable.Resource.Styleable.ViewBackgroundHelper_android_background = global::GBV_Emergency_Response.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::XamarinTextDrawable.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::GBV_Emergency_Response.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::XamarinTextDrawable.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::GBV_Emergency_Response.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::XamarinTextDrawable.Resource.Styleable.ViewStubCompat = global::GBV_Emergency_Response.Resource.Styleable.ViewStubCompat;
-			global::XamarinTextDrawable.Resource.Styleable.ViewStubCompat_android_id = global::GBV_Emergency_Response.Resource.Styleable.ViewStubCompat_android_id;
-			global::XamarinTextDrawable.Resource.Styleable.ViewStubCompat_android_inflatedId = global::GBV_Emergency_Response.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::XamarinTextDrawable.Resource.Styleable.ViewStubCompat_android_layout = global::GBV_Emergency_Response.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Plugin.CloudFirestore.Resource.Attribute.alpha = global::GBV_Emergency_Response.Resource.Attribute.alpha;
 			global::Plugin.CloudFirestore.Resource.Attribute.buttonSize = global::GBV_Emergency_Response.Resource.Attribute.buttonSize;
 			global::Plugin.CloudFirestore.Resource.Attribute.circleCrop = global::GBV_Emergency_Response.Resource.Attribute.circleCrop;
@@ -10379,166 +8899,172 @@ namespace GBV_Emergency_Response
 			public const int ic_person_search_white_18dp = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int ic_search_black_18dp = 2131165341;
+			public const int ic_question_answer_black_18dp = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int ic_settings_power_black_18dp = 2131165342;
+			public const int ic_search_black_18dp = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int ic_settings_power_white_18dp = 2131165343;
-			
-			// aapt resource value: 0x7F0700A1
-			public const int ic_successstatus = 2131165345;
+			public const int ic_settings_power_black_18dp = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int ic_success_tick = 2131165344;
+			public const int ic_settings_power_white_18dp = 2131165344;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int logo9_23_202554 = 2131165346;
+			public const int ic_successstatus = 2131165346;
+			
+			// aapt resource value: 0x7F0700A1
+			public const int ic_success_tick = 2131165345;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int logo9_23_211337 = 2131165347;
+			public const int ic_today_black_18dp = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int material_cursor_drawable = 2131165348;
+			public const int logo9_23_202554 = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int material_ic_calendar_black_24dp = 2131165349;
+			public const int logo9_23_211337 = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int material_ic_clear_black_24dp = 2131165350;
+			public const int material_cursor_drawable = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int material_ic_edit_black_24dp = 2131165351;
+			public const int material_ic_calendar_black_24dp = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165352;
+			public const int material_ic_clear_black_24dp = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int material_ic_keyboard_arrow_next_black_24dp = 2131165353;
+			public const int material_ic_edit_black_24dp = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int material_ic_keyboard_arrow_previous_black_24dp = 2131165354;
+			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165355;
+			public const int material_ic_keyboard_arrow_next_black_24dp = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int material_ic_menu_arrow_down_black_24dp = 2131165356;
+			public const int material_ic_keyboard_arrow_previous_black_24dp = 2131165356;
 			
 			// aapt resource value: 0x7F0700AD
-			public const int material_ic_menu_arrow_up_black_24dp = 2131165357;
+			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int mtrl_dialog_background = 2131165358;
+			public const int material_ic_menu_arrow_down_black_24dp = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
-			public const int mtrl_dropdown_arrow = 2131165359;
+			public const int material_ic_menu_arrow_up_black_24dp = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int mtrl_ic_arrow_drop_down = 2131165360;
+			public const int mtrl_dialog_background = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int mtrl_ic_arrow_drop_up = 2131165361;
+			public const int mtrl_dropdown_arrow = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int mtrl_ic_cancel = 2131165362;
+			public const int mtrl_ic_arrow_drop_down = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int mtrl_ic_error = 2131165363;
+			public const int mtrl_ic_arrow_drop_up = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int mtrl_navigation_bar_item_background = 2131165364;
+			public const int mtrl_ic_cancel = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int mtrl_popupmenu_background = 2131165365;
+			public const int mtrl_ic_error = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int mtrl_popupmenu_background_dark = 2131165366;
+			public const int mtrl_navigation_bar_item_background = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int mtrl_tabs_default_indicator = 2131165367;
+			public const int mtrl_popupmenu_background = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int navigation_empty_icon = 2131165368;
+			public const int mtrl_popupmenu_background_dark = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int notification_action_background = 2131165369;
+			public const int mtrl_tabs_default_indicator = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int notification_bg = 2131165370;
+			public const int navigation_empty_icon = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int notification_bg_low = 2131165371;
+			public const int notification_action_background = 2131165371;
 			
 			// aapt resource value: 0x7F0700BC
-			public const int notification_bg_low_normal = 2131165372;
+			public const int notification_bg = 2131165372;
 			
 			// aapt resource value: 0x7F0700BD
-			public const int notification_bg_low_pressed = 2131165373;
+			public const int notification_bg_low = 2131165373;
 			
 			// aapt resource value: 0x7F0700BE
-			public const int notification_bg_normal = 2131165374;
+			public const int notification_bg_low_normal = 2131165374;
 			
 			// aapt resource value: 0x7F0700BF
-			public const int notification_bg_normal_pressed = 2131165375;
+			public const int notification_bg_low_pressed = 2131165375;
 			
 			// aapt resource value: 0x7F0700C0
-			public const int notification_icon_background = 2131165376;
+			public const int notification_bg_normal = 2131165376;
 			
 			// aapt resource value: 0x7F0700C1
-			public const int notification_red_dot = 2131165377;
+			public const int notification_bg_normal_pressed = 2131165377;
 			
 			// aapt resource value: 0x7F0700C2
-			public const int notification_template_icon_bg = 2131165378;
+			public const int notification_icon_background = 2131165378;
 			
 			// aapt resource value: 0x7F0700C3
-			public const int notification_template_icon_low_bg = 2131165379;
+			public const int notification_red_dot = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int notification_tile_bg = 2131165380;
+			public const int notification_template_icon_bg = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
-			public const int notify_panel_notification_icon_bg = 2131165381;
+			public const int notification_template_icon_low_bg = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int red_background = 2131165382;
+			public const int notification_tile_bg = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int roundedbg = 2131165383;
+			public const int notify_panel_notification_icon_bg = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int roundedbgdark = 2131165384;
+			public const int red_background = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int splash_screen = 2131165385;
+			public const int roundedbg = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int success_bow = 2131165386;
+			public const int roundedbgdark = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int success_circle = 2131165387;
+			public const int splash_screen = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int test_custom_background = 2131165388;
+			public const int success_bow = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int tooltip_frame_dark = 2131165389;
+			public const int success_circle = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int tooltip_frame_light = 2131165390;
+			public const int test_custom_background = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int view_style = 2131165391;
+			public const int tooltip_frame_dark = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int warning_circle = 2131165392;
+			public const int tooltip_frame_light = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int warning_sigh = 2131165393;
+			public const int view_style = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int yellow_background = 2131165394;
+			public const int warning_circle = 2131165394;
+			
+			// aapt resource value: 0x7F0700D3
+			public const int warning_sigh = 2131165395;
+			
+			// aapt resource value: 0x7F0700D4
+			public const int yellow_background = 2131165396;
 			
 			static Drawable()
 			{
@@ -10553,323 +9079,323 @@ namespace GBV_Emergency_Response
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7F080047
+			public const int about_providers = 2131230791;
+			
 			// aapt resource value: 0x7F080048
-			public const int about_providers = 2131230792;
+			public const int accelerate = 2131230792;
 			
 			// aapt resource value: 0x7F080049
-			public const int accelerate = 2131230793;
+			public const int accessibility_action_clickable_span = 2131230793;
 			
 			// aapt resource value: 0x7F08004A
-			public const int accessibility_action_clickable_span = 2131230794;
+			public const int accessibility_custom_action_0 = 2131230794;
 			
 			// aapt resource value: 0x7F08004B
-			public const int accessibility_custom_action_0 = 2131230795;
+			public const int accessibility_custom_action_1 = 2131230795;
 			
 			// aapt resource value: 0x7F08004C
-			public const int accessibility_custom_action_1 = 2131230796;
+			public const int accessibility_custom_action_10 = 2131230796;
 			
 			// aapt resource value: 0x7F08004D
-			public const int accessibility_custom_action_10 = 2131230797;
+			public const int accessibility_custom_action_11 = 2131230797;
 			
 			// aapt resource value: 0x7F08004E
-			public const int accessibility_custom_action_11 = 2131230798;
+			public const int accessibility_custom_action_12 = 2131230798;
 			
 			// aapt resource value: 0x7F08004F
-			public const int accessibility_custom_action_12 = 2131230799;
+			public const int accessibility_custom_action_13 = 2131230799;
 			
 			// aapt resource value: 0x7F080050
-			public const int accessibility_custom_action_13 = 2131230800;
+			public const int accessibility_custom_action_14 = 2131230800;
 			
 			// aapt resource value: 0x7F080051
-			public const int accessibility_custom_action_14 = 2131230801;
+			public const int accessibility_custom_action_15 = 2131230801;
 			
 			// aapt resource value: 0x7F080052
-			public const int accessibility_custom_action_15 = 2131230802;
+			public const int accessibility_custom_action_16 = 2131230802;
 			
 			// aapt resource value: 0x7F080053
-			public const int accessibility_custom_action_16 = 2131230803;
+			public const int accessibility_custom_action_17 = 2131230803;
 			
 			// aapt resource value: 0x7F080054
-			public const int accessibility_custom_action_17 = 2131230804;
+			public const int accessibility_custom_action_18 = 2131230804;
 			
 			// aapt resource value: 0x7F080055
-			public const int accessibility_custom_action_18 = 2131230805;
+			public const int accessibility_custom_action_19 = 2131230805;
 			
 			// aapt resource value: 0x7F080056
-			public const int accessibility_custom_action_19 = 2131230806;
+			public const int accessibility_custom_action_2 = 2131230806;
 			
 			// aapt resource value: 0x7F080057
-			public const int accessibility_custom_action_2 = 2131230807;
+			public const int accessibility_custom_action_20 = 2131230807;
 			
 			// aapt resource value: 0x7F080058
-			public const int accessibility_custom_action_20 = 2131230808;
+			public const int accessibility_custom_action_21 = 2131230808;
 			
 			// aapt resource value: 0x7F080059
-			public const int accessibility_custom_action_21 = 2131230809;
+			public const int accessibility_custom_action_22 = 2131230809;
 			
 			// aapt resource value: 0x7F08005A
-			public const int accessibility_custom_action_22 = 2131230810;
+			public const int accessibility_custom_action_23 = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int accessibility_custom_action_23 = 2131230811;
+			public const int accessibility_custom_action_24 = 2131230811;
 			
 			// aapt resource value: 0x7F08005C
-			public const int accessibility_custom_action_24 = 2131230812;
+			public const int accessibility_custom_action_25 = 2131230812;
 			
 			// aapt resource value: 0x7F08005D
-			public const int accessibility_custom_action_25 = 2131230813;
+			public const int accessibility_custom_action_26 = 2131230813;
 			
 			// aapt resource value: 0x7F08005E
-			public const int accessibility_custom_action_26 = 2131230814;
+			public const int accessibility_custom_action_27 = 2131230814;
 			
 			// aapt resource value: 0x7F08005F
-			public const int accessibility_custom_action_27 = 2131230815;
+			public const int accessibility_custom_action_28 = 2131230815;
 			
 			// aapt resource value: 0x7F080060
-			public const int accessibility_custom_action_28 = 2131230816;
+			public const int accessibility_custom_action_29 = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int accessibility_custom_action_29 = 2131230817;
+			public const int accessibility_custom_action_3 = 2131230817;
 			
 			// aapt resource value: 0x7F080062
-			public const int accessibility_custom_action_3 = 2131230818;
+			public const int accessibility_custom_action_30 = 2131230818;
 			
 			// aapt resource value: 0x7F080063
-			public const int accessibility_custom_action_30 = 2131230819;
+			public const int accessibility_custom_action_31 = 2131230819;
 			
 			// aapt resource value: 0x7F080064
-			public const int accessibility_custom_action_31 = 2131230820;
+			public const int accessibility_custom_action_4 = 2131230820;
 			
 			// aapt resource value: 0x7F080065
-			public const int accessibility_custom_action_4 = 2131230821;
+			public const int accessibility_custom_action_5 = 2131230821;
 			
 			// aapt resource value: 0x7F080066
-			public const int accessibility_custom_action_5 = 2131230822;
+			public const int accessibility_custom_action_6 = 2131230822;
 			
 			// aapt resource value: 0x7F080067
-			public const int accessibility_custom_action_6 = 2131230823;
+			public const int accessibility_custom_action_7 = 2131230823;
 			
 			// aapt resource value: 0x7F080068
-			public const int accessibility_custom_action_7 = 2131230824;
+			public const int accessibility_custom_action_8 = 2131230824;
 			
 			// aapt resource value: 0x7F080069
-			public const int accessibility_custom_action_8 = 2131230825;
+			public const int accessibility_custom_action_9 = 2131230825;
 			
 			// aapt resource value: 0x7F08006A
-			public const int accessibility_custom_action_9 = 2131230826;
+			public const int action0 = 2131230826;
 			
 			// aapt resource value: 0x7F08006B
-			public const int action0 = 2131230827;
+			public const int actionDown = 2131230827;
 			
 			// aapt resource value: 0x7F08006C
-			public const int actionDown = 2131230828;
-			
-			// aapt resource value: 0x7F08006D
-			public const int actionDownUp = 2131230829;
-			
-			// aapt resource value: 0x7F080081
-			public const int actions = 2131230849;
-			
-			// aapt resource value: 0x7F08006E
-			public const int actionUp = 2131230830;
-			
-			// aapt resource value: 0x7F08006F
-			public const int action_bar = 2131230831;
-			
-			// aapt resource value: 0x7F080070
-			public const int action_bar_activity_content = 2131230832;
-			
-			// aapt resource value: 0x7F080071
-			public const int action_bar_container = 2131230833;
-			
-			// aapt resource value: 0x7F080072
-			public const int action_bar_root = 2131230834;
-			
-			// aapt resource value: 0x7F080073
-			public const int action_bar_spinner = 2131230835;
-			
-			// aapt resource value: 0x7F080074
-			public const int action_bar_subtitle = 2131230836;
-			
-			// aapt resource value: 0x7F080075
-			public const int action_bar_title = 2131230837;
-			
-			// aapt resource value: 0x7F080076
-			public const int action_container = 2131230838;
-			
-			// aapt resource value: 0x7F080077
-			public const int action_context_bar = 2131230839;
-			
-			// aapt resource value: 0x7F080078
-			public const int action_divider = 2131230840;
-			
-			// aapt resource value: 0x7F080079
-			public const int action_image = 2131230841;
-			
-			// aapt resource value: 0x7F08007A
-			public const int action_menu_divider = 2131230842;
-			
-			// aapt resource value: 0x7F08007B
-			public const int action_menu_presenter = 2131230843;
-			
-			// aapt resource value: 0x7F08007C
-			public const int action_mode_bar = 2131230844;
-			
-			// aapt resource value: 0x7F08007D
-			public const int action_mode_bar_stub = 2131230845;
-			
-			// aapt resource value: 0x7F08007E
-			public const int action_mode_close_button = 2131230846;
-			
-			// aapt resource value: 0x7F08007F
-			public const int action_search = 2131230847;
+			public const int actionDownUp = 2131230828;
 			
 			// aapt resource value: 0x7F080080
-			public const int action_text = 2131230848;
+			public const int actions = 2131230848;
+			
+			// aapt resource value: 0x7F08006D
+			public const int actionUp = 2131230829;
+			
+			// aapt resource value: 0x7F08006E
+			public const int action_bar = 2131230830;
+			
+			// aapt resource value: 0x7F08006F
+			public const int action_bar_activity_content = 2131230831;
+			
+			// aapt resource value: 0x7F080070
+			public const int action_bar_container = 2131230832;
+			
+			// aapt resource value: 0x7F080071
+			public const int action_bar_root = 2131230833;
+			
+			// aapt resource value: 0x7F080072
+			public const int action_bar_spinner = 2131230834;
+			
+			// aapt resource value: 0x7F080073
+			public const int action_bar_subtitle = 2131230835;
+			
+			// aapt resource value: 0x7F080074
+			public const int action_bar_title = 2131230836;
+			
+			// aapt resource value: 0x7F080075
+			public const int action_container = 2131230837;
+			
+			// aapt resource value: 0x7F080076
+			public const int action_context_bar = 2131230838;
+			
+			// aapt resource value: 0x7F080077
+			public const int action_divider = 2131230839;
+			
+			// aapt resource value: 0x7F080078
+			public const int action_image = 2131230840;
+			
+			// aapt resource value: 0x7F080079
+			public const int action_menu_divider = 2131230841;
+			
+			// aapt resource value: 0x7F08007A
+			public const int action_menu_presenter = 2131230842;
+			
+			// aapt resource value: 0x7F08007B
+			public const int action_mode_bar = 2131230843;
+			
+			// aapt resource value: 0x7F08007C
+			public const int action_mode_bar_stub = 2131230844;
+			
+			// aapt resource value: 0x7F08007D
+			public const int action_mode_close_button = 2131230845;
+			
+			// aapt resource value: 0x7F08007E
+			public const int action_search = 2131230846;
+			
+			// aapt resource value: 0x7F08007F
+			public const int action_text = 2131230847;
+			
+			// aapt resource value: 0x7F080081
+			public const int activity_chooser_view_content = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int activity_chooser_view_content = 2131230850;
+			public const int add = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int add = 2131230851;
+			public const int adjust_height = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int adjust_height = 2131230852;
+			public const int adjust_width = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int adjust_width = 2131230853;
+			public const int alertTitle = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int alertTitle = 2131230854;
+			public const int alert_background = 2131230854;
 			
 			// aapt resource value: 0x7F080087
-			public const int alert_background = 2131230855;
+			public const int aligned = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int aligned = 2131230856;
+			public const int all = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int all = 2131230857;
-			
-			// aapt resource value: 0x7F08008A
-			public const int allStates = 2131230858;
+			public const int allStates = 2131230857;
 			
 			// aapt resource value: 0x7F080000
 			public const int ALT = 2131230720;
 			
+			// aapt resource value: 0x7F08008A
+			public const int always = 2131230858;
+			
 			// aapt resource value: 0x7F08008B
-			public const int always = 2131230859;
+			public const int animateToEnd = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int animateToEnd = 2131230860;
-			
-			// aapt resource value: 0x7F08008D
-			public const int animateToStart = 2131230861;
-			
-			// aapt resource value: 0x7F08008F
-			public const int anticipate = 2131230863;
+			public const int animateToStart = 2131230860;
 			
 			// aapt resource value: 0x7F08008E
-			public const int antiClockwise = 2131230862;
+			public const int anticipate = 2131230862;
+			
+			// aapt resource value: 0x7F08008D
+			public const int antiClockwise = 2131230861;
+			
+			// aapt resource value: 0x7F08008F
+			public const int appBarLayout1 = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int appBarLayout1 = 2131230864;
+			public const int app_invites_toolbar = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int app_invites_toolbar = 2131230865;
+			public const int app_users_toolbar = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int app_users_toolbar = 2131230866;
+			public const int arc = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int arc = 2131230867;
+			public const int asConfigured = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int asConfigured = 2131230868;
+			public const int async = 2131230868;
 			
 			// aapt resource value: 0x7F080095
-			public const int async = 2131230869;
+			public const int auto = 2131230869;
 			
 			// aapt resource value: 0x7F080096
-			public const int auto = 2131230870;
+			public const int autoComplete = 2131230870;
 			
 			// aapt resource value: 0x7F080097
-			public const int autoComplete = 2131230871;
+			public const int autoCompleteToEnd = 2131230871;
 			
 			// aapt resource value: 0x7F080098
-			public const int autoCompleteToEnd = 2131230872;
+			public const int autoCompleteToStart = 2131230872;
 			
 			// aapt resource value: 0x7F080099
-			public const int autoCompleteToStart = 2131230873;
+			public const int awareness_img = 2131230873;
 			
 			// aapt resource value: 0x7F08009A
-			public const int awareness_img = 2131230874;
+			public const int badgeTextView = 2131230874;
 			
 			// aapt resource value: 0x7F08009B
-			public const int badgeTextView = 2131230875;
+			public const int barrier = 2131230875;
 			
 			// aapt resource value: 0x7F08009C
-			public const int barrier = 2131230876;
-			
-			// aapt resource value: 0x7F08009D
-			public const int baseline = 2131230877;
-			
-			// aapt resource value: 0x7F08009F
-			public const int beginning = 2131230879;
+			public const int baseline = 2131230876;
 			
 			// aapt resource value: 0x7F08009E
-			public const int beginOnFirstDraw = 2131230878;
+			public const int beginning = 2131230878;
+			
+			// aapt resource value: 0x7F08009D
+			public const int beginOnFirstDraw = 2131230877;
+			
+			// aapt resource value: 0x7F08009F
+			public const int bestChoice = 2131230879;
 			
 			// aapt resource value: 0x7F0800A0
-			public const int bestChoice = 2131230880;
+			public const int blocking = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int blocking = 2131230881;
-			
-			// aapt resource value: 0x7F0800A2
-			public const int bottom = 2131230882;
+			public const int bottom = 2131230881;
 			
 			// aapt resource value: 0x7F080001
 			public const int BOTTOM_END = 2131230721;
 			
-			// aapt resource value: 0x7F0800A3
-			public const int bottom_nav_view = 2131230883;
+			// aapt resource value: 0x7F0800A2
+			public const int bottom_nav_view = 2131230882;
 			
 			// aapt resource value: 0x7F080002
 			public const int BOTTOM_START = 2131230722;
 			
+			// aapt resource value: 0x7F0800A3
+			public const int bounce = 2131230883;
+			
 			// aapt resource value: 0x7F0800A4
-			public const int bounce = 2131230884;
+			public const int bounceBoth = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int bounceBoth = 2131230885;
+			public const int bounceEnd = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int bounceEnd = 2131230886;
+			public const int bounceStart = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int bounceStart = 2131230887;
-			
-			// aapt resource value: 0x7F0800A8
-			public const int browser_actions_header_text = 2131230888;
-			
-			// aapt resource value: 0x7F0800AB
-			public const int browser_actions_menu_items = 2131230891;
-			
-			// aapt resource value: 0x7F0800A9
-			public const int browser_actions_menu_item_icon = 2131230889;
+			public const int browser_actions_header_text = 2131230887;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int browser_actions_menu_item_text = 2131230890;
+			public const int browser_actions_menu_items = 2131230890;
 			
-			// aapt resource value: 0x7F0800AC
-			public const int browser_actions_menu_view = 2131230892;
+			// aapt resource value: 0x7F0800A8
+			public const int browser_actions_menu_item_icon = 2131230888;
+			
+			// aapt resource value: 0x7F0800A9
+			public const int browser_actions_menu_item_text = 2131230889;
+			
+			// aapt resource value: 0x7F0800AB
+			public const int browser_actions_menu_view = 2131230891;
 			
 			// aapt resource value: 0x7F080003
 			public const int BtnBackToLogin = 2131230723;
 			
-			// aapt resource value: 0x7F0800AD
-			public const int btnCreatAccount = 2131230893;
+			// aapt resource value: 0x7F0800AC
+			public const int btnCreatAccount = 2131230892;
 			
 			// aapt resource value: 0x7F080004
 			public const int BtnDeleteAwareness = 2131230724;
@@ -10883,8 +9409,8 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F080007
 			public const int BtnInviteAction = 2131230727;
 			
-			// aapt resource value: 0x7F0800AE
-			public const int btnLogin = 2131230894;
+			// aapt resource value: 0x7F0800AD
+			public const int btnLogin = 2131230893;
 			
 			// aapt resource value: 0x7F080008
 			public const int BtnNavigate = 2131230728;
@@ -10892,146 +9418,146 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F080009
 			public const int BtnPanic = 2131230729;
 			
-			// aapt resource value: 0x7F0800AF
-			public const int btnRegister = 2131230895;
+			// aapt resource value: 0x7F0800AE
+			public const int btnRegister = 2131230894;
 			
 			// aapt resource value: 0x7F08000A
 			public const int BtnUpdate = 2131230730;
 			
+			// aapt resource value: 0x7F0800AF
+			public const int buttonPanel = 2131230895;
+			
 			// aapt resource value: 0x7F0800B0
-			public const int buttonPanel = 2131230896;
+			public const int cache_measures = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int cache_measures = 2131230897;
+			public const int cancel_action = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int cancel_action = 2131230898;
+			public const int cancel_button = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int cancel_button = 2131230899;
+			public const int cardview = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int cardview = 2131230900;
+			public const int carryVelocity = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int carryVelocity = 2131230901;
+			public const int cbn_item_internal_container = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
-			public const int cbn_item_internal_container = 2131230902;
+			public const int cbn_item_notification_count = 2131230902;
 			
 			// aapt resource value: 0x7F0800B7
-			public const int cbn_item_notification_count = 2131230903;
+			public const int cbn_item_title = 2131230903;
 			
 			// aapt resource value: 0x7F0800B8
-			public const int cbn_item_title = 2131230904;
+			public const int center = 2131230904;
 			
 			// aapt resource value: 0x7F0800B9
-			public const int center = 2131230905;
+			public const int center_horizontal = 2131230905;
 			
 			// aapt resource value: 0x7F0800BA
-			public const int center_horizontal = 2131230906;
+			public const int center_vertical = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int center_vertical = 2131230907;
+			public const int chain = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int chain = 2131230908;
-			
-			// aapt resource value: 0x7F0800BD
-			public const int chains = 2131230909;
+			public const int chains = 2131230908;
 			
 			// aapt resource value: 0x7F08000C
 			public const int ChasingDots = 2131230732;
 			
+			// aapt resource value: 0x7F0800BD
+			public const int checkbox = 2131230909;
+			
 			// aapt resource value: 0x7F0800BE
-			public const int checkbox = 2131230910;
+			public const int @checked = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int @checked = 2131230911;
+			public const int chip = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int chip = 2131230912;
+			public const int chip1 = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int chip1 = 2131230913;
+			public const int chip2 = 2131230913;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int chip2 = 2131230914;
+			public const int chip3 = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int chip3 = 2131230915;
+			public const int chip_group = 2131230915;
 			
 			// aapt resource value: 0x7F0800C4
-			public const int chip_group = 2131230916;
-			
-			// aapt resource value: 0x7F0800C5
-			public const int chronometer = 2131230917;
+			public const int chronometer = 2131230916;
 			
 			// aapt resource value: 0x7F08000D
 			public const int Circle = 2131230733;
 			
+			// aapt resource value: 0x7F0800C5
+			public const int circle_center = 2131230917;
+			
 			// aapt resource value: 0x7F0800C6
-			public const int circle_center = 2131230918;
+			public const int clear_text = 2131230918;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int clear_text = 2131230919;
+			public const int clip_horizontal = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int clip_horizontal = 2131230920;
+			public const int clip_vertical = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int clip_vertical = 2131230921;
+			public const int clockwise = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int clockwise = 2131230922;
+			public const int closest = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int closest = 2131230923;
+			public const int cnb_item_icon = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int cnb_item_icon = 2131230924;
+			public const int collapseActionView = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int collapseActionView = 2131230925;
+			public const int confirm_button = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int confirm_button = 2131230926;
+			public const int constraint = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int constraint = 2131230927;
+			public const int contact_image = 2131230927;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int contact_image = 2131230928;
+			public const int contact_names = 2131230928;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int contact_names = 2131230929;
+			public const int container = 2131230929;
 			
 			// aapt resource value: 0x7F0800D2
-			public const int container = 2131230930;
+			public const int content = 2131230930;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int content = 2131230931;
+			public const int contentPanel = 2131230931;
 			
 			// aapt resource value: 0x7F0800D4
-			public const int contentPanel = 2131230932;
+			public const int content_text = 2131230932;
 			
 			// aapt resource value: 0x7F0800D5
-			public const int content_text = 2131230933;
+			public const int contiguous = 2131230933;
 			
 			// aapt resource value: 0x7F0800D6
-			public const int contiguous = 2131230934;
+			public const int continuousVelocity = 2131230934;
 			
 			// aapt resource value: 0x7F0800D7
-			public const int continuousVelocity = 2131230935;
+			public const int coordinator = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int coordinator = 2131230936;
+			public const int cos = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int cos = 2131230937;
-			
-			// aapt resource value: 0x7F0800DA
-			public const int counterclockwise = 2131230938;
+			public const int counterclockwise = 2131230937;
 			
 			// aapt resource value: 0x7F08000B
 			public const int CTRL = 2131230731;
@@ -11039,182 +9565,182 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F08000E
 			public const int CubeGrid = 2131230734;
 			
+			// aapt resource value: 0x7F0800DA
+			public const int currentState = 2131230938;
+			
 			// aapt resource value: 0x7F0800DB
-			public const int currentState = 2131230939;
+			public const int custom = 2131230939;
 			
 			// aapt resource value: 0x7F0800DC
-			public const int custom = 2131230940;
+			public const int customPanel = 2131230940;
 			
 			// aapt resource value: 0x7F0800DD
-			public const int customPanel = 2131230941;
+			public const int custom_confirm_button = 2131230941;
 			
 			// aapt resource value: 0x7F0800DE
-			public const int custom_confirm_button = 2131230942;
+			public const int custom_image = 2131230942;
 			
 			// aapt resource value: 0x7F0800DF
-			public const int custom_image = 2131230943;
+			public const int custom_view_container = 2131230943;
 			
 			// aapt resource value: 0x7F0800E0
-			public const int custom_view_container = 2131230944;
+			public const int cut = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int cut = 2131230945;
+			public const int dark = 2131230945;
 			
 			// aapt resource value: 0x7F0800E2
-			public const int dark = 2131230946;
+			public const int date_picker_actions = 2131230946;
 			
 			// aapt resource value: 0x7F0800E3
-			public const int date_picker_actions = 2131230947;
+			public const int decelerate = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int decelerate = 2131230948;
+			public const int decelerateAndComplete = 2131230948;
 			
 			// aapt resource value: 0x7F0800E5
-			public const int decelerateAndComplete = 2131230949;
+			public const int decor_content_parent = 2131230949;
 			
 			// aapt resource value: 0x7F0800E6
-			public const int decor_content_parent = 2131230950;
+			public const int default_activity_button = 2131230950;
 			
 			// aapt resource value: 0x7F0800E7
-			public const int default_activity_button = 2131230951;
+			public const int deltaRelative = 2131230951;
 			
 			// aapt resource value: 0x7F0800E8
-			public const int deltaRelative = 2131230952;
+			public const int dependency_ordering = 2131230952;
 			
 			// aapt resource value: 0x7F0800E9
-			public const int dependency_ordering = 2131230953;
+			public const int description = 2131230953;
 			
 			// aapt resource value: 0x7F0800EA
-			public const int description = 2131230954;
+			public const int design_bottom_sheet = 2131230954;
 			
 			// aapt resource value: 0x7F0800EB
-			public const int design_bottom_sheet = 2131230955;
+			public const int design_menu_item_action_area = 2131230955;
 			
 			// aapt resource value: 0x7F0800EC
-			public const int design_menu_item_action_area = 2131230956;
+			public const int design_menu_item_action_area_stub = 2131230956;
 			
 			// aapt resource value: 0x7F0800ED
-			public const int design_menu_item_action_area_stub = 2131230957;
+			public const int design_menu_item_text = 2131230957;
 			
 			// aapt resource value: 0x7F0800EE
-			public const int design_menu_item_text = 2131230958;
+			public const int design_navigation_view = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int design_navigation_view = 2131230959;
+			public const int dialog_button = 2131230959;
 			
 			// aapt resource value: 0x7F0800F0
-			public const int dialog_button = 2131230960;
+			public const int dimensions = 2131230960;
 			
 			// aapt resource value: 0x7F0800F1
-			public const int dimensions = 2131230961;
+			public const int direct = 2131230961;
 			
 			// aapt resource value: 0x7F0800F2
-			public const int direct = 2131230962;
+			public const int disableHome = 2131230962;
 			
 			// aapt resource value: 0x7F0800F3
-			public const int disableHome = 2131230963;
+			public const int disableIntraAutoTransition = 2131230963;
 			
 			// aapt resource value: 0x7F0800F4
-			public const int disableIntraAutoTransition = 2131230964;
+			public const int disablePostScroll = 2131230964;
 			
 			// aapt resource value: 0x7F0800F5
-			public const int disablePostScroll = 2131230965;
+			public const int disableScroll = 2131230965;
 			
 			// aapt resource value: 0x7F0800F6
-			public const int disableScroll = 2131230966;
+			public const int disjoint = 2131230966;
 			
 			// aapt resource value: 0x7F0800F7
-			public const int disjoint = 2131230967;
+			public const int dlgBtnSubmiAwareness = 2131230967;
 			
 			// aapt resource value: 0x7F0800F8
-			public const int dlgBtnSubmiAwareness = 2131230968;
+			public const int dlgImge = 2131230968;
 			
 			// aapt resource value: 0x7F0800F9
-			public const int dlgImge = 2131230969;
-			
-			// aapt resource value: 0x7F0800FA
-			public const int dlgInputAwareness = 2131230970;
+			public const int dlgInputAwareness = 2131230969;
 			
 			// aapt resource value: 0x7F08000F
 			public const int DoubleBounce = 2131230735;
 			
+			// aapt resource value: 0x7F0800FA
+			public const int dragAnticlockwise = 2131230970;
+			
 			// aapt resource value: 0x7F0800FB
-			public const int dragAnticlockwise = 2131230971;
+			public const int dragClockwise = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int dragClockwise = 2131230972;
+			public const int dragDown = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int dragDown = 2131230973;
+			public const int dragEnd = 2131230973;
 			
 			// aapt resource value: 0x7F0800FE
-			public const int dragEnd = 2131230974;
+			public const int dragLeft = 2131230974;
 			
 			// aapt resource value: 0x7F0800FF
-			public const int dragLeft = 2131230975;
+			public const int dragRight = 2131230975;
 			
 			// aapt resource value: 0x7F080100
-			public const int dragRight = 2131230976;
+			public const int dragStart = 2131230976;
 			
 			// aapt resource value: 0x7F080101
-			public const int dragStart = 2131230977;
+			public const int dragUp = 2131230977;
 			
 			// aapt resource value: 0x7F080102
-			public const int dragUp = 2131230978;
+			public const int dropdown_menu = 2131230978;
 			
 			// aapt resource value: 0x7F080103
-			public const int dropdown_menu = 2131230979;
+			public const int easeIn = 2131230979;
 			
 			// aapt resource value: 0x7F080104
-			public const int easeIn = 2131230980;
+			public const int easeInOut = 2131230980;
 			
 			// aapt resource value: 0x7F080105
-			public const int easeInOut = 2131230981;
+			public const int easeOut = 2131230981;
 			
 			// aapt resource value: 0x7F080106
-			public const int easeOut = 2131230982;
+			public const int east = 2131230982;
 			
 			// aapt resource value: 0x7F080107
-			public const int east = 2131230983;
+			public const int edit_query = 2131230983;
 			
 			// aapt resource value: 0x7F080108
-			public const int edit_query = 2131230984;
+			public const int edit_text = 2131230984;
 			
 			// aapt resource value: 0x7F080109
-			public const int edit_text = 2131230985;
+			public const int elastic = 2131230985;
 			
 			// aapt resource value: 0x7F08010A
-			public const int elastic = 2131230986;
+			public const int end = 2131230986;
 			
 			// aapt resource value: 0x7F08010B
-			public const int end = 2131230987;
+			public const int endToStart = 2131230987;
 			
 			// aapt resource value: 0x7F08010C
-			public const int endToStart = 2131230988;
+			public const int end_padder = 2131230988;
 			
 			// aapt resource value: 0x7F08010D
-			public const int end_padder = 2131230989;
+			public const int enterAlways = 2131230989;
 			
 			// aapt resource value: 0x7F08010E
-			public const int enterAlways = 2131230990;
+			public const int enterAlwaysCollapsed = 2131230990;
 			
 			// aapt resource value: 0x7F08010F
-			public const int enterAlwaysCollapsed = 2131230991;
+			public const int error_frame = 2131230991;
 			
 			// aapt resource value: 0x7F080110
-			public const int error_frame = 2131230992;
+			public const int error_x = 2131230992;
 			
 			// aapt resource value: 0x7F080111
-			public const int error_x = 2131230993;
-			
-			// aapt resource value: 0x7F080112
-			public const int exitUntilCollapsed = 2131230994;
-			
-			// aapt resource value: 0x7F080114
-			public const int expanded_menu = 2131230996;
+			public const int exitUntilCollapsed = 2131230993;
 			
 			// aapt resource value: 0x7F080113
-			public const int expand_activities_button = 2131230995;
+			public const int expanded_menu = 2131230995;
+			
+			// aapt resource value: 0x7F080112
+			public const int expand_activities_button = 2131230994;
 			
 			// aapt resource value: 0x7F080013
 			public const int FabCall = 2131230739;
@@ -11234,44 +9760,47 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F080018
 			public const int FabUploadImg = 2131230744;
 			
-			// aapt resource value: 0x7F080115
-			public const int fade = 2131230997;
+			// aapt resource value: 0x7F080114
+			public const int fade = 2131230996;
 			
 			// aapt resource value: 0x7F080019
 			public const int FadingCircle = 2131230745;
 			
-			// aapt resource value: 0x7F080116
-			public const int fill = 2131230998;
-			
-			// aapt resource value: 0x7F080119
-			public const int filled = 2131231001;
-			
-			// aapt resource value: 0x7F080117
-			public const int fill_horizontal = 2131230999;
+			// aapt resource value: 0x7F080115
+			public const int fill = 2131230997;
 			
 			// aapt resource value: 0x7F080118
-			public const int fill_vertical = 2131231000;
+			public const int filled = 2131231000;
+			
+			// aapt resource value: 0x7F080116
+			public const int fill_horizontal = 2131230998;
+			
+			// aapt resource value: 0x7F080117
+			public const int fill_vertical = 2131230999;
+			
+			// aapt resource value: 0x7F080119
+			public const int fitToContents = 2131231001;
 			
 			// aapt resource value: 0x7F08011A
-			public const int fitToContents = 2131231002;
+			public const int @fixed = 2131231002;
 			
 			// aapt resource value: 0x7F08011B
-			public const int @fixed = 2131231003;
+			public const int flip = 2131231003;
 			
 			// aapt resource value: 0x7F08011C
-			public const int flip = 2131231004;
-			
-			// aapt resource value: 0x7F08011D
-			public const int floating = 2131231005;
+			public const int floating = 2131231004;
 			
 			// aapt resource value: 0x7F08001A
 			public const int FoldingCube = 2131230746;
 			
+			// aapt resource value: 0x7F08011D
+			public const int forever = 2131231005;
+			
 			// aapt resource value: 0x7F08011E
-			public const int forever = 2131231006;
+			public const int fragHost = 2131231006;
 			
 			// aapt resource value: 0x7F08011F
-			public const int fragHost = 2131231007;
+			public const int fragMap = 2131231007;
 			
 			// aapt resource value: 0x7F080120
 			public const int fragment_container_view_tag = 2131231008;
@@ -11388,49 +9917,46 @@ namespace GBV_Emergency_Response
 			public const int info = 2131231039;
 			
 			// aapt resource value: 0x7F08001E
-			public const int InputConfirmPassword = 2131230750;
+			public const int InputEmail = 2131230750;
 			
 			// aapt resource value: 0x7F08001F
-			public const int InputEmail = 2131230751;
+			public const int InputFirstName = 2131230751;
 			
 			// aapt resource value: 0x7F080020
-			public const int InputFirstName = 2131230752;
+			public const int InputLastName = 2131230752;
 			
 			// aapt resource value: 0x7F080021
-			public const int InputLastName = 2131230753;
+			public const int InputPassword = 2131230753;
 			
 			// aapt resource value: 0x7F080022
-			public const int InputName = 2131230754;
+			public const int InputPhoneNumber = 2131230754;
 			
 			// aapt resource value: 0x7F080023
-			public const int InputPassword = 2131230755;
+			public const int InputReplyMessage = 2131230755;
 			
 			// aapt resource value: 0x7F080024
-			public const int InputPhoneNumber = 2131230756;
-			
-			// aapt resource value: 0x7F080025
-			public const int InputReplyMessage = 2131230757;
+			public const int InputUserName = 2131230756;
 			
 			// aapt resource value: 0x7F080140
 			public const int input_content = 2131231040;
 			
+			// aapt resource value: 0x7F080025
+			public const int Input_Email = 2131230757;
+			
 			// aapt resource value: 0x7F080026
-			public const int Input_Email = 2131230758;
+			public const int Input_Name = 2131230758;
 			
 			// aapt resource value: 0x7F080027
-			public const int Input_Name = 2131230759;
+			public const int Input_Password = 2131230759;
 			
 			// aapt resource value: 0x7F080028
-			public const int Input_Password = 2131230760;
+			public const int Input_Phone = 2131230760;
 			
 			// aapt resource value: 0x7F080029
-			public const int Input_Phone = 2131230761;
+			public const int Input_Surname = 2131230761;
 			
 			// aapt resource value: 0x7F08002A
-			public const int Input_Surname = 2131230762;
-			
-			// aapt resource value: 0x7F08002B
-			public const int Input_Username = 2131230763;
+			public const int Input_Username = 2131230762;
 			
 			// aapt resource value: 0x7F080141
 			public const int invisible = 2131231041;
@@ -11591,8 +10117,8 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F080175
 			public const int message = 2131231093;
 			
-			// aapt resource value: 0x7F08002C
-			public const int META = 2131230764;
+			// aapt resource value: 0x7F08002B
+			public const int META = 2131230763;
 			
 			// aapt resource value: 0x7F080176
 			public const int middle = 2131231094;
@@ -11690,11 +10216,11 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F080195
 			public const int mtrl_view_tag_bottom_padding = 2131231125;
 			
-			// aapt resource value: 0x7F08002D
-			public const int MultiplePulse = 2131230765;
+			// aapt resource value: 0x7F08002C
+			public const int MultiplePulse = 2131230764;
 			
-			// aapt resource value: 0x7F08002E
-			public const int MultiplePulseRing = 2131230766;
+			// aapt resource value: 0x7F08002D
+			public const int MultiplePulseRing = 2131230765;
 			
 			// aapt resource value: 0x7F080196
 			public const int multiply = 2131231126;
@@ -11774,8 +10300,8 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801AF
 			public const int notification_main_column_container = 2131231151;
 			
-			// aapt resource value: 0x7F08002F
-			public const int NO_DEBUG = 2131230767;
+			// aapt resource value: 0x7F08002E
+			public const int NO_DEBUG = 2131230766;
 			
 			// aapt resource value: 0x7F0801B0
 			public const int off = 2131231152;
@@ -11846,11 +10372,11 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801C6
 			public const int progress_horizontal = 2131231174;
 			
-			// aapt resource value: 0x7F080030
-			public const int Pulse = 2131230768;
+			// aapt resource value: 0x7F08002F
+			public const int Pulse = 2131230767;
 			
-			// aapt resource value: 0x7F080031
-			public const int PulseRing = 2131230769;
+			// aapt resource value: 0x7F080030
+			public const int PulseRing = 2131230768;
 			
 			// aapt resource value: 0x7F0801C7
 			public const int radio = 2131231175;
@@ -11867,11 +10393,11 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801CB
 			public const int recyclerAppUsers = 2131231179;
 			
-			// aapt resource value: 0x7F080032
-			public const int RecyclerAwareness = 2131230770;
+			// aapt resource value: 0x7F080031
+			public const int RecyclerAwareness = 2131230769;
 			
-			// aapt resource value: 0x7F080033
-			public const int RecyclerChatForum = 2131230771;
+			// aapt resource value: 0x7F080032
+			public const int RecyclerChatForum = 2131230770;
 			
 			// aapt resource value: 0x7F0801CC
 			public const int recyclerContactsList = 2131231180;
@@ -11900,17 +10426,17 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801D4
 			public const int right_side = 2131231188;
 			
-			// aapt resource value: 0x7F080034
-			public const int RotatingCircle = 2131230772;
+			// aapt resource value: 0x7F080033
+			public const int RotatingCircle = 2131230771;
 			
-			// aapt resource value: 0x7F080035
-			public const int RotatingPlane = 2131230773;
+			// aapt resource value: 0x7F080034
+			public const int RotatingPlane = 2131230772;
 			
 			// aapt resource value: 0x7F0801D5
 			public const int rounded = 2131231189;
 			
-			// aapt resource value: 0x7F080036
-			public const int RowDateTime = 2131230774;
+			// aapt resource value: 0x7F080035
+			public const int RowDateTime = 2131230773;
 			
 			// aapt resource value: 0x7F0801D6
 			public const int row_help_call = 2131231190;
@@ -11924,17 +10450,17 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801D9
 			public const int row_invite_image = 2131231193;
 			
-			// aapt resource value: 0x7F080037
-			public const int Row_Location = 2131230775;
+			// aapt resource value: 0x7F080036
+			public const int Row_Location = 2131230774;
 			
-			// aapt resource value: 0x7F080038
-			public const int Row_Phone_Number = 2131230776;
+			// aapt resource value: 0x7F080037
+			public const int Row_Phone_Number = 2131230775;
 			
 			// aapt resource value: 0x7F0801DA
 			public const int row_user_image = 2131231194;
 			
-			// aapt resource value: 0x7F080039
-			public const int Row_User_Name = 2131230777;
+			// aapt resource value: 0x7F080038
+			public const int Row_User_Name = 2131230776;
 			
 			// aapt resource value: 0x7F0801DB
 			public const int satellite = 2131231195;
@@ -12011,11 +10537,11 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801F1
 			public const int select_dialog_listview = 2131231217;
 			
-			// aapt resource value: 0x7F08003F
-			public const int SenderTxtMessage = 2131230783;
+			// aapt resource value: 0x7F08003E
+			public const int SenderTxtMessage = 2131230782;
 			
-			// aapt resource value: 0x7F080040
-			public const int SenderTxtMsgTime = 2131230784;
+			// aapt resource value: 0x7F08003F
+			public const int SenderTxtMsgTime = 2131230783;
 			
 			// aapt resource value: 0x7F0801F4
 			public const int sharedValueSet = 2131231220;
@@ -12023,8 +10549,8 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801F5
 			public const int sharedValueUnset = 2131231221;
 			
-			// aapt resource value: 0x7F08003A
-			public const int SHIFT = 2131230778;
+			// aapt resource value: 0x7F080039
+			public const int SHIFT = 2131230777;
 			
 			// aapt resource value: 0x7F0801F6
 			public const int shortcut = 2131231222;
@@ -12038,14 +10564,14 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F0801F9
 			public const int showTitle = 2131231225;
 			
+			// aapt resource value: 0x7F08003A
+			public const int SHOW_ALL = 2131230778;
+			
 			// aapt resource value: 0x7F08003B
-			public const int SHOW_ALL = 2131230779;
+			public const int SHOW_PATH = 2131230779;
 			
 			// aapt resource value: 0x7F08003C
-			public const int SHOW_PATH = 2131230780;
-			
-			// aapt resource value: 0x7F08003D
-			public const int SHOW_PROGRESS = 2131230781;
+			public const int SHOW_PROGRESS = 2131230780;
 			
 			// aapt resource value: 0x7F0801FA
 			public const int sin = 2131231226;
@@ -12155,8 +10681,8 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F08021D
 			public const int supportScrollUp = 2131231261;
 			
-			// aapt resource value: 0x7F08003E
-			public const int SYM = 2131230782;
+			// aapt resource value: 0x7F08003D
+			public const int SYM = 2131230781;
 			
 			// aapt resource value: 0x7F08021E
 			public const int tabMode = 2131231262;
@@ -12284,8 +10810,8 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F080241
 			public const int text_input_start_icon = 2131231297;
 			
-			// aapt resource value: 0x7F080043
-			public const int ThreeBounce = 2131230787;
+			// aapt resource value: 0x7F080042
+			public const int ThreeBounce = 2131230786;
 			
 			// aapt resource value: 0x7F080248
 			public const int time = 2131231304;
@@ -12317,11 +10843,11 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F080251
 			public const int topPanel = 2131231313;
 			
-			// aapt resource value: 0x7F080041
-			public const int TOP_END = 2131230785;
+			// aapt resource value: 0x7F080040
+			public const int TOP_END = 2131230784;
 			
-			// aapt resource value: 0x7F080042
-			public const int TOP_START = 2131230786;
+			// aapt resource value: 0x7F080041
+			public const int TOP_START = 2131230785;
 			
 			// aapt resource value: 0x7F080252
 			public const int touch_outside = 2131231314;
@@ -12356,119 +10882,122 @@ namespace GBV_Emergency_Response
 			// aapt resource value: 0x7F08025C
 			public const int txtAwarenessSender = 2131231324;
 			
-			// aapt resource value: 0x7F080044
-			public const int TxtMessage = 2131230788;
-			
-			// aapt resource value: 0x7F080045
-			public const int TxtMsgSenderName = 2131230789;
-			
 			// aapt resource value: 0x7F08025D
-			public const int txtOr = 2131231325;
+			public const int txtDates = 2131231325;
+			
+			// aapt resource value: 0x7F080043
+			public const int TxtMessage = 2131230787;
+			
+			// aapt resource value: 0x7F080044
+			public const int TxtMsgSenderName = 2131230788;
 			
 			// aapt resource value: 0x7F08025E
-			public const int txt_friends = 2131231326;
+			public const int txtOr = 2131231326;
 			
 			// aapt resource value: 0x7F08025F
-			public const int txt_invite_count = 2131231327;
+			public const int txt_friends = 2131231327;
 			
 			// aapt resource value: 0x7F080260
-			public const int txt_profile_name = 2131231328;
+			public const int txt_invite_count = 2131231328;
 			
 			// aapt resource value: 0x7F080261
-			public const int txt_profile_phone_number = 2131231329;
+			public const int txt_profile_name = 2131231329;
 			
 			// aapt resource value: 0x7F080262
-			public const int txt_profile_surname = 2131231330;
+			public const int txt_profile_phone_number = 2131231330;
 			
 			// aapt resource value: 0x7F080263
-			public const int @unchecked = 2131231331;
+			public const int txt_profile_surname = 2131231331;
 			
 			// aapt resource value: 0x7F080264
-			public const int uniform = 2131231332;
+			public const int @unchecked = 2131231332;
 			
 			// aapt resource value: 0x7F080265
-			public const int unlabeled = 2131231333;
+			public const int uniform = 2131231333;
 			
 			// aapt resource value: 0x7F080266
-			public const int up = 2131231334;
+			public const int unlabeled = 2131231334;
 			
 			// aapt resource value: 0x7F080267
-			public const int useLogo = 2131231335;
+			public const int up = 2131231335;
 			
 			// aapt resource value: 0x7F080268
-			public const int user_row_display_name = 2131231336;
+			public const int useLogo = 2131231336;
 			
 			// aapt resource value: 0x7F080269
-			public const int user_row_names = 2131231337;
+			public const int user_row_display_name = 2131231337;
 			
 			// aapt resource value: 0x7F08026A
-			public const int vertical = 2131231338;
+			public const int user_row_names = 2131231338;
 			
 			// aapt resource value: 0x7F08026B
-			public const int vertical_only = 2131231339;
+			public const int vertical = 2131231339;
 			
 			// aapt resource value: 0x7F08026C
-			public const int view_offset_helper = 2131231340;
+			public const int vertical_only = 2131231340;
 			
 			// aapt resource value: 0x7F08026D
-			public const int view_separator = 2131231341;
+			public const int view_offset_helper = 2131231341;
 			
 			// aapt resource value: 0x7F08026E
-			public const int view_transition = 2131231342;
+			public const int view_separator = 2131231342;
 			
 			// aapt resource value: 0x7F08026F
-			public const int view_tree_lifecycle_owner = 2131231343;
+			public const int view_transition = 2131231343;
 			
 			// aapt resource value: 0x7F080270
-			public const int view_tree_saved_state_registry_owner = 2131231344;
+			public const int view_tree_lifecycle_owner = 2131231344;
 			
 			// aapt resource value: 0x7F080271
-			public const int view_tree_view_model_store_owner = 2131231345;
+			public const int view_tree_saved_state_registry_owner = 2131231345;
 			
 			// aapt resource value: 0x7F080272
-			public const int visible = 2131231346;
+			public const int view_tree_view_model_store_owner = 2131231346;
 			
 			// aapt resource value: 0x7F080273
-			public const int visible_removing_fragment_view_tag = 2131231347;
-			
-			// aapt resource value: 0x7F080046
-			public const int WanderingCubes = 2131230790;
+			public const int visible = 2131231347;
 			
 			// aapt resource value: 0x7F080274
-			public const int warning_frame = 2131231348;
+			public const int visible_removing_fragment_view_tag = 2131231348;
 			
-			// aapt resource value: 0x7F080047
-			public const int Wave = 2131230791;
+			// aapt resource value: 0x7F080045
+			public const int WanderingCubes = 2131230789;
 			
 			// aapt resource value: 0x7F080275
-			public const int west = 2131231349;
+			public const int warning_frame = 2131231349;
+			
+			// aapt resource value: 0x7F080046
+			public const int Wave = 2131230790;
 			
 			// aapt resource value: 0x7F080276
-			public const int wide = 2131231350;
-			
-			// aapt resource value: 0x7F080278
-			public const int withinBounds = 2131231352;
+			public const int west = 2131231350;
 			
 			// aapt resource value: 0x7F080277
-			public const int withText = 2131231351;
+			public const int wide = 2131231351;
 			
 			// aapt resource value: 0x7F080279
-			public const int wrap = 2131231353;
+			public const int withinBounds = 2131231353;
+			
+			// aapt resource value: 0x7F080278
+			public const int withText = 2131231352;
 			
 			// aapt resource value: 0x7F08027A
-			public const int wrap_content = 2131231354;
+			public const int wrap = 2131231354;
 			
 			// aapt resource value: 0x7F08027B
-			public const int wrap_content_constrained = 2131231355;
+			public const int wrap_content = 2131231355;
 			
 			// aapt resource value: 0x7F08027C
-			public const int x_left = 2131231356;
+			public const int wrap_content_constrained = 2131231356;
 			
 			// aapt resource value: 0x7F08027D
-			public const int x_right = 2131231357;
+			public const int x_left = 2131231357;
 			
 			// aapt resource value: 0x7F08027E
-			public const int zero_corner_chip = 2131231358;
+			public const int x_right = 2131231358;
+			
+			// aapt resource value: 0x7F08027F
+			public const int zero_corner_chip = 2131231359;
 			
 			static Id()
 			{
@@ -12849,247 +11378,250 @@ namespace GBV_Emergency_Response
 			public const int login = 2131427400;
 			
 			// aapt resource value: 0x7F0B0049
-			public const int material_chip_input_combo = 2131427401;
-			
-			// aapt resource value: 0x7F0B004E
-			public const int material_clockface_textview = 2131427406;
-			
-			// aapt resource value: 0x7F0B004F
-			public const int material_clockface_view = 2131427407;
+			public const int map_fragment = 2131427401;
 			
 			// aapt resource value: 0x7F0B004A
-			public const int material_clock_display = 2131427402;
+			public const int material_chip_input_combo = 2131427402;
 			
-			// aapt resource value: 0x7F0B004B
-			public const int material_clock_display_divider = 2131427403;
-			
-			// aapt resource value: 0x7F0B004C
-			public const int material_clock_period_toggle = 2131427404;
-			
-			// aapt resource value: 0x7F0B004D
-			public const int material_clock_period_toggle_land = 2131427405;
+			// aapt resource value: 0x7F0B004F
+			public const int material_clockface_textview = 2131427407;
 			
 			// aapt resource value: 0x7F0B0050
-			public const int material_radial_view_group = 2131427408;
+			public const int material_clockface_view = 2131427408;
+			
+			// aapt resource value: 0x7F0B004B
+			public const int material_clock_display = 2131427403;
+			
+			// aapt resource value: 0x7F0B004C
+			public const int material_clock_display_divider = 2131427404;
+			
+			// aapt resource value: 0x7F0B004D
+			public const int material_clock_period_toggle = 2131427405;
+			
+			// aapt resource value: 0x7F0B004E
+			public const int material_clock_period_toggle_land = 2131427406;
 			
 			// aapt resource value: 0x7F0B0051
-			public const int material_textinput_timepicker = 2131427409;
-			
-			// aapt resource value: 0x7F0B0054
-			public const int material_timepicker = 2131427412;
-			
-			// aapt resource value: 0x7F0B0055
-			public const int material_timepicker_dialog = 2131427413;
-			
-			// aapt resource value: 0x7F0B0056
-			public const int material_timepicker_textinput_display = 2131427414;
+			public const int material_radial_view_group = 2131427409;
 			
 			// aapt resource value: 0x7F0B0052
-			public const int material_time_chip = 2131427410;
+			public const int material_textinput_timepicker = 2131427410;
 			
-			// aapt resource value: 0x7F0B0053
-			public const int material_time_input = 2131427411;
+			// aapt resource value: 0x7F0B0055
+			public const int material_timepicker = 2131427413;
+			
+			// aapt resource value: 0x7F0B0056
+			public const int material_timepicker_dialog = 2131427414;
 			
 			// aapt resource value: 0x7F0B0057
-			public const int mtrl_alert_dialog = 2131427415;
+			public const int material_timepicker_textinput_display = 2131427415;
+			
+			// aapt resource value: 0x7F0B0053
+			public const int material_time_chip = 2131427411;
+			
+			// aapt resource value: 0x7F0B0054
+			public const int material_time_input = 2131427412;
 			
 			// aapt resource value: 0x7F0B0058
-			public const int mtrl_alert_dialog_actions = 2131427416;
+			public const int mtrl_alert_dialog = 2131427416;
 			
 			// aapt resource value: 0x7F0B0059
-			public const int mtrl_alert_dialog_title = 2131427417;
+			public const int mtrl_alert_dialog_actions = 2131427417;
 			
 			// aapt resource value: 0x7F0B005A
-			public const int mtrl_alert_select_dialog_item = 2131427418;
+			public const int mtrl_alert_dialog_title = 2131427418;
 			
 			// aapt resource value: 0x7F0B005B
-			public const int mtrl_alert_select_dialog_multichoice = 2131427419;
+			public const int mtrl_alert_select_dialog_item = 2131427419;
 			
 			// aapt resource value: 0x7F0B005C
-			public const int mtrl_alert_select_dialog_singlechoice = 2131427420;
+			public const int mtrl_alert_select_dialog_multichoice = 2131427420;
 			
 			// aapt resource value: 0x7F0B005D
-			public const int mtrl_calendar_day = 2131427421;
-			
-			// aapt resource value: 0x7F0B005F
-			public const int mtrl_calendar_days_of_week = 2131427423;
+			public const int mtrl_alert_select_dialog_singlechoice = 2131427421;
 			
 			// aapt resource value: 0x7F0B005E
-			public const int mtrl_calendar_day_of_week = 2131427422;
+			public const int mtrl_calendar_day = 2131427422;
 			
 			// aapt resource value: 0x7F0B0060
-			public const int mtrl_calendar_horizontal = 2131427424;
+			public const int mtrl_calendar_days_of_week = 2131427424;
+			
+			// aapt resource value: 0x7F0B005F
+			public const int mtrl_calendar_day_of_week = 2131427423;
 			
 			// aapt resource value: 0x7F0B0061
-			public const int mtrl_calendar_month = 2131427425;
-			
-			// aapt resource value: 0x7F0B0064
-			public const int mtrl_calendar_months = 2131427428;
+			public const int mtrl_calendar_horizontal = 2131427425;
 			
 			// aapt resource value: 0x7F0B0062
-			public const int mtrl_calendar_month_labeled = 2131427426;
-			
-			// aapt resource value: 0x7F0B0063
-			public const int mtrl_calendar_month_navigation = 2131427427;
+			public const int mtrl_calendar_month = 2131427426;
 			
 			// aapt resource value: 0x7F0B0065
-			public const int mtrl_calendar_vertical = 2131427429;
+			public const int mtrl_calendar_months = 2131427429;
+			
+			// aapt resource value: 0x7F0B0063
+			public const int mtrl_calendar_month_labeled = 2131427427;
+			
+			// aapt resource value: 0x7F0B0064
+			public const int mtrl_calendar_month_navigation = 2131427428;
 			
 			// aapt resource value: 0x7F0B0066
-			public const int mtrl_calendar_year = 2131427430;
+			public const int mtrl_calendar_vertical = 2131427430;
 			
 			// aapt resource value: 0x7F0B0067
-			public const int mtrl_layout_snackbar = 2131427431;
+			public const int mtrl_calendar_year = 2131427431;
 			
 			// aapt resource value: 0x7F0B0068
-			public const int mtrl_layout_snackbar_include = 2131427432;
+			public const int mtrl_layout_snackbar = 2131427432;
 			
 			// aapt resource value: 0x7F0B0069
-			public const int mtrl_navigation_rail_item = 2131427433;
+			public const int mtrl_layout_snackbar_include = 2131427433;
 			
 			// aapt resource value: 0x7F0B006A
-			public const int mtrl_picker_actions = 2131427434;
+			public const int mtrl_navigation_rail_item = 2131427434;
 			
 			// aapt resource value: 0x7F0B006B
-			public const int mtrl_picker_dialog = 2131427435;
+			public const int mtrl_picker_actions = 2131427435;
 			
 			// aapt resource value: 0x7F0B006C
-			public const int mtrl_picker_fullscreen = 2131427436;
+			public const int mtrl_picker_dialog = 2131427436;
 			
 			// aapt resource value: 0x7F0B006D
-			public const int mtrl_picker_header_dialog = 2131427437;
+			public const int mtrl_picker_fullscreen = 2131427437;
 			
 			// aapt resource value: 0x7F0B006E
-			public const int mtrl_picker_header_fullscreen = 2131427438;
+			public const int mtrl_picker_header_dialog = 2131427438;
 			
 			// aapt resource value: 0x7F0B006F
-			public const int mtrl_picker_header_selection_text = 2131427439;
+			public const int mtrl_picker_header_fullscreen = 2131427439;
 			
 			// aapt resource value: 0x7F0B0070
-			public const int mtrl_picker_header_title_text = 2131427440;
+			public const int mtrl_picker_header_selection_text = 2131427440;
 			
 			// aapt resource value: 0x7F0B0071
-			public const int mtrl_picker_header_toggle = 2131427441;
+			public const int mtrl_picker_header_title_text = 2131427441;
 			
 			// aapt resource value: 0x7F0B0072
-			public const int mtrl_picker_text_input_date = 2131427442;
+			public const int mtrl_picker_header_toggle = 2131427442;
 			
 			// aapt resource value: 0x7F0B0073
-			public const int mtrl_picker_text_input_date_range = 2131427443;
+			public const int mtrl_picker_text_input_date = 2131427443;
 			
 			// aapt resource value: 0x7F0B0074
-			public const int notification_action = 2131427444;
+			public const int mtrl_picker_text_input_date_range = 2131427444;
 			
 			// aapt resource value: 0x7F0B0075
-			public const int notification_action_tombstone = 2131427445;
+			public const int notification_action = 2131427445;
 			
 			// aapt resource value: 0x7F0B0076
-			public const int notification_media_action = 2131427446;
+			public const int notification_action_tombstone = 2131427446;
 			
 			// aapt resource value: 0x7F0B0077
-			public const int notification_media_cancel_action = 2131427447;
+			public const int notification_media_action = 2131427447;
 			
 			// aapt resource value: 0x7F0B0078
-			public const int notification_template_big_media = 2131427448;
+			public const int notification_media_cancel_action = 2131427448;
 			
 			// aapt resource value: 0x7F0B0079
-			public const int notification_template_big_media_custom = 2131427449;
+			public const int notification_template_big_media = 2131427449;
 			
 			// aapt resource value: 0x7F0B007A
-			public const int notification_template_big_media_narrow = 2131427450;
+			public const int notification_template_big_media_custom = 2131427450;
 			
 			// aapt resource value: 0x7F0B007B
-			public const int notification_template_big_media_narrow_custom = 2131427451;
+			public const int notification_template_big_media_narrow = 2131427451;
 			
 			// aapt resource value: 0x7F0B007C
-			public const int notification_template_custom_big = 2131427452;
+			public const int notification_template_big_media_narrow_custom = 2131427452;
 			
 			// aapt resource value: 0x7F0B007D
-			public const int notification_template_icon_group = 2131427453;
+			public const int notification_template_custom_big = 2131427453;
 			
 			// aapt resource value: 0x7F0B007E
-			public const int notification_template_lines_media = 2131427454;
+			public const int notification_template_icon_group = 2131427454;
 			
 			// aapt resource value: 0x7F0B007F
-			public const int notification_template_media = 2131427455;
+			public const int notification_template_lines_media = 2131427455;
 			
 			// aapt resource value: 0x7F0B0080
-			public const int notification_template_media_custom = 2131427456;
+			public const int notification_template_media = 2131427456;
 			
 			// aapt resource value: 0x7F0B0081
-			public const int notification_template_part_chronometer = 2131427457;
+			public const int notification_template_media_custom = 2131427457;
 			
 			// aapt resource value: 0x7F0B0082
-			public const int notification_template_part_time = 2131427458;
+			public const int notification_template_part_chronometer = 2131427458;
 			
 			// aapt resource value: 0x7F0B0083
-			public const int profile_fragment = 2131427459;
+			public const int notification_template_part_time = 2131427459;
 			
 			// aapt resource value: 0x7F0B0084
-			public const int receiver_message_row = 2131427460;
+			public const int profile_fragment = 2131427460;
 			
 			// aapt resource value: 0x7F0B0085
-			public const int select_dialog_item_material = 2131427461;
+			public const int receiver_message_row = 2131427461;
 			
 			// aapt resource value: 0x7F0B0086
-			public const int select_dialog_multichoice_material = 2131427462;
+			public const int select_dialog_item_material = 2131427462;
 			
 			// aapt resource value: 0x7F0B0087
-			public const int select_dialog_singlechoice_material = 2131427463;
+			public const int select_dialog_multichoice_material = 2131427463;
 			
 			// aapt resource value: 0x7F0B0088
-			public const int sender_message_row = 2131427464;
+			public const int select_dialog_singlechoice_material = 2131427464;
 			
 			// aapt resource value: 0x7F0B0089
-			public const int sign_up = 2131427465;
+			public const int sender_message_row = 2131427465;
 			
 			// aapt resource value: 0x7F0B008A
-			public const int support_simple_spinner_dropdown_item = 2131427466;
+			public const int sign_up = 2131427466;
 			
 			// aapt resource value: 0x7F0B008B
-			public const int test_action_chip = 2131427467;
+			public const int support_simple_spinner_dropdown_item = 2131427467;
 			
 			// aapt resource value: 0x7F0B008C
-			public const int test_chip_zero_corner_radius = 2131427468;
+			public const int test_action_chip = 2131427468;
 			
 			// aapt resource value: 0x7F0B008D
-			public const int test_design_checkbox = 2131427469;
+			public const int test_chip_zero_corner_radius = 2131427469;
 			
 			// aapt resource value: 0x7F0B008E
-			public const int test_design_radiobutton = 2131427470;
+			public const int test_design_checkbox = 2131427470;
 			
 			// aapt resource value: 0x7F0B008F
-			public const int test_navigation_bar_item_layout = 2131427471;
+			public const int test_design_radiobutton = 2131427471;
 			
 			// aapt resource value: 0x7F0B0090
-			public const int test_reflow_chipgroup = 2131427472;
+			public const int test_navigation_bar_item_layout = 2131427472;
 			
 			// aapt resource value: 0x7F0B0091
-			public const int test_toolbar = 2131427473;
+			public const int test_reflow_chipgroup = 2131427473;
 			
 			// aapt resource value: 0x7F0B0092
-			public const int test_toolbar_custom_background = 2131427474;
+			public const int test_toolbar = 2131427474;
 			
 			// aapt resource value: 0x7F0B0093
-			public const int test_toolbar_elevation = 2131427475;
+			public const int test_toolbar_custom_background = 2131427475;
 			
 			// aapt resource value: 0x7F0B0094
-			public const int test_toolbar_surface = 2131427476;
-			
-			// aapt resource value: 0x7F0B0099
-			public const int text_view_without_line_height = 2131427481;
+			public const int test_toolbar_elevation = 2131427476;
 			
 			// aapt resource value: 0x7F0B0095
-			public const int text_view_with_line_height_from_appearance = 2131427477;
+			public const int test_toolbar_surface = 2131427477;
+			
+			// aapt resource value: 0x7F0B009A
+			public const int text_view_without_line_height = 2131427482;
 			
 			// aapt resource value: 0x7F0B0096
-			public const int text_view_with_line_height_from_layout = 2131427478;
+			public const int text_view_with_line_height_from_appearance = 2131427478;
 			
 			// aapt resource value: 0x7F0B0097
-			public const int text_view_with_line_height_from_style = 2131427479;
+			public const int text_view_with_line_height_from_layout = 2131427479;
 			
 			// aapt resource value: 0x7F0B0098
-			public const int text_view_with_theme_line_height = 2131427480;
+			public const int text_view_with_line_height_from_style = 2131427480;
+			
+			// aapt resource value: 0x7F0B0099
+			public const int text_view_with_theme_line_height = 2131427481;
 			
 			static Layout()
 			{
@@ -13129,11 +11661,11 @@ namespace GBV_Emergency_Response
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F0D0029
-			public const int iconfinder_Sed_16_2232599 = 2131558441;
+			// aapt resource value: 0x7F0D002B
+			public const int iconfinder_Sed_16_2232599 = 2131558443;
 			
-			// aapt resource value: 0x7F0D002A
-			public const int iconfinder_user03_6318050 = 2131558442;
+			// aapt resource value: 0x7F0D002C
+			public const int iconfinder_user03_6318050 = 2131558444;
 			
 			// aapt resource value: 0x7F0D0000
 			public const int ic_access_time_black_18dp = 2131558400;
@@ -13247,16 +11779,22 @@ namespace GBV_Emergency_Response
 			public const int ic_phonelink_ring_black_18dp = 2131558436;
 			
 			// aapt resource value: 0x7F0D0025
-			public const int ic_search_black_18dp = 2131558437;
+			public const int ic_question_answer_black_18dp = 2131558437;
 			
 			// aapt resource value: 0x7F0D0026
-			public const int ic_settings_power_black_18dp = 2131558438;
+			public const int ic_search_black_18dp = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int ic_settings_power_white_18dp = 2131558439;
+			public const int ic_settings_power_black_18dp = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
-			public const int ic_sms_black_18dp = 2131558440;
+			public const int ic_settings_power_white_18dp = 2131558440;
+			
+			// aapt resource value: 0x7F0D0029
+			public const int ic_sms_black_18dp = 2131558441;
+			
+			// aapt resource value: 0x7F0D002A
+			public const int ic_today_black_18dp = 2131558442;
 			
 			static Mipmap()
 			{
@@ -13543,22 +12081,22 @@ namespace GBV_Emergency_Response
 			public const int google_storage_bucket = 2131689557;
 			
 			// aapt resource value: 0x7F0F0056
-			public const int hello = 2131689558;
+			public const int hide_bottom_view_on_scroll_behavior = 2131689558;
 			
 			// aapt resource value: 0x7F0F0057
-			public const int hide_bottom_view_on_scroll_behavior = 2131689559;
+			public const int icon_content_description = 2131689559;
 			
 			// aapt resource value: 0x7F0F0058
-			public const int icon_content_description = 2131689560;
+			public const int item_view_role_description = 2131689560;
 			
 			// aapt resource value: 0x7F0F0059
-			public const int item_view_role_description = 2131689561;
-			
-			// aapt resource value: 0x7F0F005A
-			public const int library_name = 2131689562;
+			public const int library_name = 2131689561;
 			
 			// aapt resource value: 0x7F0F0000
 			public const int LOADING = 2131689472;
+			
+			// aapt resource value: 0x7F0F005A
+			public const int mapKey = 2131689562;
 			
 			// aapt resource value: 0x7F0F005B
 			public const int material_clock_display_divider = 2131689563;

@@ -9,7 +9,7 @@ namespace GBV_Emergency_Response.Models
     public class AppUsers
     {
         [Id]
-        public string Uid { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }

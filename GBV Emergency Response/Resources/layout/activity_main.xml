@@ -37,15 +37,16 @@
         android:layout_below="@+id/appBarLayout1"
         android:layout_above="@+id/bottom_nav_view"
      />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        app:cnb_menuResource="@menu/nav_menu"
         android:id="@+id/bottom_nav_view"
-        app:menu="@menu/nav_menu"
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-    />
+        app:cnb_orientationMode="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        />
 
     
 </RelativeLayout>

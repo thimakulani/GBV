@@ -12,9 +12,9 @@ namespace GBV_Emergency_Response.Adapters
     {
         public event EventHandler<ContactsAdapterClickEventArgs> ItemClick;
         public event EventHandler<ContactsAdapterClickEventArgs> ItemLongClick;
-        private readonly List<InviteModel> items = new List<InviteModel>();
+        private readonly List<AppUsers> items = new List<AppUsers>();
 
-        public ContactsAdapter(List<InviteModel> data)
+        public ContactsAdapter(List<AppUsers> data)
         {
             items = data;
         }
@@ -39,9 +39,8 @@ namespace GBV_Emergency_Response.Adapters
             
             var holder = viewHolder as ContactsAdapterViewHolder;
 
-            var color = new XamarinTextDrawable.Util.ColorGenerator();
-            var drawable = new XamarinTextDrawable.TextDrawable.Builder().BuildRect("", color.GetRandomColor());
-            holder.Img.SetImageDrawable(drawable);
+            holder.Name.Text = $"{items[position].Name} {items[position].Surname}";
+
 
 
 

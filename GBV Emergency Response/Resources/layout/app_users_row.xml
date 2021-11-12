@@ -16,8 +16,8 @@
         android:padding="10dp"
     >
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/row_user_image"
             android:src="@mipmap/ic_contact_phone_black_18dp"
             android:layout_marginLeft="5dp"
@@ -28,9 +28,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/user_row_display_name"
             android:layout_marginRight="5dp"
-            android:text="@string/full_app_name"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@+id/row_user_image"
+            android:layout_toStartOf="@+id/BtnFriendAction"
+            android:layout_toEndOf="@+id/row_user_image"
         />
         <TextView
             android:layout_width="match_parent"
@@ -39,18 +39,17 @@
             android:layout_below="@+id/user_row_display_name"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            android:text="@string/full_app_name"
-            android:layout_toRightOf="@+id/row_user_image"
+            android:layout_toStartOf="@+id/BtnFriendAction"
+            android:layout_toEndOf="@+id/row_user_image"
         />
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/BtnFriendAction"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
             android:text="@string/txt_btn_invite"
-            android:layout_below="@+id/user_row_names"
-            android:layout_toRightOf="@+id/row_user_image"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
         />
     </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>

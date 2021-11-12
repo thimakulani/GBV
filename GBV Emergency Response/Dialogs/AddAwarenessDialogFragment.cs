@@ -17,6 +17,7 @@ using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.TextField;
+using ID.IonBit.IonAlertLib;
 using Plugin.CloudFirestore;
 using Plugin.Media;
 
@@ -55,37 +56,51 @@ namespace GBV_Emergency_Response.Dialogs
             SubmitAwareness.Click += SubmitAwareness_Click;
 
         }
-        string documentId = null;
+        
         IDocumentReference query;
+        IonAlert loadingDialog;
         private async void SubmitAwareness_Click(object sender, EventArgs e)
         {
-            Dictionary<string, object> data = new Dictionary<string, object>
-            {
-                { "Uid", FirebaseAuth.Instance.CurrentUser.Uid },
-                { "Dates", FieldValue.ServerTimestamp },
-                { "Message", AwarenessInput.Text },
-                { "ImageUrl", null },
-            };
 
-            query = await CrossCloudFirestore.Current
-                .Instance
-                .Collection("AWARENESS")
-                .AddAsync(data);
-            documentId = query.Id;
 
             if (!string.IsNullOrEmpty(AwarenessInput.Text) && !string.IsNullOrWhiteSpace(AwarenessInput.Text))
             {
+                Dictionary<string, object> data = new Dictionary<string, object>
+                {
+                    { "Uid", FirebaseAuth.Instance.CurrentUser.Uid },
+                    { "Dates", FieldValue.ServerTimestamp },
+                    { "Message", AwarenessInput.Text },
+                    { "ImageUrl", null },
+                };
+                loadingDialog = new IonAlert(context, IonAlert.ProgressType);
+                loadingDialog.SetSpinKit("DoubleBounce")
+                    .SetSpinColor("#008D91")
+                    .ShowCancelButton(false)
+                    .Show();
+                query = await CrossCloudFirestore.Current
+                    .Instance
+                    .Collection("AWARENESS")
+                    .AddAsync(data);
 
                 //dbRef = FirebaseDatabase.Instance.GetReference("Awareness").Push();
                 //dbRef.SetValue(data);
                 if (imageArray != null)
                 {
-                    storageRef = FirebaseStorage.Instance.GetReference("Awareness");
+                    storageRef = FirebaseStorage.Instance.GetReference("AWARENESS");
                     storageRef.PutBytes(imageArray)
                         .AddOnSuccessListener(this)
+                        .AddOnCompleteListener(this)
                         .AddOnFailureListener(this);
                 }
+                else
+                {
+                    loadingDialog.Dismiss();
+                }
 
+            }
+            else
+            {
+                AwarenessInput.Error = "Type a message";
             }
             AwarenessInput.Text = string.Empty;
             Dismiss();
@@ -160,10 +175,7 @@ namespace GBV_Emergency_Response.Dialogs
 
         public void OnComplete(Task task)
         {
-            if (task.IsSuccessful)
-            {
-
-            }
+            loadingDialog.Dismiss();
         }
 
     }

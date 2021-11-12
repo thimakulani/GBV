@@ -119,8 +119,31 @@ namespace GBV_Emergency_Response.Dialogs
 
        
 
-        private void Adapter_BtnClick(object sender, AppUsersAdapterClickEventArgs e)
+        private async void Adapter_BtnClick(object sender, AppUsersAdapterClickEventArgs e)
         {
+            Dictionary<string, object> data = new Dictionary<string, object>();
+            data.Add("Uid", FirebaseAuth.Instance.Uid);
+            data.Add("Status", "0");
+            await CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("REQUESTS")
+                .Document("Request")
+                .Collection(items[e.Position].Id)
+                .AddAsync(data);
+
+
+            Dictionary<string, object> data_2 = new Dictionary<string, object>();
+            data.Add("Uid", items[e.Position].Id);
+            data.Add("Status", "0");
+
+            await CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("REQUESTS")
+                .Document("Request")
+                .Collection(FirebaseAuth.Instance.Uid)
+                .AddAsync(data_2);
             //FirebaseDatabase.Instance.GetReference("Request")
             //    .Child(items[e.Position].Keyid)
             //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)

@@ -10,10 +10,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="5dp"
         android:id="@+id/RecyclerAwareness"
         android:scrollbars="vertical"
+        android:layout_above="@+id/FabCreateAwareness"
     />
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:layout_width="wrap_content"
@@ -21,7 +22,7 @@
         android:layout_margin="5dp"
         android:layout_gravity="right"
         android:id="@+id/FabCreateAwareness"
-        app:icon="@mipmap/ic_add_white_18dp"
+        app:icon="@drawable/ic_add_white_18dp"
         android:textColor="@color/color_white"
         android:text="@string/txt_add_awareness"
         android:layout_alignParentBottom="true"

@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Plugin.CloudFirestore;
+using Plugin.CloudFirestore.Attributes;
 
 namespace GBV_Emergency_Response.Models
 {
@@ -18,9 +20,10 @@ namespace GBV_Emergency_Response.Models
         public string Phone { get; set; }
         public string Lat { get; set; }
         public string Lon { get; set; }
-        public DateTime TimeDate { get; set; }
+        public Timestamp TimeDate { get; set; }
         public string UserKey { get; set; }
-        public string AlertId { get; set; }
+        [Id]
+        public string Id { get; set; }
         public bool Attended { get; set; }
     }
 }

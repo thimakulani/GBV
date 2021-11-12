@@ -94,8 +94,6 @@ namespace GBV_Emergency_Response.Fragments
                     }
                 });
 
-
-
             FabCreateAwareness.Click += FabCreateAwareness_Click;
             //BtnCreateAwareness.Click += BtnCreateAwareness_Click;
         }

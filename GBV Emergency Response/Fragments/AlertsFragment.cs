@@ -4,15 +4,16 @@ using System.Threading.Tasks;
 using Android.Content;
 using Android.OS;
 using Android.Views;
+using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
-using Firebase.Auth;
 using GBV_Emergency_Response.Adapters;
 using GBV_Emergency_Response.Models;
+using Plugin.CloudFirestore;
 using Xamarin.Essentials;
 
 namespace GBV_Emergency_Response.Fragments
 {
-    public class AlertsFragment : HelpFragment
+    public class AlertsFragment : Fragment
     {
         private RecyclerView recyclerAlerts;
         private List<AlertsMessages> items = new List<AlertsMessages>();
@@ -49,12 +50,74 @@ namespace GBV_Emergency_Response.Fragments
             recyclerAlerts.SetAdapter(adapter);
             adapter.NotifyDataSetChanged();
             adapter.BtnNavClick += Adapter_BtnNavClick;
+            adapter.ItemClick += Adapter_ItemClick;
             adapter.FabCallClick += Adapter_FabCallClick;
 
+            
+            CrossCloudFirestore.Current.Instance
+                .Collection("EMERGENCY")
+                .OrderBy("TimeDate", false)
+                .AddSnapshotListener((value, errors) =>
+                {
+                    if (!value.IsEmpty)
+                    {
+                        foreach (var dc in value.DocumentChanges)
+                        {
+                            var alert = dc.Document.ToObject<AlertsMessages>();
+                            switch (dc.Type)
+                            {
+                                case DocumentChangeType.Added:
+                                    items.Add(alert);
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Modified:
+                                    items[dc.OldIndex] = alert;
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Removed:
+                                    items.RemoveAt(dc.OldIndex);
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                });
 
+            
         }
+        public event EventHandler<ShowMapFragmentArgs> ShowMapHandler;
+        public  class ShowMapFragmentArgs : EventArgs
+        {
+            public AlertsMessages Alerts { get; set; }
+        }
+        private void Adapter_ItemClick(object sender, AlertsAdapterClickEventArgs e)
+        {
+            ShowMapHandler.Invoke(this, new ShowMapFragmentArgs { Alerts = items[e.Position] });
+            //var utility = new PolylineUtility();
 
-      
+            //// Create an IEnumberable<IGeoCoordinate>
+            //// or IEnumerable<Tuple<double,double>>
+            //var geoPoints = new List<IGeoCoordinate>
+            //{
+            //    //, 
+            //    new GeoCoordinate(-23.869037400561844, 29.48357921705048),
+            //    new GeoCoordinate(-23.909845674211308, 29.597562367273195),
+            //};
+
+            //// Encode points to string.
+            //var polyLine = utility.Encode(geoPoints); // output: _p~iF~ps|U_ulLnnqC_mqNvxq`@
+
+            //// Decode string to points.
+            //var decodedPoints = utility.Decode(polyLine);
+            //int i = 0;
+            //foreach (var item in polyLine)
+            //{
+            //    i++;
+            //}
+            //Toast.MakeText(context, $"{polyLine}  =={i}", ToastLength.Long).Show();
+        }
 
         private void Adapter_FabCallClick(object sender, AlertsAdapterClickEventArgs e)
         {
@@ -63,7 +126,7 @@ namespace GBV_Emergency_Response.Fragments
 
         private async void Adapter_BtnNavClick(object sender, AlertsAdapterClickEventArgs e)
         {
-            await OpenMap.NavigateToVictim(Double.Parse(items[e.Position].Lat), Double.Parse(items[e.Position].Lon));
+            await OpenMap.NavigateToVictim(double.Parse(items[e.Position].Lat), double.Parse(items[e.Position].Lon));
         }
 
        
@@ -73,7 +136,7 @@ namespace GBV_Emergency_Response.Fragments
         public static async Task NavigateToVictim(double lat, double lon)
         {
             var location = new Xamarin.Essentials.Location(lat, lon);
-            var options = new MapLaunchOptions { Name = "Victim" };
+            var options = new MapLaunchOptions { Name = "Victim", };
 
             try
             {

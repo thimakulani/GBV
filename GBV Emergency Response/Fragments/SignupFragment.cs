@@ -26,7 +26,6 @@ namespace GBV_Emergency_Response.Fragments
         private TextInputEditText InputSurname;
         private TextInputEditText InputPhoneNumber;
         private TextInputEditText InputPassword;
-        private TextInputEditText InputPassword2;
         private TextInputEditText InputEmail;
         private TextInputEditText InputUsername;
         Context context;
@@ -49,10 +48,9 @@ namespace GBV_Emergency_Response.Fragments
 
         private void ConnectViews(View view)
         {
-            InputUsername = view.FindViewById<TextInputEditText>(Resource.Id.Input_Username);
+            InputUsername = view.FindViewById<TextInputEditText>(Resource.Id.InputUserName);
             InputName = view.FindViewById<TextInputEditText>(Resource.Id.InputFirstName);
             InputPassword = view.FindViewById<TextInputEditText>(Resource.Id.InputPassword);
-            InputPassword2 = view.FindViewById<TextInputEditText>(Resource.Id.InputConfirmPassword);
             InputPhoneNumber = view.FindViewById<TextInputEditText>(Resource.Id.InputPhoneNumber);
             InputEmail = view.FindViewById<TextInputEditText>(Resource.Id.InputEmail);
             InputSurname = view.FindViewById<TextInputEditText>(Resource.Id.InputLastName);
@@ -91,11 +89,7 @@ namespace GBV_Emergency_Response.Fragments
                 InputPassword.Error = "Please provide your password";
                 return;
             }
-            if (InputPassword.Text != InputPassword2.Text)
-            {
-                InputPassword.Error = "Password does not match";
-                return;
-            }
+         
             BtnRegister.Enabled = false;
             loadingDialog = new IonAlert(context, IonAlert.ProgressType);
             loadingDialog.SetSpinKit("DoubleBounce")
@@ -132,7 +126,7 @@ namespace GBV_Emergency_Response.Fragments
             alert.Show();
         }
        
-        public void OnSuccess(Java.Lang.Object result)
+        public async void OnSuccess(Java.Lang.Object result)
         {
             Dictionary<string, object> data = new Dictionary<string, object>();
             data.Add("Username", InputUsername.Text);
@@ -140,8 +134,8 @@ namespace GBV_Emergency_Response.Fragments
             data.Add("Surname", InputSurname.Text);
             data.Add("PhoneNumber", InputPhoneNumber.Text);
             data.Add("Email", InputEmail.Text);
-            data.Add("ImageUrl", InputEmail.Text);
-            CrossCloudFirestore
+            data.Add("ImageUrl", null);
+            await CrossCloudFirestore
                 .Current
                 .Instance
                 .Collection("PEOPLE")
@@ -156,6 +150,7 @@ namespace GBV_Emergency_Response.Fragments
         public void OnComplete(Task task)
         {
             loadingDialog.Dismiss();
+            BtnRegister.Enabled = true;
         }
     }
 }

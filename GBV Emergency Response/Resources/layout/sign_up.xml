@@ -61,10 +61,10 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/txt_username"
                     android:textColor="@color/colorPrimary"
-                    android:id="@+id/InputName"
+                    android:id="@+id/InputUserName"
                     android:digits="@string/text_inputs_digits"
-                    android:inputType="textPersonName"
-
+                    android:inputType="text"
+                    android:autoText="false"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -88,6 +88,7 @@
                     android:id="@+id/InputFirstName"
                     android:inputType="textPersonName"
                     android:digits="@string/text_inputs_digits"
+                    android:autoText="false"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -112,6 +113,7 @@
                     android:id="@+id/InputLastName"
                     android:inputType="textPersonName"
                     android:digits="@string/text_inputs_digits"
+                    android:autoText="false"
 
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -134,8 +136,8 @@
                     android:hint="@string/txt_phone_number"
                     android:textColor="@color/colorPrimary"
                     android:id="@+id/InputPhoneNumber"
-                    android:inputType="number"
-              
+                    android:inputType="phone"
+                    android:autoText="false"
 
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -159,7 +161,7 @@
                     android:textColor="@color/colorPrimary"
                     android:id="@+id/InputEmail"
                     android:inputType="textEmailAddress"
-
+                    android:autoText="false"
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -183,35 +185,10 @@
                     android:textColor="@color/white"
                     android:inputType="textPassword"
                     android:id="@+id/InputPassword"
+                    android:autoText="false"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                style="@style/InputStyles"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:boxStrokeColor="@color/white"
-                app:hintTextColor="@color/white"
-                android:textColorHint="@color/white"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusTopStart="20dp"
-
-                >
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/txt_password_2"
-                    android:textColor="@color/white"
-                    android:inputType="textPassword"
-                    android:id="@+id/InputConfirmPassword"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
                 style="@style/Widget.MaterialComponents.Button.TextButton"

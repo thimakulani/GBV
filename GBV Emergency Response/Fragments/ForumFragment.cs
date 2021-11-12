@@ -11,12 +11,12 @@ using GBV_Emergency_Response.Models;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.TextField;
 using Java.Util;
+using Plugin.CloudFirestore;
 
 namespace GBV_Emergency_Response.Fragments
 {
     public class ForumFragment : HelpFragment
     {
-        private string SenderName;
         private Context context;
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,7 +32,6 @@ namespace GBV_Emergency_Response.Fragments
         {
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
             base.OnCreateView(inflater, container, savedInstanceState);
             View view = inflater.Inflate(Resource.Layout.forum_fragment, container, false);
             context = view.Context;
@@ -41,12 +40,25 @@ namespace GBV_Emergency_Response.Fragments
         }
         private void SendMsg()
         {
-            HashMap msg = new HashMap();
-            msg.Put("Message", InputMessage.Text);
-            msg.Put("SenderName", SenderName);
-            msg.Put("DateTime", DateTime.Now.ToString("dd MMM yyyy HH:mm tt"));
-            msg.Put("SenderId", Firebase.Auth.FirebaseAuth.Instance.Uid);
+            Dictionary<string, object> msg = new Dictionary<string, object>
+            {
+                { "Message", InputMessage.Text },
+                { "DateTime", DateTime.Now.ToString("dd MMM yyyy HH:mm tt") },
+                { "Uid", Firebase.Auth.FirebaseAuth.Instance.Uid }
+            };
 
+            if (string.IsNullOrEmpty(InputMessage.Text))
+            {
+                InputMessage.Error = "Enter message";
+            }
+            else
+            {
+                CrossCloudFirestore
+                    .Current
+                    .Instance
+                    .Collection("FORUM")
+                    .AddAsync(msg);
+            }
             InputMessage.Text = string.Empty;
         }
         private void ConnectViews(View view)
@@ -68,6 +80,35 @@ namespace GBV_Emergency_Response.Fragments
             recycler.SetAdapter(adapter);
 
             recycler.SmoothScrollToPosition(adapter.ItemCount);
+
+            CrossCloudFirestore
+                    .Current
+                    .Instance
+                    .Collection("FORUM")
+                    .AddSnapshotListener((values, errors) =>
+                    {
+                        if (!values.IsEmpty)
+                        {
+                            foreach (var item in values.DocumentChanges)
+                            {
+                                switch (item.Type)
+                                {
+                                    case DocumentChangeType.Added:
+                                        var msg = item.Document.ToObject<ForumMessage>();
+                                        items.Add(msg);
+                                        adapter.NotifyDataSetChanged();
+                                        break;
+                                    case DocumentChangeType.Modified:
+                                        break;
+                                    case DocumentChangeType.Removed:
+                                        break;
+                                }
+                            }
+                        }
+                    });
+
+
+
         }
 
 
@@ -83,7 +124,7 @@ namespace GBV_Emergency_Response.Fragments
     class ChatAdapter : RecyclerView.Adapter
     {
         private readonly List<ForumMessage> items = new List<ForumMessage>();
-        string KeyId;
+        private readonly string KeyId;
         
         public ChatAdapter(List<ForumMessage> data, string key)
         {
@@ -105,28 +146,43 @@ namespace GBV_Emergency_Response.Fragments
                 ChatsView chatsView = holder as ChatsView;
                 //chatsView.TxtTimeDate.Text = items[position].DateTime;
                 chatsView.TxtMessage.Text = items[position].Msg;
-                if(items[position].Date_Time.Date==DateTime.Now.Date)
-                {
-                    chatsView.TxtName.Text = $"{items[position].SenderName} 📅 today {items[position].Date_Time.ToString("HH:mm tt")}" ;
-                }
-                else
-                {
-                    chatsView.TxtName.Text = $"{items[position].SenderName} 📅({items[position].Date_Time.ToString("ddd, dd/MMM/yyyy HH:mm tt")})";
-                }
+                CrossCloudFirestore
+                    .Current
+                    .Instance
+                    .Collection("PEOPLE")
+                    .Document(items[position].UserId)
+                    .AddSnapshotListener((value, errors) =>
+                    {
+                        if (value.Exists)
+                        {
+                            var user = value.ToObject<AppUsers>();
+                            chatsView.TxtName.Text = $"{user.Name} {user.Surname}";
+
+
+                        }
+                    });
+                //if(items[position].Date_Time.Date ==DateTime.Now.Date)
+                //{
+                //    chatsView.TxtName.Text = $"{items[position].SenderName} 📅 today {items[position].Date_Time.ToString("HH:mm tt")}" ;
+                //}
+                //else
+                //{
+                //    chatsView.TxtName.Text = $"{items[position].SenderName} 📅({items[position].Date_Time.ToString("ddd, dd/MMM/yyyy HH:mm tt")})";
+                //}
             }
             else
             {
                 SenderChats senderView = holder as SenderChats;
                 senderView.SenderTxtMessage.Text = items[position].Msg;
                 //senderView.SenderTxtTimeDate.Text = items[position].Date_Time.;
-                if (items[position].Date_Time.Date == DateTime.Now.Date)
-                {
-                    senderView.SenderTxtTimeDate.Text = $"📅 today: {items[position].Date_Time.ToString("HH:mm tt")}";
-                }
-                else
-                {
-                    senderView.SenderTxtTimeDate.Text = $"📅{items[position].Date_Time.ToString("ddd, dd/MMM/yyyy HH:mm tt")}";
-                }
+                //if (items[position].Date_Time.Date == DateTime.Now.Date)
+                //{
+                   senderView.SenderTxtTimeDate.Text = $"📅Me";
+                //}
+                //else
+                //{
+                //    senderView.SenderTxtTimeDate.Text = $"📅{items[position].Date_Time.ToString("ddd, dd/MMM/yyyy HH:mm tt")}";
+                //}
             }
 
         }

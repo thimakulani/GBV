@@ -54,21 +54,20 @@ namespace GBV_Emergency_Response.Adapters
 
             holder.TxtName.Text = items[position].Name;
             holder.TxtPhone.Text = items[position].Phone;
-            TimeSpan timeSpan = DateTime.Now - items[position].TimeDate;
-            if (timeSpan.TotalMinutes > 20)
+            TimeSpan timeSpan = DateTime.UtcNow - items[position].TimeDate.ToDateTime();
+            if (timeSpan.TotalMinutes > 30)
             {
                 holder.BtnNavigate.Visibility = ViewStates.Gone;
                 holder.FabCall.Visibility = ViewStates.Gone;
             }
-            if(items[position].TimeDate.ToString("dd/MMM/yyyy") == DateTime.Now.ToString("dd/MMM/yyyy"))
+            if(items[position].TimeDate.ToDateTime().ToString("dd/MMM/yyyy") == DateTime.UtcNow.ToString("dd/MMM/yyyy"))
             {
 
-                holder.TxtTimeDate.Text = "today: " +  items[position].TimeDate.ToString("HH:mm tt");
-
+                holder.TxtTimeDate.Text = "today: " +  items[position].TimeDate.ToDateTime().ToString("HH:mm tt");
             }
             else
             {
-                holder.TxtTimeDate.Text = items[position].TimeDate.ToString("ddd, dd/MMM/yyyy HH:mm tt");
+                holder.TxtTimeDate.Text = items[position].TimeDate.ToDateTime().ToString("ddd, dd/MMM/yyyy HH:mm tt");
             }
 
             double lat = Convert.ToDouble(items[position].Lat);
