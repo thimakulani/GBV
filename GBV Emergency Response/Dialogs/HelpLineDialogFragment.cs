@@ -24,13 +24,14 @@ namespace GBV_Emergency_Response.Dialogs
 
             // Create your fragment here
         }
-
+        Context mContext;   
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             // Use this to return your custom view for this Fragment
             base.OnCreateView(inflater, container, savedInstanceState);
             View view=  inflater.Inflate(Resource.Layout.help_line_fragment, container, false);
             ConnectViews(view);
+            mContext=view.Context;  
             return view;
         }
 
@@ -53,9 +54,9 @@ namespace GBV_Emergency_Response.Dialogs
             {
                 Xamarin.Essentials.PhoneDialer.Open(Items[e.Position].PhoneNumber);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Toast.MakeText(mContext,ex.Message, ToastLength.Long).Show();
             } 
 
         }

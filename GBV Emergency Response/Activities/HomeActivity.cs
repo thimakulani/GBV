@@ -234,22 +234,18 @@ namespace GBV_Emergency_Response.Activities
             Dictionary<string, object> data = new Dictionary<string, object>();
             if (SendAlert)
             {
-
-
                 if (CurrentKey == "X")
                 {
                     data.Add("Latitude", lastLocation.Latitude.ToString());
                     data.Add("Longitude", lastLocation.Longitude.ToString());
                     data.Add("Uid", FirebaseAuth.Instance.CurrentUser.Uid);
                     data.Add("TimeDate", FieldValue.ServerTimestamp);
-
-                    
                     var dbref = await CrossCloudFirestore
                         .Current
                         .Instance
                         .Collection("EMERGENCY")
                         .AddAsync(data);
-                    CurrentKey = dbref.Id;
+                    CurrentKey = dbref.Id; 
 
                 }
                 else

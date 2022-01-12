@@ -8,9 +8,11 @@ using AndroidX.AppCompat.Widget;
 using AndroidX.Fragment.App;
 using FFImageLoading;
 using Firebase.Database;
+using GBV_Emergency_Response.Models;
 using Google.Android.Material.AppBar;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.TextView;
+using Plugin.CloudFirestore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,7 +64,25 @@ namespace GBV_Emergency_Response.Dialogs
 
             FabCallFriend = view.FindViewById<FloatingActionButton>(Resource.Id.FabCallFriend);
             FabCallFriend.Click += FabCallFriend_Click;
-            
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("PEOPLE")
+                .Document(id)
+                .AddSnapshotListener((value, error) =>
+                {
+                    if (value.Exists)
+                    {
+                        var users = value.ToObject<AppUsers>();
+                        Names.Text = users.Name;
+                        Surname.Text = users.Surname;
+                        ///InputUsername.Text = users.Username;
+                        Phone.Text = users.PhoneNumber;
+                        // InputEmail.Text = users.Email;
+
+                    }
+
+                });
         }
 
         private void FabCallFriend_Click(object sender, EventArgs e)
