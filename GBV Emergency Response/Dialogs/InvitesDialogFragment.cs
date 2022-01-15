@@ -9,6 +9,7 @@ using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
 using GBV_Emergency_Response.Adapters;
 using GBV_Emergency_Response.Models;
+using Plugin.CloudFirestore;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace GBV_Emergency_Response.Dialogs
@@ -45,87 +46,59 @@ namespace GBV_Emergency_Response.Dialogs
             app_invites_toolbar.NavigationClick += App_invites_toolbar_NavigationClick;
 
 
-            InvitesAdapter adapter = new InvitesAdapter(items);
+            adapter = new InvitesAdapter(Items);
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
             recycler.SetLayoutManager(linearLayoutManager);
             recycler.SetAdapter(adapter);
+            adapter.NotifyDataSetChanged();
             adapter.BtnClick += Adapter_BtnClick;
+            LoadInvites();
 
         }
+        InvitesAdapter adapter;
 
         private void App_invites_toolbar_NavigationClick(object sender, Toolbar.NavigationClickEventArgs e)
         {
             Dismiss();
         }
 
-        List<InviteModel> items = new List<InviteModel>();
+        public List<InviteModel> Items = new List<InviteModel>();
 
         private void Adapter_BtnClick(object sender, InvitesAdapterClickEventArgs e)
         {
-            //if(items[e.Position].Status == "Invite")
-            //{
-            //    FirebaseDatabase.Instance.GetReference("Request")
-            //        .Child(items[e.Position].Key)
-            //        .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //        .Child("Type")
-            //        .SetValue("Approved");
-            //    FirebaseDatabase.Instance.GetReference("Request")
-            //        .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //        .Child(items[e.Position].Key)
-            //        .Child("Type")
-            //        .SetValue("Approved");
-            //}
-            //if (items[e.Position].Status == "Approved")
-            //{
-            //    AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(context);
-            //    builder.SetTitle("Confirm");
-            //    builder.SetMessage("Are you sure you want to delete");
-            //    builder.SetNegativeButton("No", delegate
-            //    {
-            //        builder.Dispose();
-            //    });
-            //    builder.SetPositiveButton("Yes", delegate
-            //    {
-            //        FirebaseDatabase.Instance.GetReference("Request")
-            //            .Child(items[e.Position].Key)
-            //            .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //            .RemoveValue();
 
-            //        FirebaseDatabase.Instance.GetReference("Request")
-            //            .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //            .Child(items[e.Position].Key)
-            //            .RemoveValue();
-            //        builder.Dispose();
-            //    });
-            //    builder.Show();
+            
 
-
-            //}
-            //if (items[e.Position].Status == "****")
-            //{
-            //    AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(context);
-            //    builder.SetTitle("Confirm");
-            //    builder.SetMessage("Are you sure you want to cancel");
-            //    builder.SetNegativeButton("No", delegate
-            //    {
-            //        builder.Dispose();
-            //    });
-            //    builder.SetPositiveButton("Yes", delegate
-            //    {
-            //        FirebaseDatabase.Instance.GetReference("Request")
-            //            .Child(items[e.Position].Key)
-            //            .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //            .RemoveValue();
-
-            //        FirebaseDatabase.Instance.GetReference("Request")
-            //            .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //            .Child(items[e.Position].Key)
-            //            .RemoveValue();
-            //        builder.Dispose();
-            //    });
-            //    builder.Show();
-
-
+        }
+        private void LoadInvites()
+        {
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("REQUESTS")
+                .WhereEqualsTo("Fid", FirebaseAuth.Instance.CurrentUser.Uid)
+                .AddSnapshotListener((value, error) =>
+                {
+                    if (!value.IsEmpty)
+                    {
+                        foreach (var item in value.DocumentChanges)
+                        {
+                            switch (item.Type)
+                            {
+                                case DocumentChangeType.Added:
+                                    Items.Add(item.Document.ToObject<InviteModel>());
+                                    adapter.NotifyDataSetChanged();
+                                    break;
+                                case DocumentChangeType.Modified:
+                                    break;
+                                case DocumentChangeType.Removed:
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                });
         }
     }
 }

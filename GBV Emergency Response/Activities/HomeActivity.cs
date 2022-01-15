@@ -4,6 +4,7 @@ using Android.Content.PM;
 using Android.Gms.Extensions;
 using Android.Gms.Location;
 using Android.OS;
+using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using AndroidX.Core.App;
@@ -18,6 +19,7 @@ using IsmaelDiVita.ChipNavigationLib;
 using Plugin.CloudFirestore;
 using System;
 using System.Collections.Generic;
+using Xamarin.Essentials;
 using static IsmaelDiVita.ChipNavigationLib.ChipNavigationBar;
 using PopupMenu = AndroidX.AppCompat.Widget.PopupMenu;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
@@ -53,9 +55,16 @@ namespace GBV_Emergency_Response.Activities
 
 
 
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        {
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);    
+            //if(grantResults == Permission.Granted)
+            //{
 
+            //}
+        }
 
-        private readonly List<AlertsMessages> items = new List<AlertsMessages>();
+        //private readonly List<AlertsMessages> items = new List<AlertsMessages>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -128,12 +137,34 @@ namespace GBV_Emergency_Response.Activities
         }
 
 
-        private void Alerts_ShowMapHandler(object sender, AlertsFragment.ShowMapFragmentArgs e)
+        private async void Alerts_ShowMapHandler(object sender, AlertsFragment.ShowMapFragmentArgs e)
         {
-            MapFragmentDialog profile = new MapFragmentDialog();
-            SupportFragmentManager.BeginTransaction()
-                .Replace(Resource.Id.fragHost, profile)
-                .Commit();
+            if(e.Type == 1)
+            {
+                MapFragmentDialog profile = new MapFragmentDialog();
+                SupportFragmentManager.BeginTransaction()
+                    .Replace(Resource.Id.fragHost, profile)
+                    .Commit();
+            }
+            else
+            {
+                System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
+                cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
+                System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
+
+                var location = new Xamarin.Essentials.Location(double.Parse(e.Alerts.Lat), double.Parse(e.Alerts.Lon));
+                var options = new MapLaunchOptions { Name = "Victim", };
+
+                try
+                {
+                    await Map.OpenAsync(location, options);
+                }
+                catch (Exception ex)
+                {
+                    // No map application available to open
+                    Console.WriteLine(ex.Message);
+                }
+            }
         }
 
         protected override  void OnResume()

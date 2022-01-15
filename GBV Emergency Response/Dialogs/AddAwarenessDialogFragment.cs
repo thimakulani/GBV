@@ -8,10 +8,12 @@ using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Activity.Result.Contract;
 using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
 using Firebase.Storage;
+using GBV_Emergency_Response.Activities;
 using GBV_Emergency_Response.Adapters;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
@@ -20,6 +22,7 @@ using Google.Android.Material.TextField;
 using ID.IonBit.IonAlertLib;
 using Plugin.CloudFirestore;
 using Plugin.Media;
+using Xamarin.Essentials;
 
 namespace GBV_Emergency_Response.Dialogs
 {
@@ -73,7 +76,7 @@ namespace GBV_Emergency_Response.Dialogs
                     { "ImageUrl", null },
                 };
                 loadingDialog = new IonAlert(context, IonAlert.ProgressType);
-                loadingDialog.SetSpinKit("DoubleBounce")
+                loadingDialog.SetSpinKit("WanderingCubes")
                     .SetSpinColor("#008D91")
                     .ShowCancelButton(false)
                     .Show();
@@ -86,11 +89,33 @@ namespace GBV_Emergency_Response.Dialogs
                 //dbRef.SetValue(data);
                 if (imageArray != null)
                 {
-                    storageRef = FirebaseStorage.Instance.GetReference("AWARENESS");
-                    storageRef.PutBytes(imageArray)
-                        .AddOnSuccessListener(this)
-                        .AddOnCompleteListener(this)
-                        .AddOnFailureListener(this);
+                    //storageRef = FirebaseStorage.Instance.GetReference("AWARENESS");
+                    //storageRef.PutBytes(imageArray)
+                    //    .AddOnSuccessListener(this)
+                    //    .AddOnCompleteListener(this)
+                    //    .AddOnFailureListener(this);
+
+
+                    var storage_ref = Plugin.FirebaseStorage.CrossFirebaseStorage
+                        .Current
+                        .Instance
+                        .RootReference
+                        .Child("AWARENESS")
+                        .Child(query.Id);
+
+                    await storage_ref.PutStreamAsync(upload_file);
+
+                    var url = await storage_ref.GetDownloadUrlAsync();
+
+                    //    .PutStreamAsync(file.GetStream());
+                    await CrossCloudFirestore
+                        .Current
+                        .Instance
+                        .Collection("AWARENESS")
+                        .Document(query.Id)
+                        .UpdateAsync("ImageUrl", url.ToString());
+
+
                 }
                 else
                 {
@@ -107,9 +132,11 @@ namespace GBV_Emergency_Response.Dialogs
         }
         StorageReference storageRef;
         private byte[] imageArray;
-
+        System.IO.Stream upload_file;
         private async void ChosePicture()
-        {
+        { 
+
+
             await CrossMedia.Current.Initialize();
             if (!CrossMedia.Current.IsPickPhotoSupported)
             {
@@ -121,23 +148,30 @@ namespace GBV_Emergency_Response.Dialogs
                 var file = await CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
                 {
                     PhotoSize = Plugin.Media.Abstractions.PhotoSize.Full,
-                    CompressionQuality = 50 ,
+                    CompressionQuality = 50,
 
                 });
-                if(file != null)
+                if (file != null)
                 {
+                    upload_file = file.GetStream();
                     imageArray = System.IO.File.ReadAllBytes(file.Path);
                     if (imageArray != null)
                     {
                         Bitmap bmp = BitmapFactory.DecodeByteArray(imageArray, 0, imageArray.Length);
                         ImgAwareness.SetImageBitmap(bmp);
                     }
+
+
+                    
+
+
+
                 }
 
             }
             catch (Exception ex)
             {
-                Toast.MakeText(context, "errrror  "  + ex.Message, ToastLength.Long).Show();
+                Toast.MakeText(context, "error  " + ex.Message, ToastLength.Long).Show();
             }
 
         }

@@ -18,6 +18,10 @@ namespace GBV_Emergency_Response.Fragments
         }
         private Context context;
         private GoogleMap googleMap;
+        public MapFragmentDialog(double lat, double lon)
+        {
+
+        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {

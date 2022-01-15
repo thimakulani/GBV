@@ -114,7 +114,10 @@ namespace GBV_Emergency_Response.Fragments
       
         private void ImgProfile_Click(object sender, EventArgs e)
         {
+            //Console.WriteLine("Button Image Click");
+            ImgProfile.Enabled = false;
             ChosePicture();
+            ImgProfile.Enabled = true;
 
         }
 
@@ -181,16 +184,33 @@ namespace GBV_Emergency_Response.Fragments
 
                 if (imageArray != null)
                 {
-                    storageRef = FirebaseStorage.Instance.GetReference("PROFILE").Child(FirebaseAuth.Instance.CurrentUser.Uid);//FirebaseHelper.FirebaseData.GetFirebaseStorage().GetReference("UserProfile").Child(auth.CurrentUser.Uid);
-                    storageRef.PutBytes(imageArray)
-                        .AddOnSuccessListener(this)
-                        .AddOnFailureListener(this);
+               
+                    var storage_ref = Plugin.FirebaseStorage.CrossFirebaseStorage
+                         .Current
+                         .Instance
+                         .RootReference
+                         .Child("PROFILE")
+                         .Child(FirebaseAuth.Instance.CurrentUser.Uid);
+
+                    await storage_ref.PutStreamAsync(file.GetStream());
+
+                    var url = await storage_ref.GetDownloadUrlAsync();
+
+                    //    .PutStreamAsync(file.GetStream());
+                    await CrossCloudFirestore
+                        .Current
+                        .Instance
+                        .Collection("PEOPLE")
+                        .Document(FirebaseAuth.Instance.Uid)
+                        .UpdateAsync("ImageUrl", url.ToString());
+
+
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Toast.MakeText(context, ex.Message, ToastLength.Long).Show();
             }
 
         }

@@ -18,5 +18,7 @@ namespace GBV_Emergency_Response.Models
         [Id]
         public string Id { get; set; }
         public string Status { get; set; }
+        public string Uid { get; set; } 
+        public string Fid { get; set; }
     }
 }

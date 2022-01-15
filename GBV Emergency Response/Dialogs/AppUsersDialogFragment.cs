@@ -56,7 +56,7 @@ namespace GBV_Emergency_Response.Dialogs
             recyclerAppUsers = view.FindViewById<RecyclerView>(Resource.Id.recyclerAppUsers);
             searchView = view.FindViewById<SearchView>(Resource.Id.searchContacts);
             app_users_toolbar.SetNavigationIcon(Resource.Mipmap.ic_arrow_back_white_18dp);
-            app_users_toolbar.Title = "GBV Users";
+            app_users_toolbar.Title = "GBV USERS";
             app_users_toolbar.NavigationClick += App_users_toolbar_NavigationClick;
             //searchView.QueryTextSubmit += SearchView_QueryTextSubmit;
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
@@ -112,48 +112,18 @@ namespace GBV_Emergency_Response.Dialogs
                          data.PhoneNumber.Contains(e.NewText)
                          select data)
                          .ToList();
-            
-            
-
         }
-
-       
-
         private async void Adapter_BtnClick(object sender, AppUsersAdapterClickEventArgs e)
         {
             Dictionary<string, object> data = new Dictionary<string, object>();
             data.Add("Uid", FirebaseAuth.Instance.Uid);
             data.Add("Status", "0");
+            data.Add("Fid", items[e.Position].Id);
             await CrossCloudFirestore
                 .Current
                 .Instance
                 .Collection("REQUESTS")
-                .Document("Request")
-                .Collection(items[e.Position].Id)
                 .AddAsync(data);
-
-
-            Dictionary<string, object> data_2 = new Dictionary<string, object>();
-            data.Add("Uid", items[e.Position].Id);
-            data.Add("Status", "0");
-
-            await CrossCloudFirestore
-                .Current
-                .Instance
-                .Collection("REQUESTS")
-                .Document("Request")
-                .Collection(FirebaseAuth.Instance.Uid)
-                .AddAsync(data_2);
-            //FirebaseDatabase.Instance.GetReference("Request")
-            //    .Child(items[e.Position].Keyid)
-            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //    .Child("Type")
-            //    .SetValue("Invite");
-            //FirebaseDatabase.Instance.GetReference("Request")
-            //    .Child(FirebaseAuth.Instance.CurrentUser.Uid)
-            //    .Child(items[e.Position].Keyid)
-            //    .Child("Type")
-            //    .SetValue("****");
             Toast.MakeText(context, e.Position.ToString() + items[e.Position].Name, ToastLength.Long).Show();
         }
 

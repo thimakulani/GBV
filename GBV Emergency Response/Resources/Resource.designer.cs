@@ -14,7 +14,7 @@ namespace GBV_Emergency_Response
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "12.1.99.62")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "12.1.0.11")]
 	public partial class Resource
 	{
 		
@@ -1966,187 +1966,6 @@ namespace GBV_Emergency_Response
 			global::Plugin.FirebaseStorage.Resource.Styleable.SignInButton_buttonSize = global::GBV_Emergency_Response.Resource.Styleable.SignInButton_buttonSize;
 			global::Plugin.FirebaseStorage.Resource.Styleable.SignInButton_colorScheme = global::GBV_Emergency_Response.Resource.Styleable.SignInButton_colorScheme;
 			global::Plugin.FirebaseStorage.Resource.Styleable.SignInButton_scopeUris = global::GBV_Emergency_Response.Resource.Styleable.SignInButton_scopeUris;
-			global::Plugin.Media.Resource.Attribute.alpha = global::GBV_Emergency_Response.Resource.Attribute.alpha;
-			global::Plugin.Media.Resource.Attribute.coordinatorLayoutStyle = global::GBV_Emergency_Response.Resource.Attribute.coordinatorLayoutStyle;
-			global::Plugin.Media.Resource.Attribute.font = global::GBV_Emergency_Response.Resource.Attribute.font;
-			global::Plugin.Media.Resource.Attribute.fontProviderAuthority = global::GBV_Emergency_Response.Resource.Attribute.fontProviderAuthority;
-			global::Plugin.Media.Resource.Attribute.fontProviderCerts = global::GBV_Emergency_Response.Resource.Attribute.fontProviderCerts;
-			global::Plugin.Media.Resource.Attribute.fontProviderFetchStrategy = global::GBV_Emergency_Response.Resource.Attribute.fontProviderFetchStrategy;
-			global::Plugin.Media.Resource.Attribute.fontProviderFetchTimeout = global::GBV_Emergency_Response.Resource.Attribute.fontProviderFetchTimeout;
-			global::Plugin.Media.Resource.Attribute.fontProviderPackage = global::GBV_Emergency_Response.Resource.Attribute.fontProviderPackage;
-			global::Plugin.Media.Resource.Attribute.fontProviderQuery = global::GBV_Emergency_Response.Resource.Attribute.fontProviderQuery;
-			global::Plugin.Media.Resource.Attribute.fontStyle = global::GBV_Emergency_Response.Resource.Attribute.fontStyle;
-			global::Plugin.Media.Resource.Attribute.fontVariationSettings = global::GBV_Emergency_Response.Resource.Attribute.fontVariationSettings;
-			global::Plugin.Media.Resource.Attribute.fontWeight = global::GBV_Emergency_Response.Resource.Attribute.fontWeight;
-			global::Plugin.Media.Resource.Attribute.keylines = global::GBV_Emergency_Response.Resource.Attribute.keylines;
-			global::Plugin.Media.Resource.Attribute.layout_anchor = global::GBV_Emergency_Response.Resource.Attribute.layout_anchor;
-			global::Plugin.Media.Resource.Attribute.layout_anchorGravity = global::GBV_Emergency_Response.Resource.Attribute.layout_anchorGravity;
-			global::Plugin.Media.Resource.Attribute.layout_behavior = global::GBV_Emergency_Response.Resource.Attribute.layout_behavior;
-			global::Plugin.Media.Resource.Attribute.layout_dodgeInsetEdges = global::GBV_Emergency_Response.Resource.Attribute.layout_dodgeInsetEdges;
-			global::Plugin.Media.Resource.Attribute.layout_insetEdge = global::GBV_Emergency_Response.Resource.Attribute.layout_insetEdge;
-			global::Plugin.Media.Resource.Attribute.layout_keyline = global::GBV_Emergency_Response.Resource.Attribute.layout_keyline;
-			global::Plugin.Media.Resource.Attribute.statusBarBackground = global::GBV_Emergency_Response.Resource.Attribute.statusBarBackground;
-			global::Plugin.Media.Resource.Attribute.ttcIndex = global::GBV_Emergency_Response.Resource.Attribute.ttcIndex;
-			global::Plugin.Media.Resource.Color.browser_actions_bg_grey = global::GBV_Emergency_Response.Resource.Color.browser_actions_bg_grey;
-			global::Plugin.Media.Resource.Color.browser_actions_divider_color = global::GBV_Emergency_Response.Resource.Color.browser_actions_divider_color;
-			global::Plugin.Media.Resource.Color.browser_actions_text_color = global::GBV_Emergency_Response.Resource.Color.browser_actions_text_color;
-			global::Plugin.Media.Resource.Color.browser_actions_title_color = global::GBV_Emergency_Response.Resource.Color.browser_actions_title_color;
-			global::Plugin.Media.Resource.Color.notification_action_color_filter = global::GBV_Emergency_Response.Resource.Color.notification_action_color_filter;
-			global::Plugin.Media.Resource.Color.notification_icon_bg_color = global::GBV_Emergency_Response.Resource.Color.notification_icon_bg_color;
-			global::Plugin.Media.Resource.Color.ripple_material_light = global::GBV_Emergency_Response.Resource.Color.ripple_material_light;
-			global::Plugin.Media.Resource.Color.secondary_text_default_material_light = global::GBV_Emergency_Response.Resource.Color.secondary_text_default_material_light;
-			global::Plugin.Media.Resource.Dimension.browser_actions_context_menu_max_width = global::GBV_Emergency_Response.Resource.Dimension.browser_actions_context_menu_max_width;
-			global::Plugin.Media.Resource.Dimension.browser_actions_context_menu_min_padding = global::GBV_Emergency_Response.Resource.Dimension.browser_actions_context_menu_min_padding;
-			global::Plugin.Media.Resource.Dimension.compat_button_inset_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_inset_horizontal_material;
-			global::Plugin.Media.Resource.Dimension.compat_button_inset_vertical_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_inset_vertical_material;
-			global::Plugin.Media.Resource.Dimension.compat_button_padding_horizontal_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_padding_horizontal_material;
-			global::Plugin.Media.Resource.Dimension.compat_button_padding_vertical_material = global::GBV_Emergency_Response.Resource.Dimension.compat_button_padding_vertical_material;
-			global::Plugin.Media.Resource.Dimension.compat_control_corner_material = global::GBV_Emergency_Response.Resource.Dimension.compat_control_corner_material;
-			global::Plugin.Media.Resource.Dimension.compat_notification_large_icon_max_height = global::GBV_Emergency_Response.Resource.Dimension.compat_notification_large_icon_max_height;
-			global::Plugin.Media.Resource.Dimension.compat_notification_large_icon_max_width = global::GBV_Emergency_Response.Resource.Dimension.compat_notification_large_icon_max_width;
-			global::Plugin.Media.Resource.Dimension.notification_action_icon_size = global::GBV_Emergency_Response.Resource.Dimension.notification_action_icon_size;
-			global::Plugin.Media.Resource.Dimension.notification_action_text_size = global::GBV_Emergency_Response.Resource.Dimension.notification_action_text_size;
-			global::Plugin.Media.Resource.Dimension.notification_big_circle_margin = global::GBV_Emergency_Response.Resource.Dimension.notification_big_circle_margin;
-			global::Plugin.Media.Resource.Dimension.notification_content_margin_start = global::GBV_Emergency_Response.Resource.Dimension.notification_content_margin_start;
-			global::Plugin.Media.Resource.Dimension.notification_large_icon_height = global::GBV_Emergency_Response.Resource.Dimension.notification_large_icon_height;
-			global::Plugin.Media.Resource.Dimension.notification_large_icon_width = global::GBV_Emergency_Response.Resource.Dimension.notification_large_icon_width;
-			global::Plugin.Media.Resource.Dimension.notification_main_column_padding_top = global::GBV_Emergency_Response.Resource.Dimension.notification_main_column_padding_top;
-			global::Plugin.Media.Resource.Dimension.notification_media_narrow_margin = global::GBV_Emergency_Response.Resource.Dimension.notification_media_narrow_margin;
-			global::Plugin.Media.Resource.Dimension.notification_right_icon_size = global::GBV_Emergency_Response.Resource.Dimension.notification_right_icon_size;
-			global::Plugin.Media.Resource.Dimension.notification_right_side_padding_top = global::GBV_Emergency_Response.Resource.Dimension.notification_right_side_padding_top;
-			global::Plugin.Media.Resource.Dimension.notification_small_icon_background_padding = global::GBV_Emergency_Response.Resource.Dimension.notification_small_icon_background_padding;
-			global::Plugin.Media.Resource.Dimension.notification_small_icon_size_as_large = global::GBV_Emergency_Response.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Plugin.Media.Resource.Dimension.notification_subtext_size = global::GBV_Emergency_Response.Resource.Dimension.notification_subtext_size;
-			global::Plugin.Media.Resource.Dimension.notification_top_pad = global::GBV_Emergency_Response.Resource.Dimension.notification_top_pad;
-			global::Plugin.Media.Resource.Dimension.notification_top_pad_large_text = global::GBV_Emergency_Response.Resource.Dimension.notification_top_pad_large_text;
-			global::Plugin.Media.Resource.Drawable.notification_action_background = global::GBV_Emergency_Response.Resource.Drawable.notification_action_background;
-			global::Plugin.Media.Resource.Drawable.notification_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_bg;
-			global::Plugin.Media.Resource.Drawable.notification_bg_low = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_low;
-			global::Plugin.Media.Resource.Drawable.notification_bg_low_normal = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_low_normal;
-			global::Plugin.Media.Resource.Drawable.notification_bg_low_pressed = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_low_pressed;
-			global::Plugin.Media.Resource.Drawable.notification_bg_normal = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_normal;
-			global::Plugin.Media.Resource.Drawable.notification_bg_normal_pressed = global::GBV_Emergency_Response.Resource.Drawable.notification_bg_normal_pressed;
-			global::Plugin.Media.Resource.Drawable.notification_icon_background = global::GBV_Emergency_Response.Resource.Drawable.notification_icon_background;
-			global::Plugin.Media.Resource.Drawable.notification_template_icon_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_template_icon_bg;
-			global::Plugin.Media.Resource.Drawable.notification_template_icon_low_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_template_icon_low_bg;
-			global::Plugin.Media.Resource.Drawable.notification_tile_bg = global::GBV_Emergency_Response.Resource.Drawable.notification_tile_bg;
-			global::Plugin.Media.Resource.Drawable.notify_panel_notification_icon_bg = global::GBV_Emergency_Response.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Plugin.Media.Resource.Id.actions = global::GBV_Emergency_Response.Resource.Id.actions;
-			global::Plugin.Media.Resource.Id.action_container = global::GBV_Emergency_Response.Resource.Id.action_container;
-			global::Plugin.Media.Resource.Id.action_divider = global::GBV_Emergency_Response.Resource.Id.action_divider;
-			global::Plugin.Media.Resource.Id.action_image = global::GBV_Emergency_Response.Resource.Id.action_image;
-			global::Plugin.Media.Resource.Id.action_text = global::GBV_Emergency_Response.Resource.Id.action_text;
-			global::Plugin.Media.Resource.Id.all = global::GBV_Emergency_Response.Resource.Id.all;
-			global::Plugin.Media.Resource.Id.async = global::GBV_Emergency_Response.Resource.Id.async;
-			global::Plugin.Media.Resource.Id.blocking = global::GBV_Emergency_Response.Resource.Id.blocking;
-			global::Plugin.Media.Resource.Id.bottom = global::GBV_Emergency_Response.Resource.Id.bottom;
-			global::Plugin.Media.Resource.Id.browser_actions_header_text = global::GBV_Emergency_Response.Resource.Id.browser_actions_header_text;
-			global::Plugin.Media.Resource.Id.browser_actions_menu_items = global::GBV_Emergency_Response.Resource.Id.browser_actions_menu_items;
-			global::Plugin.Media.Resource.Id.browser_actions_menu_item_icon = global::GBV_Emergency_Response.Resource.Id.browser_actions_menu_item_icon;
-			global::Plugin.Media.Resource.Id.browser_actions_menu_item_text = global::GBV_Emergency_Response.Resource.Id.browser_actions_menu_item_text;
-			global::Plugin.Media.Resource.Id.browser_actions_menu_view = global::GBV_Emergency_Response.Resource.Id.browser_actions_menu_view;
-			global::Plugin.Media.Resource.Id.center = global::GBV_Emergency_Response.Resource.Id.center;
-			global::Plugin.Media.Resource.Id.center_horizontal = global::GBV_Emergency_Response.Resource.Id.center_horizontal;
-			global::Plugin.Media.Resource.Id.center_vertical = global::GBV_Emergency_Response.Resource.Id.center_vertical;
-			global::Plugin.Media.Resource.Id.chronometer = global::GBV_Emergency_Response.Resource.Id.chronometer;
-			global::Plugin.Media.Resource.Id.clip_horizontal = global::GBV_Emergency_Response.Resource.Id.clip_horizontal;
-			global::Plugin.Media.Resource.Id.clip_vertical = global::GBV_Emergency_Response.Resource.Id.clip_vertical;
-			global::Plugin.Media.Resource.Id.end = global::GBV_Emergency_Response.Resource.Id.end;
-			global::Plugin.Media.Resource.Id.fill = global::GBV_Emergency_Response.Resource.Id.fill;
-			global::Plugin.Media.Resource.Id.fill_horizontal = global::GBV_Emergency_Response.Resource.Id.fill_horizontal;
-			global::Plugin.Media.Resource.Id.fill_vertical = global::GBV_Emergency_Response.Resource.Id.fill_vertical;
-			global::Plugin.Media.Resource.Id.forever = global::GBV_Emergency_Response.Resource.Id.forever;
-			global::Plugin.Media.Resource.Id.icon = global::GBV_Emergency_Response.Resource.Id.icon;
-			global::Plugin.Media.Resource.Id.icon_group = global::GBV_Emergency_Response.Resource.Id.icon_group;
-			global::Plugin.Media.Resource.Id.info = global::GBV_Emergency_Response.Resource.Id.info;
-			global::Plugin.Media.Resource.Id.italic = global::GBV_Emergency_Response.Resource.Id.italic;
-			global::Plugin.Media.Resource.Id.left = global::GBV_Emergency_Response.Resource.Id.left;
-			global::Plugin.Media.Resource.Id.line1 = global::GBV_Emergency_Response.Resource.Id.line1;
-			global::Plugin.Media.Resource.Id.line3 = global::GBV_Emergency_Response.Resource.Id.line3;
-			global::Plugin.Media.Resource.Id.none = global::GBV_Emergency_Response.Resource.Id.none;
-			global::Plugin.Media.Resource.Id.normal = global::GBV_Emergency_Response.Resource.Id.normal;
-			global::Plugin.Media.Resource.Id.notification_background = global::GBV_Emergency_Response.Resource.Id.notification_background;
-			global::Plugin.Media.Resource.Id.notification_main_column = global::GBV_Emergency_Response.Resource.Id.notification_main_column;
-			global::Plugin.Media.Resource.Id.notification_main_column_container = global::GBV_Emergency_Response.Resource.Id.notification_main_column_container;
-			global::Plugin.Media.Resource.Id.right = global::GBV_Emergency_Response.Resource.Id.right;
-			global::Plugin.Media.Resource.Id.right_icon = global::GBV_Emergency_Response.Resource.Id.right_icon;
-			global::Plugin.Media.Resource.Id.right_side = global::GBV_Emergency_Response.Resource.Id.right_side;
-			global::Plugin.Media.Resource.Id.start = global::GBV_Emergency_Response.Resource.Id.start;
-			global::Plugin.Media.Resource.Id.tag_transition_group = global::GBV_Emergency_Response.Resource.Id.tag_transition_group;
-			global::Plugin.Media.Resource.Id.tag_unhandled_key_event_manager = global::GBV_Emergency_Response.Resource.Id.tag_unhandled_key_event_manager;
-			global::Plugin.Media.Resource.Id.tag_unhandled_key_listeners = global::GBV_Emergency_Response.Resource.Id.tag_unhandled_key_listeners;
-			global::Plugin.Media.Resource.Id.text = global::GBV_Emergency_Response.Resource.Id.text;
-			global::Plugin.Media.Resource.Id.text2 = global::GBV_Emergency_Response.Resource.Id.text2;
-			global::Plugin.Media.Resource.Id.time = global::GBV_Emergency_Response.Resource.Id.time;
-			global::Plugin.Media.Resource.Id.title = global::GBV_Emergency_Response.Resource.Id.title;
-			global::Plugin.Media.Resource.Id.top = global::GBV_Emergency_Response.Resource.Id.top;
-			global::Plugin.Media.Resource.Integer.status_bar_notification_info_maxnum = global::GBV_Emergency_Response.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Plugin.Media.Resource.Layout.browser_actions_context_menu_page = global::GBV_Emergency_Response.Resource.Layout.browser_actions_context_menu_page;
-			global::Plugin.Media.Resource.Layout.browser_actions_context_menu_row = global::GBV_Emergency_Response.Resource.Layout.browser_actions_context_menu_row;
-			global::Plugin.Media.Resource.Layout.notification_action = global::GBV_Emergency_Response.Resource.Layout.notification_action;
-			global::Plugin.Media.Resource.Layout.notification_action_tombstone = global::GBV_Emergency_Response.Resource.Layout.notification_action_tombstone;
-			global::Plugin.Media.Resource.Layout.notification_template_custom_big = global::GBV_Emergency_Response.Resource.Layout.notification_template_custom_big;
-			global::Plugin.Media.Resource.Layout.notification_template_icon_group = global::GBV_Emergency_Response.Resource.Layout.notification_template_icon_group;
-			global::Plugin.Media.Resource.Layout.notification_template_part_chronometer = global::GBV_Emergency_Response.Resource.Layout.notification_template_part_chronometer;
-			global::Plugin.Media.Resource.Layout.notification_template_part_time = global::GBV_Emergency_Response.Resource.Layout.notification_template_part_time;
-			global::Plugin.Media.Resource.String.status_bar_notification_info_overflow = global::GBV_Emergency_Response.Resource.String.status_bar_notification_info_overflow;
-			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification;
-			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Info = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Info;
-			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Line2;
-			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Time = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Time;
-			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Title = global::GBV_Emergency_Response.Resource.Style.TextAppearance_Compat_Notification_Title;
-			global::Plugin.Media.Resource.Style.Widget_Compat_NotificationActionContainer = global::GBV_Emergency_Response.Resource.Style.Widget_Compat_NotificationActionContainer;
-			global::Plugin.Media.Resource.Style.Widget_Compat_NotificationActionText = global::GBV_Emergency_Response.Resource.Style.Widget_Compat_NotificationActionText;
-			global::Plugin.Media.Resource.Style.Widget_Support_CoordinatorLayout = global::GBV_Emergency_Response.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Plugin.Media.Resource.Styleable.ColorStateListItem = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem;
-			global::Plugin.Media.Resource.Styleable.ColorStateListItem_alpha = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem_alpha;
-			global::Plugin.Media.Resource.Styleable.ColorStateListItem_android_alpha = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::Plugin.Media.Resource.Styleable.ColorStateListItem_android_color = global::GBV_Emergency_Response.Resource.Styleable.ColorStateListItem_android_color;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_keylines = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
-			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::GBV_Emergency_Response.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Plugin.Media.Resource.Styleable.FontFamily = global::GBV_Emergency_Response.Resource.Styleable.FontFamily;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_font = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_font;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontStyle = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_fontStyle;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontWeight = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_fontWeight;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_android_ttcIndex;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_font = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_font;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontStyle = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_fontStyle;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_fontVariationSettings;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontWeight = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_fontWeight;
-			global::Plugin.Media.Resource.Styleable.FontFamilyFont_ttcIndex = global::GBV_Emergency_Response.Resource.Styleable.FontFamilyFont_ttcIndex;
-			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderAuthority = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderCerts = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderPackage = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderQuery = global::GBV_Emergency_Response.Resource.Styleable.FontFamily_fontProviderQuery;
-			global::Plugin.Media.Resource.Styleable.GradientColor = global::GBV_Emergency_Response.Resource.Styleable.GradientColor;
-			global::Plugin.Media.Resource.Styleable.GradientColorItem = global::GBV_Emergency_Response.Resource.Styleable.GradientColorItem;
-			global::Plugin.Media.Resource.Styleable.GradientColorItem_android_color = global::GBV_Emergency_Response.Resource.Styleable.GradientColorItem_android_color;
-			global::Plugin.Media.Resource.Styleable.GradientColorItem_android_offset = global::GBV_Emergency_Response.Resource.Styleable.GradientColorItem_android_offset;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerColor = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_centerColor;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerX = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_centerX;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerY = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_centerY;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_endColor = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_endColor;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_endX = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_endX;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_endY = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_endY;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_gradientRadius = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_gradientRadius;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_startColor = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_startColor;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_startX = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_startX;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_startY = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_startY;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_tileMode = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_tileMode;
-			global::Plugin.Media.Resource.Styleable.GradientColor_android_type = global::GBV_Emergency_Response.Resource.Styleable.GradientColor_android_type;
 		}
 		
 		public partial class Animation
@@ -22722,22 +22541,25 @@ namespace GBV_Emergency_Response
 		{
 			
 			// aapt resource value: 0x7F120000
-			public const int image_share_filepaths = 2131886080;
+			public const int file_paths = 2131886080;
 			
 			// aapt resource value: 0x7F120001
-			public const int standalone_badge = 2131886081;
+			public const int image_share_filepaths = 2131886081;
 			
 			// aapt resource value: 0x7F120002
-			public const int standalone_badge_gravity_bottom_end = 2131886082;
+			public const int standalone_badge = 2131886082;
 			
 			// aapt resource value: 0x7F120003
-			public const int standalone_badge_gravity_bottom_start = 2131886083;
+			public const int standalone_badge_gravity_bottom_end = 2131886083;
 			
 			// aapt resource value: 0x7F120004
-			public const int standalone_badge_gravity_top_start = 2131886084;
+			public const int standalone_badge_gravity_bottom_start = 2131886084;
 			
 			// aapt resource value: 0x7F120005
-			public const int standalone_badge_offset = 2131886085;
+			public const int standalone_badge_gravity_top_start = 2131886085;
+			
+			// aapt resource value: 0x7F120006
+			public const int standalone_badge_offset = 2131886086;
 			
 			static Xml()
 			{

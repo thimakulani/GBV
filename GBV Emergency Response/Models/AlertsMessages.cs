@@ -18,7 +18,9 @@ namespace GBV_Emergency_Response.Models
     {
         public string Name { get; set; }
         public string Phone { get; set; }
+        [MapTo("Latitude")]
         public string Lat { get; set; }
+        [MapTo("Longitude")]
         public string Lon { get; set; }
         public Timestamp TimeDate { get; set; }
         public string UserKey { get; set; }

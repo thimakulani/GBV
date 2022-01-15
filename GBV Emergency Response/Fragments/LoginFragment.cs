@@ -66,7 +66,7 @@ namespace GBV_Emergency_Response.Fragments
                 return;
             }
             loadingDialog = new IonAlert(context, IonAlert.ProgressType);
-            loadingDialog.SetSpinKit("DoubleBounce")
+            loadingDialog.SetSpinKit("WanderingCubes")
                 .SetSpinColor("#008D91")
                 .ShowCancelButton(false)
                 .Show();

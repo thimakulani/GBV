@@ -20,11 +20,10 @@ namespace GBV_Emergency_Response
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            if(savedInstanceState == null)
+            if (savedInstanceState == null)
             {
 
             }
-            
         }
         protected override void OnResume()
         {

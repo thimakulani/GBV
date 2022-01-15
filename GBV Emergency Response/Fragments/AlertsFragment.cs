@@ -91,32 +91,12 @@ namespace GBV_Emergency_Response.Fragments
         public  class ShowMapFragmentArgs : EventArgs
         {
             public AlertsMessages Alerts { get; set; }
+            public int Type { get; set; }
         }
         private void Adapter_ItemClick(object sender, AlertsAdapterClickEventArgs e)
         {
-            ShowMapHandler.Invoke(this, new ShowMapFragmentArgs { Alerts = items[e.Position] });
-            //var utility = new PolylineUtility();
+            ShowMapHandler.Invoke(this, new ShowMapFragmentArgs { Alerts = items[e.Position], Type = 1 });
 
-            //// Create an IEnumberable<IGeoCoordinate>
-            //// or IEnumerable<Tuple<double,double>>
-            //var geoPoints = new List<IGeoCoordinate>
-            //{
-            //    //, 
-            //    new GeoCoordinate(-23.869037400561844, 29.48357921705048),
-            //    new GeoCoordinate(-23.909845674211308, 29.597562367273195),
-            //};
-
-            //// Encode points to string.
-            //var polyLine = utility.Encode(geoPoints); // output: _p~iF~ps|U_ulLnnqC_mqNvxq`@
-
-            //// Decode string to points.
-            //var decodedPoints = utility.Decode(polyLine);
-            //int i = 0;
-            //foreach (var item in polyLine)
-            //{
-            //    i++;
-            //}
-            //Toast.MakeText(context, $"{polyLine}  =={i}", ToastLength.Long).Show();
         }
 
         private void Adapter_FabCallClick(object sender, AlertsAdapterClickEventArgs e)
@@ -124,9 +104,15 @@ namespace GBV_Emergency_Response.Fragments
             Xamarin.Essentials.PhoneDialer.Open(items[e.Position].Phone);
         }
 
-        private async void Adapter_BtnNavClick(object sender, AlertsAdapterClickEventArgs e)
+        private void Adapter_BtnNavClick(object sender, AlertsAdapterClickEventArgs e)
         {
-            await OpenMap.NavigateToVictim(double.Parse(items[e.Position].Lat), double.Parse(items[e.Position].Lon));
+            System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
+            cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
+            System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
+
+            ShowMapHandler.Invoke(this, new ShowMapFragmentArgs { Type = 2, Alerts = items[e.Position] });
+
+           // await OpenMap.NavigateToVictim(double.Parse(items[e.Position].Lat), double.Parse(items[e.Position].Lon));
         }
 
        
@@ -135,6 +121,7 @@ namespace GBV_Emergency_Response.Fragments
     {
         public static async Task NavigateToVictim(double lat, double lon)
         {
+            
             var location = new Xamarin.Essentials.Location(lat, lon);
             var options = new MapLaunchOptions { Name = "Victim", };
 
@@ -142,9 +129,10 @@ namespace GBV_Emergency_Response.Fragments
             {
                 await Map.OpenAsync(location, options);
             }
-            catch
+            catch(Exception ex)
             {
                 // No map application available to open
+                Console.WriteLine(ex.Message);
             }
         }
     }
