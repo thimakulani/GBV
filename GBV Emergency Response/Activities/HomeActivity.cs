@@ -141,7 +141,7 @@ namespace GBV_Emergency_Response.Activities
         {
             if(e.Type == 1)
             {
-                MapFragmentDialog profile = new MapFragmentDialog();
+                MapFragmentDialog profile = new MapFragmentDialog(double.Parse(e.Alerts.Lat), double.Parse(e.Alerts.Lon));
                 SupportFragmentManager.BeginTransaction()
                     .Replace(Resource.Id.fragHost, profile)
                     .Commit();
