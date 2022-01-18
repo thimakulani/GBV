@@ -39,16 +39,16 @@ namespace GBV_Emergency_Response.Fragments
                 .AddItem(new Element() { Title = "Version 1.0.0" })
                 .AddItem(element)
                 .AddGroup("Contact us on")
-                .AddEmail("thimakulani@gmail.com")
-                .AddFacebook("Thima")
+                .AddEmail("andriessebola001@gmail.com")
+                .AddFacebook("Andries Mpontseng Sebola")
                 // .AddWebsite("")
-                .AddPlayStore("Thima")
+                .AddPlayStore("not availabe")
                 .AddItem(CreateCopyright())
                 .AddGroup("Developers")
-                .AddEmail("thimakulani@gmail.com")
-                .AddFacebook("https//m.facebook.com/thima.sigauque")
-                .AddGitHub("Thimakulani")
-                .AddInstagram("instagram.com/thimasigauque")
+                .AddEmail("andriessebola@gmail.com")
+                .AddFacebook("https//m.facebook.com/andriesmpontsheng")
+                .AddGitHub("Andries-ui")
+                .AddInstagram("not available")
                 .Create();
             return about;
         }

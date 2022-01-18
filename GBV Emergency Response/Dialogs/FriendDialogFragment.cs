@@ -89,7 +89,9 @@ namespace GBV_Emergency_Response.Dialogs
         {
             try
             {
-                Xamarin.Essentials.PhoneDialer.Open(Phone.Text);
+                var uri = Android.Net.Uri.Parse($"tel: {Phone.Text}");
+                var intent = new Intent(Intent.ActionDial, uri);
+                StartActivity(intent);
             }
             catch (Exception)
             {

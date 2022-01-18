@@ -4,6 +4,7 @@ using Android.Content;
 using Android.Gms.Tasks;
 using Android.OS;
 using Android.Views;
+using Android.Widget;
 using AndroidHUD;
 using AndroidX.AppCompat.App;
 using Firebase.Auth;
@@ -17,7 +18,7 @@ using Plugin.CloudFirestore;
 
 namespace GBV_Emergency_Response.Fragments
 {
-    public class SignupFragment : HelpFragment, IOnFailureListener, IOnSuccessListener, IOnCompleteListener
+    public class ResetFragment : HelpFragment, IOnFailureListener, IOnSuccessListener, IOnCompleteListener
     {
 
         private MaterialButton BtnRegister;
@@ -40,7 +41,7 @@ namespace GBV_Emergency_Response.Fragments
         {
             // Use this to return your custom view for this Fragment
             base.OnCreateView(inflater, container, savedInstanceState);
-            View view = inflater.Inflate(Resource.Layout.sign_up, container, false);
+            View view = inflater.Inflate(Resource.Layout.reset, container, false);
             context = view.Context;
             ConnectViews(view);
             return view;
@@ -48,12 +49,7 @@ namespace GBV_Emergency_Response.Fragments
 
         private void ConnectViews(View view)
         {
-            InputUsername = view.FindViewById<TextInputEditText>(Resource.Id.InputUserName);
-            InputName = view.FindViewById<TextInputEditText>(Resource.Id.InputFirstName);
-            InputPassword = view.FindViewById<TextInputEditText>(Resource.Id.InputPassword);
-            InputPhoneNumber = view.FindViewById<TextInputEditText>(Resource.Id.InputPhoneNumber);
             InputEmail = view.FindViewById<TextInputEditText>(Resource.Id.InputEmail);
-            InputSurname = view.FindViewById<TextInputEditText>(Resource.Id.InputLastName);
             BtnRegister = view.FindViewById<MaterialButton>(Resource.Id.btnRegister);
             BtnLogin = view.FindViewById<MaterialButton>(Resource.Id.BtnBackToLogin);
             BtnRegister.Click += BtnRegister_Click;
@@ -63,33 +59,13 @@ namespace GBV_Emergency_Response.Fragments
         private IonAlert loadingDialog;
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(InputName.Text) && string.IsNullOrWhiteSpace(InputName.Text))
-            {
-                InputName.Error = "Please provide your name";
-                return;
-            }
-            if (string.IsNullOrEmpty(InputSurname.Text) && string.IsNullOrWhiteSpace(InputSurname.Text))
-            {
-                InputSurname.Error = "Please provide your surname";
-                return;
-            }
-            
+          
             if (string.IsNullOrEmpty(InputEmail.Text) && string.IsNullOrWhiteSpace(InputEmail.Text))
             {
                 InputEmail.Error = "Please provide your email";//, ToastLength.Long).Show();
                 return;
             }
-            if (string.IsNullOrEmpty(InputPhoneNumber.Text) && string.IsNullOrWhiteSpace(InputPhoneNumber.Text))
-            {
-                InputPhoneNumber.Error = "Please provide your phone number";//, ToastLength.Long).Show();
-                return;
-            }
-            if (string.IsNullOrEmpty(InputPassword.Text) && string.IsNullOrWhiteSpace(InputPassword.Text))
-            {
-                InputPassword.Error = "Please provide your password";
-                return;
-            }
-         
+           
             BtnRegister.Enabled = false;
             loadingDialog = new IonAlert(context, IonAlert.ProgressType);
             loadingDialog.SetSpinKit("WanderingCubes")
@@ -97,7 +73,7 @@ namespace GBV_Emergency_Response.Fragments
                 .ShowCancelButton(false)
                 .Show();
             auth = FirebaseAuth.Instance;
-            auth.CreateUserWithEmailAndPassword(InputEmail.Text.Trim(), InputPassword.Text.Trim())
+            auth.SendPasswordResetEmail(InputEmail.Text.Trim())
                 .AddOnFailureListener(this)
                 .AddOnSuccessListener(this)
                 .AddOnCompleteListener(this);
@@ -105,6 +81,7 @@ namespace GBV_Emergency_Response.Fragments
         }
 
         public event EventHandler LoginHandler;
+      
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
@@ -127,38 +104,29 @@ namespace GBV_Emergency_Response.Fragments
        
         public async void OnSuccess(Java.Lang.Object result)
         {
-            Dictionary<string, object> data = new Dictionary<string, object>();
-            data.Add("Username", InputUsername.Text);
-            data.Add("Name", InputName.Text);
-            data.Add("Surname", InputSurname.Text);
-            data.Add("PhoneNumber", InputPhoneNumber.Text);
-            data.Add("Email", InputEmail.Text);
-            data.Add("ImageUrl", null);
-            await CrossCloudFirestore
-                .Current
-                .Instance
-                .Collection("PEOPLE")
-                .Document(FirebaseAuth.Instance.Uid)
-                .SetAsync(data);
-
-            Dictionary<string, object> location = new Dictionary<string, object>();
-            location.Add("Latitude", null);
-            location.Add("Longitude", null);
-            await CrossCloudFirestore
-                .Current
-                .Instance
-                .Collection("LOCATION")
-                .Document(FirebaseAuth.Instance.Uid)
-                .SetAsync(location);
-
-            AndHUD.Shared.ShowSuccess(context, "You have successfully created your account", MaskType.Black, TimeSpan.FromSeconds(2));
-            Intent intent = new Intent(context, typeof(HomeActivity));
-            StartActivity(intent);
+            //MaterialAlertDialogBuilder alert = new MaterialAlertDialogBuilder(context);
+            ////Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(context);
+            //alert.SetTitle("Error");
+            //alert.SetMessage(result.ToString());
+            //alert.SetNeutralButton("OK", delegate
+            //{
+            //    alert.Dispose();
+            //});
+            //alert.Show(); loadingDialog.Dismiss();
+            loadingDialog.Dismiss();
         }
 
         public void OnComplete(Task task)
         {
-            loadingDialog.Dismiss();
+            MaterialAlertDialogBuilder alert = new MaterialAlertDialogBuilder(context);
+            //Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(context);
+            alert.SetTitle("Done");
+            alert.SetMessage(task.ToString());
+            alert.SetNeutralButton("OK", delegate
+            {
+                alert.Dispose();
+            });
+            alert.Show(); loadingDialog.Dismiss();
             BtnRegister.Enabled = true;
         }
     }

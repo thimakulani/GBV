@@ -29,5 +29,7 @@
     <string name="txt_searchview">Name, Phone number or Email</string>
     <string name="txt_btn_invite">Connect</string>
     <string name="text_view_already_have_account">Already have an account</string>
-  <string name="mapKey">AIzaSyAWIh3y0jsa17IDkpFJ4Qo9VTGqsZ8n4VU</string>
+	<string name="mapKey">AIzaSyAWIh3y0jsa17IDkpFJ4Qo9VTGqsZ8n4VU</string>
+	<string name="reset">Send a link</string>
+	<string name="reset_caption">Reset password</string>
 </resources>

@@ -8,6 +8,7 @@ using Google.Android.Material.Button;
 using FFImageLoading;
 using AndroidX.RecyclerView.Widget;
 using Firebase.Auth;
+using GBV_Emergency_Response.Filters;
 
 namespace GBV_Emergency_Response.Adapters
 {
@@ -17,10 +18,12 @@ namespace GBV_Emergency_Response.Adapters
         public event EventHandler<AppUsersAdapterClickEventArgs> ItemLongClick;
         public event EventHandler<AppUsersAdapterClickEventArgs> BtnClick;
         private List<AppUsers> items = new List<AppUsers>();
+        private readonly List<AppUsers> currentList = new List<AppUsers>();
 
         public AppUsersAdapter(List<AppUsers> data)
         {
             items = data;
+            currentList = items;
         }
 
         // Create new views (invoked by the layout manager)
@@ -71,6 +74,11 @@ namespace GBV_Emergency_Response.Adapters
         }
 
         public override int ItemCount => items.Count;
+
+        //public Filter Filter
+        //{
+        //    //get { return FilterHelper.newInstance(currentList.to, this); }
+        //}
 
         void OnBtnClick(AppUsersAdapterClickEventArgs args) => BtnClick?.Invoke(this, args);
         void OnClick(AppUsersAdapterClickEventArgs args) => ItemClick?.Invoke(this, args);

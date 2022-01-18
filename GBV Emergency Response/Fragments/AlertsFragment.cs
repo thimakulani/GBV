@@ -41,7 +41,6 @@ namespace GBV_Emergency_Response.Fragments
         {
             recyclerAlerts = view.FindViewById<RecyclerView>(Resource.Id.recyclerAlerts);
 
-
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
             linearLayoutManager.StackFromEnd = true;
             linearLayoutManager.ReverseLayout = true;
@@ -53,7 +52,6 @@ namespace GBV_Emergency_Response.Fragments
             adapter.ItemClick += Adapter_ItemClick;
             adapter.FabCallClick += Adapter_FabCallClick;
 
-            
             CrossCloudFirestore.Current.Instance
                 .Collection("EMERGENCY")
                 .OrderBy("TimeDate", false)
@@ -85,7 +83,6 @@ namespace GBV_Emergency_Response.Fragments
                     }
                 });
 
-            
         }
         public event EventHandler<ShowMapFragmentArgs> ShowMapHandler;
         public  class ShowMapFragmentArgs : EventArgs
@@ -96,12 +93,13 @@ namespace GBV_Emergency_Response.Fragments
         private void Adapter_ItemClick(object sender, AlertsAdapterClickEventArgs e)
         {
             ShowMapHandler.Invoke(this, new ShowMapFragmentArgs { Alerts = items[e.Position], Type = 1 });
-
         }
 
         private void Adapter_FabCallClick(object sender, AlertsAdapterClickEventArgs e)
         {
-            Xamarin.Essentials.PhoneDialer.Open(items[e.Position].Phone);
+            var uri = Android.Net.Uri.Parse($"tel:{items[e.Position].Phone}");
+            var intent = new Intent(Intent.ActionDial, uri);
+            StartActivity(intent); 
         }
 
         private void Adapter_BtnNavClick(object sender, AlertsAdapterClickEventArgs e)
@@ -110,12 +108,13 @@ namespace GBV_Emergency_Response.Fragments
             cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
             System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
 
-            ShowMapHandler.Invoke(this, new ShowMapFragmentArgs { Type = 2, Alerts = items[e.Position] });
+            //Intent intent = new Intent(Intent.ActionView, Uri.parse("google.navigation:q=22.659239,88.43534&mode=l"));
+
+            //ShowMapHandler.Invoke(this, new ShowMapFragmentArgs { Type = 2, Alerts = items[e.Position] });
 
            // await OpenMap.NavigateToVictim(double.Parse(items[e.Position].Lat), double.Parse(items[e.Position].Lon));
         }
 
-       
     }
     public static class OpenMap
     {

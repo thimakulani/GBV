@@ -111,13 +111,21 @@ namespace GBV_Emergency_Response.Fragments
 
         private async void Adapter_ItemDeleteClick(object sender, AwarenessAdapterClickEventArgs e)
         {
+            var picture = items[e.Position].ImageUrl;
+
             await CrossCloudFirestore.Current.Instance
                  .Collection("AWARENESS")
                  .Document(items[e.Position].Id)
                  .DeleteAsync();
-            if (items[e.Position].ImageUrl != null)
+            if (picture != null)
             {
-                await FirebaseStorage.Instance.GetReferenceFromUrl(items[e.Position].ImageUrl).DeleteAsync();
+                try
+                {
+                    await FirebaseStorage.Instance.GetReferenceFromUrl(items[e.Position].ImageUrl).DeleteAsync();
+                }catch(Exception ex)
+                {
+                    AndHUD.Shared.ShowSuccess(context, "You have successfully deleted", AndroidHUD.MaskType.Black, TimeSpan.FromSeconds(2));
+                }
             }
             AndHUD.Shared.ShowSuccess(context, "You have successfully deleted", AndroidHUD.MaskType.Black, TimeSpan.FromSeconds(2));
         }

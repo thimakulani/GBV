@@ -3,6 +3,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using AndroidX.AppCompat.App;
+using Firebase;
 using GBV_Emergency_Response.Fragments;
 
 namespace GBV_Emergency_Response.Activities
@@ -15,18 +16,18 @@ namespace GBV_Emergency_Response.Activities
             base.OnCreate(savedInstanceState);
             // Create your application here
             SetContentView(Resource.Layout.activity_login_signup);
-            if(savedInstanceState == null)
+            FirebaseApp app = FirebaseApp.InitializeApp(Android.App.Application.Context);
+            if (savedInstanceState == null)
             {
                 LoginFragment login = new LoginFragment();
                 login.BtnSignUpClickEventHandler += Login_BtnSignUpClickEventHandler;
+                login.BtnResetClickEventHandler += Reset_BtnResetClickEventHandler;
                 login.SuccessEventHandler += Login_SuccessEventHandler;
                 SupportFragmentManager.BeginTransaction()
                     .SetCustomAnimations(Resource.Animation.Pushup_in, Resource.Animation.Pushup_out)
                     .Add(Resource.Id.loginFragmentHost, login)
                     .Commit();
             }
-            
-
 
         }
 
@@ -48,6 +49,16 @@ namespace GBV_Emergency_Response.Activities
                 .Commit();
         }
 
+        private void Reset_BtnResetClickEventHandler(object sender, EventArgs e)
+        {
+            ResetFragment reset = new ResetFragment();
+            reset.LoginHandler += Signup_LoginHandler;
+            SupportFragmentManager.BeginTransaction()
+                .SetCustomAnimations(Resource.Animation.right_in, Resource.Animation.right_out, Resource.Animation.left_in, Resource.Animation.left_out)
+                .Replace(Resource.Id.loginFragmentHost, reset)
+                .Commit();
+        }
+
         private void Signup_LoginHandler(object sender, EventArgs e)
         {
             LoginFragment login = new LoginFragment();
@@ -58,5 +69,6 @@ namespace GBV_Emergency_Response.Activities
                 .Replace(Resource.Id.loginFragmentHost, login)
                 .Commit();
         }
+
     }
 }

@@ -41,7 +41,9 @@ namespace GBV_Emergency_Response.Dialogs
             Items.Add(new HelpLine { PhoneNumber = "10111", Title = "SAPS" });
             Items.Add(new HelpLine { PhoneNumber = "0800055555", Title = "Childline" });
             Items.Add(new HelpLine { PhoneNumber = "0800 428 428", Title = "GBV Hotline" });
-            Items.Add(new HelpLine { PhoneNumber = "911", Title = "Ambulance" });
+            Items.Add(new HelpLine { PhoneNumber = "911", Title = "Emegency Number 1" });
+            Items.Add(new HelpLine { PhoneNumber = "121", Title = "Emegency Number 2" });
+            Items.Add(new HelpLine { PhoneNumber = "911", Title = "Fire Fighters" });
             helpline_recycler.SetLayoutManager(new LinearLayoutManager(view.Context));
             HelpAdapter adapter = new HelpAdapter(Items);
             helpline_recycler.SetAdapter(adapter);
@@ -52,7 +54,9 @@ namespace GBV_Emergency_Response.Dialogs
         {
             try
             {
-                Xamarin.Essentials.PhoneDialer.Open(Items[e.Position].PhoneNumber);
+                var uri = Android.Net.Uri.Parse($"tel:{Items[e.Position].PhoneNumber}");
+                var intent = new Intent(Intent.ActionDial, uri);
+                StartActivity(intent); 
             }
             catch (Exception ex)
             {

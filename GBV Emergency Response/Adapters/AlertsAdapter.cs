@@ -9,6 +9,7 @@ using Xamarin.Essentials;
 using AndroidX.RecyclerView.Widget;
 using GBV_Emergency_Response.Models;
 using Google.Android.Material.Button;
+using Plugin.CloudFirestore;
 
 namespace GBV_Emergency_Response.Adapters
 {
@@ -51,9 +52,6 @@ namespace GBV_Emergency_Response.Adapters
 
             var holder = viewHolder as AlertsAdapterViewHolder;
 
-
-            holder.TxtName.Text = items[position].Name;
-            holder.TxtPhone.Text = items[position].Phone;
             TimeSpan timeSpan = DateTime.UtcNow - items[position].TimeDate.ToDateTime();
             if (timeSpan.TotalMinutes > 30)
             {
@@ -62,7 +60,6 @@ namespace GBV_Emergency_Response.Adapters
             }
             if(items[position].TimeDate.ToDateTime().ToString("dd/MMM/yyyy") == DateTime.UtcNow.ToString("dd/MMM/yyyy"))
             {
-
                 holder.TxtTimeDate.Text = "today: " +  items[position].TimeDate.ToDateTime().ToString("HH:mm tt");
             }
             else
@@ -81,10 +78,34 @@ namespace GBV_Emergency_Response.Adapters
             {
                 holder.TxtLocation.Text = await GetLocationAsync(lat, log);
             }
+
+            CrossCloudFirestore
+               .Current
+               .Instance
+               .Collection("PEOPLE")
+               .Document(items[position].UserKey)
+               .AddSnapshotListener((value, error) =>
+               {
+                   try
+                   {
+
+                       if (value.Exists)
+                       {
+                           var users = value.ToObject<AppUsers>();
+
+                           holder.TxtName.Text = users.Username;
+                           holder.TxtPhone.Text = users.PhoneNumber;
+
+                       }
+                       else { Console.WriteLine("Nonsonse!!!"); }
+                   }catch(Exception ex)
+                   {
+                       Console.WriteLine(ex.Message);
+                   }
+               });
         }
         private async System.Threading.Tasks.Task<string> GetLocationAsync(double lat, double lon)
         {
-
             try
             {
 
@@ -93,7 +114,6 @@ namespace GBV_Emergency_Response.Adapters
                 System.Text.StringBuilder s = new System.Text.StringBuilder();
                 if (!string.IsNullOrEmpty(address[0].SubThoroughfare) && !string.IsNullOrWhiteSpace(address[0].SubThoroughfare))
                 {
-
                     s.Append(address[0].SubThoroughfare);
                 }
                 if (!string.IsNullOrEmpty(address[0].Thoroughfare) && !string.IsNullOrWhiteSpace(address[0].Thoroughfare))
@@ -173,7 +193,6 @@ namespace GBV_Emergency_Response.Adapters
         public View View_separator { get; set; }
         public Google.Android.Material.FloatingActionButton.FloatingActionButton FabCall { get; set; }
 
-
         public AlertsAdapterViewHolder(View itemView, Action<AlertsAdapterClickEventArgs> clickListener,
                             Action<AlertsAdapterClickEventArgs> longClickListener,
                             Action<AlertsAdapterClickEventArgs> navClickListener,
@@ -187,7 +206,6 @@ namespace GBV_Emergency_Response.Adapters
             BtnNavigate = itemView.FindViewById<MaterialButton>(Resource.Id.BtnNavigate);
             View_separator = itemView.FindViewById<View>(Resource.Id.view_separator);
             FabCall = itemView.FindViewById<Google.Android.Material.FloatingActionButton.FloatingActionButton>(Resource.Id.FabCall);
-
 
             FabCall.Click += (sender, e) => FabCallClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });
             BtnNavigate.Click += (sender, e) => navClickListener(new AlertsAdapterClickEventArgs { View = itemView, Position = AbsoluteAdapterPosition });

@@ -65,8 +65,6 @@ namespace GBV_Emergency_Response.Dialogs
             recyclerAppUsers.SetAdapter(adapter);
             adapter.BtnClick += Adapter_BtnClick;
 
-
-
             CrossCloudFirestore.Current.Instance
                 .Collection("PEOPLE")
                 .AddSnapshotListener((value, errors) =>

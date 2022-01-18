@@ -1,15 +1,18 @@
 ﻿using Android;
 using Android.App;
 using Android.Content.PM;
+using Android.Gms.Common;
 using Android.Gms.Extensions;
 using Android.Gms.Location;
 using Android.OS;
 using Android.Runtime;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 using AndroidX.Core.App;
 using Firebase.Auth;
-using Firebase.Messaging;
+using Firebase.Iid;
+using FirebaseAdmin.Messaging;
 using GBV_Emergency_Response.Dialogs;
 using GBV_Emergency_Response.Fragments;
 using GBV_Emergency_Response.MapHelper;
@@ -19,8 +22,10 @@ using IsmaelDiVita.ChipNavigationLib;
 using Plugin.CloudFirestore;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using Xamarin.Essentials;
 using static IsmaelDiVita.ChipNavigationLib.ChipNavigationBar;
+using Notification = FirebaseAdmin.Messaging.Notification;
 using PopupMenu = AndroidX.AppCompat.Widget.PopupMenu;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
@@ -37,31 +42,45 @@ namespace GBV_Emergency_Response.Activities
 
         /*LOCATION*/
         LocationRequest locationRequest;
+        FusedLocationProviderClient FusedLocationProviderClient;
+
         //permissin
 
-        readonly string[] permission = { Manifest.Permission.AccessCoarseLocation, Manifest.Permission.AccessFineLocation };
+        readonly string[] permission =
+      {
+            Manifest.Permission.ReadExternalStorage,
+            Manifest.Permission.WriteExternalStorage,
+            Manifest.Permission.Camera,
+            Manifest.Permission.AccessCoarseLocation,
+            Manifest.Permission.AccessFineLocation,
+            Manifest.Permission.AccessNotificationPolicy,
+            Manifest.Permission.BindNotificationListenerService
+        };
+
         const int requestLocationId = 0;
         //
 
-
+        
         FusedLocationProviderClient locationClient;
         Android.Locations.Location lastLocation;
-
 
         private const int UPDATE_INTERVAL = 5;
         private const int UPDATE_FASTEST_INTERVAL = 5;
         private const int DISPLACEMENT = 3;
         private LocationCallBackHelper locationCallBack;
 
-
-
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        private void LoadCurrentLocation(Location location)
         {
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);    
-            //if(grantResults == Permission.Granted)
-            //{
+            Dictionary<string, object> data = new Dictionary<string, object>();
+            data.Add("Latitude", null);
+            data.Add("Longitude", null);
 
-            //}
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("LOCATION")
+                .Document(FirebaseAuth.Instance.CurrentUser.Uid)
+                .UpdateAsync(data);
         }
 
         //private readonly List<AlertsMessages> items = new List<AlertsMessages>();
@@ -72,7 +91,11 @@ namespace GBV_Emergency_Response.Activities
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            var response = FirebaseMessaging.Instance.SubscribeToTopic("requests").AsAsync();
+            RequestPermissions(permission, 0);
+            IsPlayServiceAvailabe();
+            Firebase.Messaging.FirebaseMessaging.Instance.SubscribeToTopic("alerts");
+
+            var response = Firebase.Messaging.FirebaseMessaging.Instance.SubscribeToTopic("requests").AsAsync();
             Toast.MakeText(this, response.Id.ToString(), ToastLength.Long).Show();
 
             nav_menu = FindViewById<ChipNavigationBar>(Resource.Id.bottom_nav_view);
@@ -127,21 +150,47 @@ namespace GBV_Emergency_Response.Activities
                  {
                      nav_menu.ShowBadge(Resource.Id.navAlerts, value.Count);
                  });
+
+            CreateLocationRequest();
             if (CheckPermission())
             {
-                CreateLocationRequest();
                 GetLocation();
                 StartLocationUpdate();
             }
-    
+            
+
         }
 
+        private Boolean IsPlayServiceAvailabe()
+        {
+            int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
+            if (resultCode != ConnectionResult.Success)
+            {
+                if (GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
+                {
+                    Toast.MakeText(this, GoogleApiAvailability.Instance.GetErrorString(resultCode), ToastLength.Long).Show();
+                }
+                else
+                {
+                    Toast.MakeText(this, "This device is not supported", ToastLength.Long).Show();
+                }
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
         private async void Alerts_ShowMapHandler(object sender, AlertsFragment.ShowMapFragmentArgs e)
         {
             if(e.Type == 1)
             {
-                MapFragmentDialog profile = new MapFragmentDialog(double.Parse(e.Alerts.Lat), double.Parse(e.Alerts.Lon));
+                System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
+                cultureInfo.NumberFormat.NumberDecimalSeparator = ".";
+                System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
+
+                MapFragmentDialog profile = new MapFragmentDialog(e.Alerts.UserKey);
                 SupportFragmentManager.BeginTransaction()
                     .Replace(Resource.Id.fragHost, profile)
                     .Commit();
@@ -173,7 +222,6 @@ namespace GBV_Emergency_Response.Activities
             
         }
        
-
         private void Home_toolbar_NavigationClick(object sender, Toolbar.NavigationClickEventArgs e)
         {
             
@@ -221,22 +269,57 @@ namespace GBV_Emergency_Response.Activities
                 appUsersDialog.Show(fm, appUsersDialog.Tag);
             }
         }
-
-        private void Home_PanicButtonEventHandler(object sender, EventArgs e)
+        private IDocumentReference dbref;
+        private async void Home_PanicButtonEventHandler(object sender, EventArgs e)
         {
-            if (CheckPermission())
-            {
-                SendAlert = true;
-                CreateLocationRequest();
-                GetLocation();
-                StartLocationUpdate();
-            }
-            else
-            {
-                Toast.MakeText(this, "Permission not granted", ToastLength.Long).Show();
-            }
+
+            CrossCloudFirestore
+              .Current
+              .Instance
+              .Collection("PEOPLE")
+              .Document(FirebaseAuth.Instance.Uid)
+              .AddSnapshotListener(async(value, error) =>
+              {
+                  if (value.Exists)
+                  {
+                      var users = value.ToObject<AppUsers>();
+
+                      Dictionary<string, object> data = new Dictionary<string, object>();
+                        data.Add("Uid", FirebaseAuth.Instance.CurrentUser.Uid);
+                        data.Add("TimeDate", FieldValue.ServerTimestamp);
+                        dbref = await CrossCloudFirestore
+                            .Current
+                            .Instance
+                            .Collection("EMERGENCY")
+                            .AddAsync(data);
+                        var stream = Resources.Assets.Open("ServiceAccount.json");
+                        var fcm = FirebaseHelper.FirebaseAdminSDK.GetFirebaseMessaging(stream);
+                        FirebaseAdmin.Messaging.Message message = new FirebaseAdmin.Messaging.Message()
+                        {
+                            Topic = "alerts",
+                            Notification = new Notification()
+                            {
+                                Title = "Emergency Alert",
+                                Body = $"${users.Username} may be in need of emergency assistance, please contact him on ${users.PhoneNumber} or contact the police and provide the address in the alert locator in the map.",
+
+                            },
+
+                        };
+                        await fcm.SendAsync(message);
+
+                  
+                  }
+                });
         }
 
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        {
+            //Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        }
         private void StartLocationUpdate()
         {
             if (CheckPermission())
@@ -256,47 +339,56 @@ namespace GBV_Emergency_Response.Activities
             locationCallBack = new LocationCallBackHelper();
             locationCallBack.CurrentLocation += LocationCallBack_CurrentLocation;
         }
-        private string CurrentKey = "X";
-        private bool SendAlert = false;
         
-        private async void LocationCallBack_CurrentLocation(object sender, LocationCallBackHelper.OnLocationCapturedEventArgs e)
+        private void LocationCallBack_CurrentLocation(object sender, LocationCallBackHelper.OnLocationCapturedEventArgs e)
         {
-            lastLocation = e.location;
-            Dictionary<string, object> data = new Dictionary<string, object>();
-            if (SendAlert)
-            {
-                if (CurrentKey == "X")
-                {
-                    data.Add("Latitude", lastLocation.Latitude.ToString());
-                    data.Add("Longitude", lastLocation.Longitude.ToString());
-                    data.Add("Uid", FirebaseAuth.Instance.CurrentUser.Uid);
-                    data.Add("TimeDate", FieldValue.ServerTimestamp);
-                    var dbref = await CrossCloudFirestore
-                        .Current
-                        .Instance
-                        .Collection("EMERGENCY")
-                        .AddAsync(data);
-                    CurrentKey = dbref.Id; 
+            Console.WriteLine($"Latitude {e.location.Latitude}  Longitude: {e.location.Longitude}");
+            
+                Dictionary<string, object> data = new Dictionary<string, object>();
+                data.Add("Latitude", lastLocation.Latitude.ToString());
+                data.Add("Longitude", lastLocation.Longitude.ToString());
+            CrossCloudFirestore
+                .Current
+                .Instance
+                .Collection("LOCATION")
+                .Document(FirebaseAuth.Instance.CurrentUser.Uid)
+                .UpdateAsync(data);
+            
+            //lastLocation = e.location;
+            //Dictionary<string, object> data = new Dictionary<string, object>();
+            //if (SendAlert)
+            //{
+            //if (CurrentKey == "X")
+            //{
+            //    Dictionary<string, object> data = new Dictionary<string, object>();
+            //    data.Add("Latitude", lastLocation.Latitude.ToString());
+            //    data.Add("Longitude", lastLocation.Longitude.ToString());
+            //    data.Add("Uid", FirebaseAuth.Instance.CurrentUser.Uid);
+            //    data.Add("TimeDate", FieldValue.ServerTimestamp);
+            //    var dbref = await CrossCloudFirestore
+            //        .Current
+            //        .Instance
+            //        .Collection("EMERGENCY")
+            //        .AddAsync(data);
+            //    CurrentKey = dbref.Id; 
 
-                }
-                else
-                {
-                    data.Add("Latitude", lastLocation.Latitude.ToString());
-                    data.Add("Longitude", lastLocation.Longitude.ToString());
-                    data.Add("LastTimeStamp", FieldValue.ServerTimestamp);
-                    await CrossCloudFirestore
-                        .Current
-                        .Instance
-                        .Collection("EMERGENCY")
-                        .Document(CurrentKey)
-                        .UpdateAsync(data);
+            //}
+            //else
+            //{
+            //    data.Add("Latitude", lastLocation.Latitude.ToString());
+            //    data.Add("Longitude", lastLocation.Longitude.ToString());
+            //    data.Add("LastTimeStamp", FieldValue.ServerTimestamp);
+            //    await CrossCloudFirestore
+            //        .Current
+            //        .Instance
+            //        .Collection("EMERGENCY")
+            //        .Document(CurrentKey)
+            //        .UpdateAsync(data);
 
 
-
-
-                }
-                SendAlert = false;
-            }
+            //}
+            //SendAlert = false;
+            // }
         }
 
         private bool CheckPermission()

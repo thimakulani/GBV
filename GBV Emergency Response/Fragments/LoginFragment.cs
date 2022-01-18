@@ -3,6 +3,7 @@ using Android.Content;
 using Android.Gms.Tasks;
 using Android.OS;
 using Android.Views;
+using Firebase;
 using Firebase.Auth;
 using Google.Android.Material.Button;
 using Google.Android.Material.Dialog;
@@ -30,6 +31,7 @@ namespace GBV_Emergency_Response.Fragments
             // Use this to return your custom view for this Fragment
             base.OnCreateView(inflater, container, savedInstanceState);
             View view = inflater.Inflate(Resource.Layout.login, container, false);
+            FirebaseApp app = FirebaseApp.InitializeApp(Android.App.Application.Context);
             context = view.Context;
             ConnectViews(view);
             return view;
@@ -37,7 +39,6 @@ namespace GBV_Emergency_Response.Fragments
 
         private void ConnectViews(View view)
         {
-
             InputEmail = view.FindViewById<TextInputEditText>(Resource.Id.Input_Email);
             InputPassword = view.FindViewById<TextInputEditText>(Resource.Id.Input_Password);
             BtnLogin = view.FindViewById<MaterialButton>(Resource.Id.btnLogin);
@@ -77,8 +78,10 @@ namespace GBV_Emergency_Response.Fragments
             
         }
 
+        public event EventHandler BtnResetClickEventHandler;
         private void ForgotPassword_Click(object sender, EventArgs e)
         {
+            BtnResetClickEventHandler(sender, e);
         }
 
         public void OnComplete(Task task)
@@ -98,12 +101,14 @@ namespace GBV_Emergency_Response.Fragments
         {
             MaterialAlertDialogBuilder alert = new MaterialAlertDialogBuilder(context);
             alert.SetTitle("Error");
-            alert.SetMessage(e.Message);
+            alert.SetMessage(e.ToString());
             alert.SetNeutralButton("OK", delegate
             {
                 alert.Dispose();
             });
             alert.Show();
+
+            Console.WriteLine(e);
         }
     }
 }

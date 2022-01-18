@@ -23,6 +23,7 @@ namespace GBV_Emergency_Response.Models
         [MapTo("Longitude")]
         public string Lon { get; set; }
         public Timestamp TimeDate { get; set; }
+        [MapTo("Uid")]
         public string UserKey { get; set; }
         [Id]
         public string Id { get; set; }

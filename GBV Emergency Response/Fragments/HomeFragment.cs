@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Android.Content;
+using Android.Gms.Common;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -98,20 +99,43 @@ namespace GBV_Emergency_Response.Fragments
                 });
 
 
-            
-                
+            IsPlayServiceAvailabe();
+        }
+
+        private Boolean IsPlayServiceAvailabe()
+        {
+            int resultCode= GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(context);
+            if (resultCode != ConnectionResult.Success)
+            {
+                if (GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
+                {
+                    Toast.MakeText(context,GoogleApiAvailability.Instance.GetErrorString(resultCode),ToastLength.Long).Show();
+                }
+                else
+                {
+                    Toast.MakeText(context, "This device is not supported", ToastLength.Long).Show();
+                }
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         private void BtnPanic_Click(object sender, EventArgs e)
         {
-            
+            PanicButtonEventHandler(sender, e);
         }
 
         private void FabInvites_Click(object sender, EventArgs e)
         {
-            InvitesDialogFragment invitesDialogFragment = new InvitesDialogFragment();
-            var fm = ChildFragmentManager.BeginTransaction();
-            invitesDialogFragment.Show(fm, invitesDialogFragment.Tag);
+            var uri = Android.Net.Uri.Parse("tel:+27");
+            var intent = new Intent(Intent.ActionDial, uri);
+            StartActivity(intent);
+            //InvitesDialogFragment invitesDialogFragment = new InvitesDialogFragment();
+            //var fm = ChildFragmentManager.BeginTransaction();
+            //invitesDialogFragment.Show(fm, invitesDialogFragment.Tag);
         }
         public event EventHandler PanicButtonEventHandler;
         private void BtnPanic_LongClick(object sender, View.LongClickEventArgs e)
